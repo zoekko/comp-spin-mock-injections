@@ -105,7 +105,7 @@ def plot_corner(fig,plot_data,hist_alpha=0.7,bins=20,labelsize=14,logscale=False
         
         # If just plotting one data set, plot the error bar values
         if len(plot_data[key]['data'].keys()) == 1:
-            ax.set_title(r"${0:.2f}^{{+{1:.2f}}}_{{-{2:.2f}}}$".format(*getBounds(plot_data[key]['data'])),fontsize=14)
+            ax.set_title(r"${0:.2f}^{{+{1:.2f}}}_{{-{2:.2f}}}$".format(*getBounds(posterior)),fontsize=14)
 
         # Turn off tick labels if this isn't the first dimension
         if i!=0:
