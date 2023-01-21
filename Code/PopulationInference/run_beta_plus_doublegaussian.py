@@ -22,9 +22,9 @@ nevents = sys.argv[2]
 model = "betaPlusDoubleGaussian"
 model_savename = model + f"_pop{pop}_{nevents}events"
 
-# Repository root 
-froot_output = "/home/simona.miller/comp-spin-mock-injections/"
-froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/" ## TODO: eventually input and output should be the same dir
+# File path root for where to store data 
+froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
+froot = "../../Data/" ## TODO: eventually input and output should both be this
 
 # Define emcee parameters
 nWalkers = 20       # number of walkers 
@@ -41,18 +41,22 @@ priorDict = {
 }
 
 # Load sampleDict
-with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1.json", 'r') as f: ## TODO: update with "real" data
-    sampleDict = json.load(f)
-    
-    err_msg = f'# of events passed via commandline ({nevents}) must equal # events in sampleDict ({len(sampleDict)})'
-    assert len(sampleDict)==int(nevents), err_msg
+with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: ## TODO: update with "real" data
+    sampleDict_full = json.load(f)
+
+# Choose subset of sampleDict if necessary
+if int(nevents)<300: 
+    events = np.random.choice(sampleDict_full.keys(), size=int(nevents), replace=False)
+    sampleDict = {event:sampleDict_full[event] for event in events}
+else: 
+    sampleDict = sampleDict_full
     
 # Load injectionDict
 with open(froot_input+"injectionDict_flat.json", 'r') as f: 
     injectionDict = json.load(f)
 
 # Will save emcee chains temporarily in the .tmp folder in this directory
-output_folder_tmp = froot_output+"Data/PopulationInferenceOutput/.tmp/"
+output_folder_tmp = froot+"PopulationInferenceOutput/.tmp/"
 output_tmp = output_folder_tmp+model_savename
 
 
@@ -179,7 +183,7 @@ results = {
 } 
 
 # Save
-savename = froot_output+f"Data/PopulationInferenceOutput/{model}/{model_savename}.json"
+savename = froot+f"PopulationInferenceOutput/{model}/{model_savename}.json"
 with open(savename, "w") as outfile:
     json.dump(results, outfile)
 print(f'Done! Run saved at {savename}')

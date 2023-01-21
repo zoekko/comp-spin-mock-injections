@@ -8,8 +8,9 @@ import astropy.units as u
 from astropy.cosmology import Planck15
 from scipy.stats import gaussian_kde
 
-from generate_populations.helper_functions import p_z as p_astro_z
-from generate_populations.helper_functions import p_astro_masses
+sys.path.append('../GeneratePopulations/')
+from helper_functions import p_z as p_astro_z
+from helper_functions import p_astro_masses
 
 '''
 Prep for calculation of dVc_dz
