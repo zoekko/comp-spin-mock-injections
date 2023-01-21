@@ -20,7 +20,7 @@ nevents = sys.argv[2]
 
 # Model
 model = "gaussianPlusGaussian"
-model_savename = model + f"_pop{pop}_{nevents}events"
+model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
 
 # File path root for where to store data 
 froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
