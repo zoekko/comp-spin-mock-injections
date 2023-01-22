@@ -148,30 +148,51 @@ Actually loading and running pop reweighting
 """
 
 
+# if __name__=="__main__":
+#     # Repository root 
+#     froot = '/home/zoe.ko/comp-spin-mock-injections/'
+    
+#     # Load dict with individual event PE samples (Load sampleDict):
+#     # f = open(f'{froot}Data/PopulationInferenceInput/sampleDict_{pop}.json')
+#     f = open(f'/home/zoe.ko/LIGOSURF22/input/sampleDict_{pop}.json')
+#     sampleDict = json.load(f) 
+    
+#     if num_injections != '300':
+#         length = len(sampleDict)
+#         to_pop = length - int(num_injections)
+#         keys = list(sampleDict.keys())
+#         keys_to_pop = np.random.choice(keys, size=to_pop, replace=False)
+#         for key in keys_to_pop:
+#             sampleDict.pop(key)
+    
+#     # Load population parameter PE samps
+#     if model == 'gaussianPlusGaussian':
+#         fname = 'gaus_gaus'
+#     elif model == 'betaPlusDoubleGaussian':
+#         fname = 'double_gaussian'
+#     hyperPEDict_fname = "/home/zoe.ko/LIGOSURF22/data/" + num_injections + "injections/" + num_injections + model + "/" + num_injections + pop + fname
+#     with open(f'{hyperPEDict_fname}.json', 'r') as f:
+#         hyperPEDict = json.load(f)
+    
+#     # Run reweighting for default model
+#     print("Running reweighting ... ")
+#     sampleDict_rw = pop_reweight(sampleDict, hyperPEDict)   
+    
+#     # Save results
+#     savename = f'{froot}Data/PopulationInferenceOutput/{model}/{num_injections}{model}_{pop}rw_sampleDict.pickle'
+#     with open(savename, 'wb') as f:
+#         pickle.dump(sampleDict_rw,f)
+
+
 if __name__=="__main__":
-    # Repository root 
-    froot = '/home/zoe.ko/comp-spin-mock-injections/'
     
     # Load dict with individual event PE samples (Load sampleDict):
     # f = open(f'{froot}Data/PopulationInferenceInput/sampleDict_{pop}.json')
-    f = open(f'/home/zoe.ko/LIGOSURF22/input/sampleDict_{pop}.json')
+    f = open(f'/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/sampleDict_{pop}_gaussian_spin_posteriors_sigma_meas_0.1.json')
     sampleDict = json.load(f) 
     
-    if num_injections != '300':
-        length = len(sampleDict)
-        to_pop = length - int(num_injections)
-        keys = list(sampleDict.keys())
-        keys_to_pop = np.random.choice(keys, size=to_pop, replace=False)
-        for key in keys_to_pop:
-            sampleDict.pop(key)
-    
     # Load population parameter PE samps
-    if model == 'gaussianPlusGaussian':
-        fname = 'gaus_gaus'
-    elif model == 'betaPlusDoubleGaussian':
-        fname = 'double_gaussian'
-    hyperPEDict_fname = "/home/zoe.ko/LIGOSURF22/data/" + num_injections + "injections/" + num_injections + model + "/" + num_injections + pop + fname
-    with open(f'{hyperPEDict_fname}.json', 'r') as f:
+    with open(f'/home/simona.miller/comp-spin-mock-injections/Data/PopulationInferenceOutput/gaussianPlusGaussian/gaussianPlusGaussian_{pop}_70events.json', 'r') as f:
         hyperPEDict = json.load(f)
     
     # Run reweighting for default model
@@ -179,6 +200,6 @@ if __name__=="__main__":
     sampleDict_rw = pop_reweight(sampleDict, hyperPEDict)   
     
     # Save results
-    savename = f'{froot}Data/PopulationInferenceOutput/{model}/{num_injections}{model}_{pop}rw_sampleDict.pickle'
+    savename = f'{froot}Data/PopulationInferenceOutput/{model}/70{model}_{pop}rw_sampleDict.pickle'
     with open(savename, 'wb') as f:
         pickle.dump(sampleDict_rw,f)
