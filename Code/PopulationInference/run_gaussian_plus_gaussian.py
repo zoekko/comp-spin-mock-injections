@@ -20,7 +20,7 @@ nevents = sys.argv[2]
 
 # Model
 model = "gaussianPlusGaussian"
-model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
+model_savename = model + f"_pop{pop}_{nevents}events"
 
 # File path root for where to store data 
 froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
@@ -29,7 +29,7 @@ froot = "../../Data/" ## TODO: eventually input and output should both be this
 # Define emcee parameters
 nWalkers = 20       # number of walkers 
 dim = 5             # dimension of parameter space (number hyper params)
-nSteps = 30000      # number of steps for chain
+nSteps = int(sys.argv[3])      # number of steps for chain
 
 # Set prior bounds (same as Table XII in https://arxiv.org/pdf/2111.03634.pdf)
 priorDict = {
@@ -40,7 +40,8 @@ priorDict = {
 }
 
 # Load sampleDict
-with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: ## TODO: update with "real" data
+#with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f: ## TODO: update with "real" data
+with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: 
     sampleDict_full = json.load(f)
 
 # Choose subset of sampleDict if necessary

@@ -73,9 +73,9 @@ waveform_arguments = dict(
 # (LIGO-Hanford (H1), LIGO-Livingston (L1). These default to their design
 # sensitivity
 ifos = bilby.gw.detector.InterferometerList(['H1', 'L1', 'V1'])
-ifos[0].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"scripts/generate_populations/aligo_O3actual_H1.txt")
-ifos[1].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"scripts/generate_populations/aligo_O3actual_L1.txt")
-ifos[2].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"scripts/generate_populations/avirgo_O3actual.txt")
+ifos[0].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"Code/GeneratePopulations/aligo_O3actual_H1.txt")
+ifos[1].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"Code/GeneratePopulations/aligo_O3actual_L1.txt")
+ifos[2].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(asd_file=directory+"Code/GeneratePopulations/avirgo_O3actual.txt")
 
 # Create the waveform_generator using a LAL BinaryBlackHole source function
 # the generator will convert all the parameters and inject the signal into the
@@ -111,7 +111,7 @@ print('duration:',duration)
 # the definition of the time prior, which is defined as uniform about the
 # injected value.
 
-priors =  bilby.gw.prior.BBHPriorDict(directory+"scripts/prior.prior")
+priors =  bilby.gw.prior.BBHPriorDict(directory+"Code/IndividualInference/prior.prior")
 
 priors['geocent_time'] = bilby.core.prior.Uniform(minimum=injection_parameters['geocent_time'] - 0.1,
                                                   maximum=injection_parameters['geocent_time'] + 0.1,
