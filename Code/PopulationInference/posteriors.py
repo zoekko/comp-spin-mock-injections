@@ -190,11 +190,11 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
         else:
             return logP
 
-def gaussianPlusGaussian(c,sampleDict,injectionDict,priorDict): 
+def betaPlusGaussian(c,sampleDict,injectionDict,priorDict): 
     
     """
-    Implementation of the Gaussian+Gaussian model: a component spin distribution with spin 
-    magnitude as 1D gaussian and the cosine of the tilt angle as another 1D gaussian, for 
+    Implementation of the Beta+Gaussian model: a component spin distribution with spin 
+    magnitude as beta distribution and the cosine of the tilt angle as another 1D gaussian, for 
     inference within `emcee`. We do not include variance between the two gaussians.
     
     Model used in Section IV of **PAPER TITLE**
@@ -206,9 +206,9 @@ def gaussianPlusGaussian(c,sampleDict,injectionDict,priorDict):
             [ mu_chi, sigma_chi, mu_cost, sigma_cost, Bq ] 
         where 
         
-        - mu_chi = mean of spin magnitude gaussian
+        - mu_chi = mean of spin magnitude beta
         
-        - sigma_chi = std. dev. of spin magnitude gaussian
+        - sigma_chi = std. dev. of spin magnitude beta
         
         - mu_cost = mean of cosine tilt gaussian
         
@@ -258,6 +258,15 @@ def gaussianPlusGaussian(c,sampleDict,injectionDict,priorDict):
         # Initialize log-posterior
         logP = 0.
         
+        # Translate mu_chi and sigma_chi to beta function parameters a and b 
+        # See: https://en.wikipedia.org/wiki/Beta_distribution#Mean_and_variance
+        a, b = mu_sigma2_to_a_b(mu_chi, sigma_chi**2.)
+        
+        # Impose cut on a and b: must be greater then or equal to 1 in order
+        # for distribution to go to 0 at chi=0 and chi=1 (aka nonsingular)
+        if a<=1. or b<=1.: 
+            return -np.inf
+        
         # Prior on Bq - gaussian centered at 0 with sigma=3
         logP -= (Bq**2)/18. 
         
@@ -277,8 +286,8 @@ def gaussianPlusGaussian(c,sampleDict,injectionDict,priorDict):
         p_draw = np.asarray(injectionDict['p_draw_a1a2cost1cost2'])*np.asarray(injectionDict['p_draw_m1m2z'])
         
         # Detected spins
-        p_chi1_det = calculate_Gaussian_1D(chi1_det, mu_chi, sigma_chi, 0, 1)
-        p_chi2_det = calculate_Gaussian_1D(chi2_det, mu_chi, sigma_chi, 0, 1)
+        p_chi1_det = calculate_betaDistribution(chi1_det, a, b)
+        p_chi2_det = calculate_betaDistribution(chi2_det, a, b)
         p_cost1_det = calculate_Gaussian_1D(cost1_det, mu_cost, sigma_cost, -1, 1.)
         p_cost2_det = calculate_Gaussian_1D(cost2_det, mu_cost, sigma_cost, -1, 1.)
         pdet_spins = p_chi1_det*p_chi2_det*p_cost1_det*p_cost2_det
@@ -318,8 +327,8 @@ def gaussianPlusGaussian(c,sampleDict,injectionDict,priorDict):
             dVdz_samples = np.asarray(sampleDict[event]['dVc_dz'])
             
             # Evaluate model at the locations of samples for this event
-            p_chi1 = calculate_Gaussian_1D(chi1_samples, mu_chi, sigma_chi, 0, 1)
-            p_chi2 = calculate_Gaussian_1D(chi2_samples, mu_chi, sigma_chi, 0, 1)
+            p_chi1 = calculate_betaDistribution(chi1_samples, a, b)
+            p_chi2 = calculate_betaDistribution(chi2_samples, a, b)
             p_cost1 = calculate_Gaussian_1D(cost1_samples, mu_cost, sigma_cost, -1, 1.)
             p_cost2 = calculate_Gaussian_1D(cost2_samples, mu_cost, sigma_cost, -1, 1.)
             

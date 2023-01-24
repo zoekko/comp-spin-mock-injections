@@ -4,7 +4,7 @@ import emcee as mc
 import json
 import sys
 from posterior_helper_functions import draw_initial_walkers_uniform
-from posteriors import gaussianPlusGaussian
+from posteriors import betaPlusGaussian
 from postprocessing import processEmceeChain 
 
 # set seed for reproducibility (number chosen arbitrarily)
@@ -19,7 +19,7 @@ pop = sys.argv[1]
 nevents = sys.argv[2]
 
 # Model
-model = "gaussianPlusGaussian"
+model = "betaPlusGaussian"
 model_savename = model + f"_pop{pop}_{nevents}events"
 
 # File path root for where to store data 
@@ -123,8 +123,8 @@ if nSteps>0: # if the run hasn't already finished
     sampler = mc.EnsembleSampler(
         nWalkers,
         dim,
-        gaussianPlusGaussian, # model in posteriors.py
-        args=[sampleDict,injectionDict,priorDict], # arguments passed to gaussianPlusGaussian
+        betaPlusGaussian, # model in posteriors.py
+        args=[sampleDict,injectionDict,priorDict], # arguments passed to betaPlusGaussian
         threads=16
     )
 
