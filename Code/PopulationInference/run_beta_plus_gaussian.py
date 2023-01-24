@@ -179,7 +179,7 @@ results = {
 } 
 
 # Save
-savename = froot+f"opulationInferenceOutput/{model}/{model_savename}.json"
+savename = froot+f"PopulationInferenceOutput/{model}/{model_savename}.json"
 with open(savename, "w") as outfile:
     json.dump(results, outfile)
 print(f'Done! Run saved at {savename}')

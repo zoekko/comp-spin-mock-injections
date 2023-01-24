@@ -59,7 +59,7 @@ def draw_chiEffs_and_chiPs_betaDoubleGauss(mu_chi, sigma_chi, mu1_cost, sigma1_c
 
 
 
-def draw_chiEffs_and_chiPs_gaussians(mu_chi, sigma_chi, mu_cost, sigma_cost, Bq, n=1):
+def draw_chiEffs_and_chiPs_betaGauss(mu_chi, sigma_chi, mu_cost, sigma_cost, Bq, n=1):
     
     # transform from mu and sigma to a and b for beta distribution
     a, b = mu_sigma2_to_a_b(mu_chi, sigma_chi**2)
@@ -77,8 +77,8 @@ def draw_chiEffs_and_chiPs_gaussians(mu_chi, sigma_chi, mu_cost, sigma_cost, Bq,
     m2s = np.minimum(mAs, mBs)
     
     # calculate p(spins,masses) for these uniform samples, using functions from posterior_helper_functions.py
-    p_chi1 = calculate_Gaussian_1D(chi1s, mu_chi, sigma_chi, 0, 1)
-    p_chi2 = calculate_Gaussian_1D(chi2s, mu_chi, sigma_chi, 0, 1)
+    p_chi1 = calculate_betaDistribution(chi1s, a, b)
+    p_chi2 = calculate_betaDistribution(chi2s, a, b)
     p_cost1 = calculate_Gaussian_1D(cost1s, mu_cost, sigma_cost, -1, 1)     
     p_cost2 = calculate_Gaussian_1D(cost2s, mu_cost, sigma_cost, -1, 1)     
     p_masses = p_astro_masses(m1s, m2s, bq=Bq)
