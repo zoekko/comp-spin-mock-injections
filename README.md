@@ -1,7 +1,5 @@
 # comp-spin-mock-injections
 
-TODO: FLESH OUT THE README WITH DETAILED INSTRUCTIONS FOR HOW TO RUN EVERYTHING
-
 This repository contains all the code to reproduce the results in [insert paper title and name]. None of the specific data used is pushed to the repo because the files are large but we give step by step instructions on how to recreate all data used below. The repo is set up with all the requisite folders / organization. Folders that our scripts write data to currently just contain .tmp files as placeholders. 
 
 ## 1. Generate Mock Population Parameters 
@@ -68,9 +66,20 @@ $ python make_injectionDict_flat.py
 
 ## 3. Perform Population Level Inference
 
-using the output individual event posteriors from bilby described above
-
 Organization:
 - Scripts: `Code/PopulationInference/`
 - Inputs read from: `Data/PopulationInferenceInput`
 - Outputs saved: `Data/PopulationInferenceOutput`
+
+The final step to reproduce our results is to run population inference using `emcee` on our mock population outputs from `bilby` to see if we can recover the original populations we injected. 
+To run the beta+doubleGaussian model (Section III of the paper), run 
+```
+$ python run_beta_plus_doublegaussian.py POP_NUMBER N_EVENTS N_STEPS
+```
+where you pass `POP_NUMBER`, `N_EVENTS`, and `N_STEPS` via commandline. `POP_NUMBER` should be "1", "2", or "3". `N_EVENTS` is the number of events you want to run on. In the paper we choose "70" and "300". If you want more than 300 make sure to generate enough events in `makeDagFiles.py` by editing the code to select a larger number. `N_STEPS` is the number of steps we want the `emcee` MCMC sampler to run for. We select 30,000. This usually takes a few days to run.
+
+This is repeated for `run_beta_plus_gaussian.py` to produce the results for Section IV of the paper. 
+
+To look at the `emcee` outputs, use notebooks `inspect_betaPlusDoubleGaussian.ipynb` and `inspect_betaGaussian.ipynb` in the `Data/PopulationInferenceOutput` folder. 
+
+Code to generate all figures is found in the `Figures` folder, which largely takes data from the `Data/PopulationInferenceOutput` as inputs.
