@@ -20,7 +20,7 @@ nevents = sys.argv[2]
 
 # Model
 model = "betaPlusGaussian"
-model_savename = model + f"_pop{pop}_{nevents}events"
+model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
 
 # File path root for where to store data 
 froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
@@ -46,7 +46,8 @@ with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_
 
 # Choose subset of sampleDict if necessary
 if int(nevents)<300: 
-    events = np.random.choice(sampleDict_full.keys(), size=int(nevents), replace=False)
+    keys = [key for key in sampleDict_full.keys()]
+    events = np.random.choice(keys, size=int(nevents), replace=False)
     sampleDict = {event:sampleDict_full[event] for event in events}
 else: 
     sampleDict = sampleDict_full
