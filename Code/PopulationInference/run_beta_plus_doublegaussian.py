@@ -20,6 +20,7 @@ nevents = sys.argv[2]
 
 # Model
 model = "betaPlusDoubleGaussian"
+#model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
 model_savename = model + f"_pop{pop}_{nevents}events_temp2" ## TODO: get rid of temp
 
 # File path root for where to store data 
@@ -41,8 +42,8 @@ priorDict = {
 }
 
 # Load sampleDict
-with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f: ## TODO: update with "real" data
 #with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: 
+with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f: ## TODO: update with "real" data
     sampleDict_full = json.load(f)
 
 # Choose subset of sampleDict if necessary
