@@ -38,6 +38,8 @@ for fname in fnames:
     saved_incs = np.zeros(target)
     saved_ras = np.zeros(target)
     saved_decs = np.zeros(target)
+    saved_phases = np.zeros(target)
+    saved_pols = np.zeros(target)
 
     # Prepare interpolation grid for redshifts 
     z_grid = np.linspace(0.,2.,1000)
@@ -101,7 +103,7 @@ for fname in fnames:
             chi2 = np.random.choice(chi2s[np.where(chi2s>=np.abs(s2z))])
 
         # Randomly split the "remaining" spin magnitude between sx and sy by
-        # uniformly drawing in phi_12
+        # uniformly drawing in phi
         s1x,s1y = draw_xy_spins(chi1,s1z)
         s2x,s2y = draw_xy_spins(chi2,s2z)
 
@@ -110,6 +112,7 @@ for fname in fnames:
         dec = np.arccos(draw_uniform(-1,1)) + np.pi/2.
         pol =  draw_uniform(0, 2*np.pi)
         inc = np.arccos(draw_uniform(-1,1))
+        phase = draw_uniform(0, 2*np.pi)
 
         # Record
         saved_m1s[i] = m1
@@ -124,7 +127,9 @@ for fname in fnames:
         saved_DLs[i] = DL
         saved_incs[i] = inc
         saved_ras[i] = ra
-        saved_decs[i] = dec        
+        saved_decs[i] = dec   
+        saved_phases[i] = phase
+        saved_pols[i] = pol
 
     # Save as dictionary -> json
     populationDict = {\
@@ -141,6 +146,8 @@ for fname in fnames:
             'ra':saved_ras,\
             'dec':saved_decs,\
             'inc':saved_incs,\
+            'phase':saved_phases,\
+            'pol':saved_pols      
             }
 
     df = pd.DataFrame(populationDict)

@@ -1,0 +1,138 @@
+01:36 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+01:36 bilby INFO    : Injected signal in H1:
+01:36 bilby INFO    :   optimal SNR = 11.16
+01:36 bilby INFO    :   matched filter SNR = 11.44-0.12j
+01:36 bilby INFO    :   mass_1 = 42.851669556788124
+01:36 bilby INFO    :   mass_2 = 30.18934131079005
+01:36 bilby INFO    :   a_1 = 0.2135322185487999
+01:36 bilby INFO    :   a_2 = 0.08093882695265735
+01:36 bilby INFO    :   tilt_1 = 0.8378964135611329
+01:36 bilby INFO    :   tilt_2 = 2.534010589355797
+01:36 bilby INFO    :   phi_12 = 1.0665697564686614
+01:36 bilby INFO    :   phi_jl = 1.2993917878167431
+01:36 bilby INFO    :   luminosity_distance = 1164.9491246563
+01:36 bilby INFO    :   theta_jn = 0.6489433179207134
+01:36 bilby INFO    :   psi = 1.9231869961
+01:36 bilby INFO    :   phase = 4.7415224401
+01:36 bilby INFO    :   geocent_time = 1126259642.413
+01:36 bilby INFO    :   ra = 5.0698960887
+01:36 bilby INFO    :   dec = 2.3444913340999998
+01:36 bilby INFO    : Injected signal in L1:
+01:36 bilby INFO    :   optimal SNR = 15.07
+01:36 bilby INFO    :   matched filter SNR = 15.55-1.16j
+01:36 bilby INFO    :   mass_1 = 42.851669556788124
+01:36 bilby INFO    :   mass_2 = 30.18934131079005
+01:36 bilby INFO    :   a_1 = 0.2135322185487999
+01:36 bilby INFO    :   a_2 = 0.08093882695265735
+01:36 bilby INFO    :   tilt_1 = 0.8378964135611329
+01:36 bilby INFO    :   tilt_2 = 2.534010589355797
+01:36 bilby INFO    :   phi_12 = 1.0665697564686614
+01:36 bilby INFO    :   phi_jl = 1.2993917878167431
+01:36 bilby INFO    :   luminosity_distance = 1164.9491246563
+01:36 bilby INFO    :   theta_jn = 0.6489433179207134
+01:36 bilby INFO    :   psi = 1.9231869961
+01:36 bilby INFO    :   phase = 4.7415224401
+01:36 bilby INFO    :   geocent_time = 1126259642.413
+01:36 bilby INFO    :   ra = 5.0698960887
+01:36 bilby INFO    :   dec = 2.3444913340999998
+01:36 bilby INFO    : Injected signal in V1:
+01:36 bilby INFO    :   optimal SNR = 7.13
+01:36 bilby INFO    :   matched filter SNR = 6.50-1.08j
+01:36 bilby INFO    :   mass_1 = 42.851669556788124
+01:36 bilby INFO    :   mass_2 = 30.18934131079005
+01:36 bilby INFO    :   a_1 = 0.2135322185487999
+01:36 bilby INFO    :   a_2 = 0.08093882695265735
+01:36 bilby INFO    :   tilt_1 = 0.8378964135611329
+01:36 bilby INFO    :   tilt_2 = 2.534010589355797
+01:36 bilby INFO    :   phi_12 = 1.0665697564686614
+01:36 bilby INFO    :   phi_jl = 1.2993917878167431
+01:36 bilby INFO    :   luminosity_distance = 1164.9491246563
+01:36 bilby INFO    :   theta_jn = 0.6489433179207134
+01:36 bilby INFO    :   psi = 1.9231869961
+01:36 bilby INFO    :   phase = 4.7415224401
+01:36 bilby INFO    :   geocent_time = 1126259642.413
+01:36 bilby INFO    :   ra = 5.0698960887
+01:36 bilby INFO    :   dec = 2.3444913340999998
+01:36 bilby INFO    : Running for label 'job_00651_fixedExtrinsic', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass'
+01:36 bilby INFO    : Using lal version 7.3.0
+01:36 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+01:36 bilby INFO    : Using lalsimulation version 5.0.0
+01:36 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+01:36 bilby INFO    : Analysis priors:
+01:36 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+01:36 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+01:36 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+01:36 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+01:36 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+01:36 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+01:36 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+01:36 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+01:36 bilby INFO    : mass_1=Constraint(minimum=32.851669556788124, maximum=52.851669556788124, name='mass_1', latex_label='$m_1$', unit=None)
+01:36 bilby INFO    : mass_2=Constraint(minimum=20.18934131079005, maximum=40.18934131079005, name='mass_2', latex_label='$m_2$', unit=None)
+01:36 bilby INFO    : ra=5.0698960887
+01:36 bilby INFO    : dec=2.3444913340999998
+01:36 bilby INFO    : geocent_time=1126259642.413
+01:36 bilby INFO    : phase=4.7415224401
+01:36 bilby INFO    : psi=1.9231869961
+01:36 bilby INFO    : luminosity_distance=1164.9491246563
+01:36 bilby INFO    : theta_jn=0.6489433179207134
+01:36 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+01:36 bilby INFO    : Analysis likelihood noise evidence: -24246.825111741484
+01:37 bilby INFO    : Single likelihood evaluation took 4.840e-02 s
+01:37 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1481a9499c40>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+01:37 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+01:37 bilby INFO    : Using dynesty version 2.1.0
+01:37 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+01:37 bilby INFO    : Setting up multiproccesing pool with 8 processes
+01:37 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00651_fixedExtrinsic_resume.pickle
+01:37 bilby INFO    : Resume file successfully loaded.
+02:15 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00651_fixedExtrinsic_resume.pickle
+02:55 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00651_fixedExtrinsic_resume.pickle
+03:34 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00651_fixedExtrinsic_resume.pickle
+04:12 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00651_fixedExtrinsic_resume.pickle
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty_utils.py", line 197, in __call__
+    self.build_cache()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty_utils.py", line 326, in build_cache
+    accept = max(accept // n_found, 1)
+ZeroDivisionError: integer division or modulo by zero
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/launchBilby_fixedExtrinsic.py", line 161, in <module>
+    result = bilby.run_sampler(
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/__init__.py", line 234, in run_sampler
+    result = sampler.run_sampler()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/base_sampler.py", line 96, in wrapped
+    output = method(self, *args, **kwargs)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 517, in run_sampler
+    out = self._run_external_sampler_with_checkpointing()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 635, in _run_external_sampler_with_checkpointing
+    self.sampler.run_nested(**sampler_kwargs)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 1016, in run_nested
+    for it, results in enumerate(
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 838, in sample
+    u, v, logl, nc = self._new_point(loglstar_new)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 395, in _new_point
+    u, v, logl, nc, blob = self._get_point_value(loglstar)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 379, in _get_point_value
+    self._fill_queue(loglstar)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 372, in _fill_queue
+    self.queue = list(mapper(evolve_point, args))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 771, in get
+    raise self._value
+ZeroDivisionError: integer division or modulo by zero
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py:265: ResourceWarning: unclosed running multiprocessing pool <multiprocessing.pool.Pool state=RUN pool_size=8>

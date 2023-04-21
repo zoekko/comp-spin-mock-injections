@@ -1,0 +1,226 @@
+03/29/23 15:44:54 Can't open directory "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/etc/condor/config.d" as PRIV_UNKNOWN, errno: 2 (No such file or directory)
+03/29/23 15:44:54 Cannot open /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/etc/condor/config.d: No such file or directory
+03/29/23 15:44:54 ******************************************************
+03/29/23 15:44:54 ** condor_scheduniv_exec.113449364.0 (CONDOR_DAGMAN) STARTING UP
+03/29/23 15:44:54 ** /cvmfs/oasis.opensciencegrid.org/ligo/deploy/sw/conda/envs/igwn-py39-20221118/bin/condor_dagman
+03/29/23 15:44:54 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=CLIENT(2)
+03/29/23 15:44:54 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+03/29/23 15:44:54 ** $CondorVersion: 9.0.17 Oct 04 2022 $
+03/29/23 15:44:54 ** $CondorPlatform: X86_64-CentOS_7.9 $
+03/29/23 15:44:54 ** PID = 2023215
+03/29/23 15:44:54 ** Log last touched time unavailable (No such file or directory)
+03/29/23 15:44:54 ******************************************************
+03/29/23 15:44:54 Using config source: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/etc/condor/condor_config
+03/29/23 15:44:54 Using local config sources: 
+03/29/23 15:44:54    /etc/condor/condor_config
+03/29/23 15:44:54    /etc/condor/config.d/00-htcondor-9.0.config
+03/29/23 15:44:54    /etc/condor/config.d/00-ldas
+03/29/23 15:44:54    /etc/condor/config.d/02-scheduler
+03/29/23 15:44:54    /etc/condor/config.d/10-cgroup
+03/29/23 15:44:54    /etc/condor/config.d/10-security
+03/29/23 15:44:54    /etc/condor/config.d/10-stash-plugin.conf
+03/29/23 15:44:54    /etc/condor/config.d/30-scratch-mount
+03/29/23 15:44:54    /etc/condor/config.d/40-vault-credmon.conf
+03/29/23 15:44:54    /etc/condor/config.d/50-transfer-limits
+03/29/23 15:44:54    /etc/condor/config.d/99-memory
+03/29/23 15:44:54    /etc/condor/config.d/99-request-disk
+03/29/23 15:44:54    /etc/condor/config.d/99-shared-port-descriptor
+03/29/23 15:44:54    /etc/condor/config.d/99-transform
+03/29/23 15:44:54    /etc/condor/condor_config.local
+03/29/23 15:44:54 config Macros = 161, Sorted = 161, StringBytes = 7988, TablesBytes = 5948
+03/29/23 15:44:54 CLASSAD_CACHING is ENABLED
+03/29/23 15:44:54 Daemon Log is logging: D_ALWAYS D_ERROR
+03/29/23 15:44:54 DaemonCore: No command port requested.
+03/29/23 15:44:54 DAGMAN_USE_STRICT setting: 1
+03/29/23 15:44:54 DAGMAN_VERBOSITY setting: 3
+03/29/23 15:44:54 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+03/29/23 15:44:54 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+03/29/23 15:44:54 DAGMAN_SUBMIT_DELAY setting: 0
+03/29/23 15:44:54 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+03/29/23 15:44:54 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+03/29/23 15:44:54 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+03/29/23 15:44:54 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+03/29/23 15:44:54 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+03/29/23 15:44:54 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+03/29/23 15:44:54 DAGMAN_DEFAULT_PRIORITY setting: 0
+03/29/23 15:44:54 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+03/29/23 15:44:54 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+03/29/23 15:44:54 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+03/29/23 15:44:54 DAGMAN_RETRY_NODE_FIRST setting: False
+03/29/23 15:44:54 DAGMAN_MAX_JOBS_IDLE setting: 1000
+03/29/23 15:44:54 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+03/29/23 15:44:54 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+03/29/23 15:44:54 DAGMAN_MAX_POST_SCRIPTS setting: 20
+03/29/23 15:44:54 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+03/29/23 15:44:54 DAGMAN_MUNGE_NODE_NAMES setting: True
+03/29/23 15:44:54 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+03/29/23 15:44:54 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+03/29/23 15:44:54 DAGMAN_ALWAYS_RUN_POST setting: False
+03/29/23 15:44:54 DAGMAN_CONDOR_SUBMIT_EXE setting: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/bin/condor_submit
+03/29/23 15:44:54 DAGMAN_USE_CONDOR_SUBMIT setting: True
+03/29/23 15:44:54 DAGMAN_ABORT_DUPLICATES setting: True
+03/29/23 15:44:54 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+03/29/23 15:44:54 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+03/29/23 15:44:54 DAGMAN_AUTO_RESCUE setting: True
+03/29/23 15:44:54 DAGMAN_MAX_RESCUE_NUM setting: 100
+03/29/23 15:44:54 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+03/29/23 15:44:54 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+03/29/23 15:44:54 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+03/29/23 15:44:54 DAGMAN_MAX_JOB_HOLDS setting: 100
+03/29/23 15:44:54 DAGMAN_HOLD_CLAIM_TIME setting: 20
+03/29/23 15:44:54 ALL_DEBUG setting: 
+03/29/23 15:44:54 DAGMAN_DEBUG setting: 
+03/29/23 15:44:54 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+03/29/23 15:44:54 DAGMAN_REMOVE_NODE_JOBS setting: True
+03/29/23 15:44:54 DAGMAN will adjust edges after parsing
+03/29/23 15:44:54 Enabling log line cache for increased NFS performance.
+03/29/23 15:44:54 argv[0] == "condor_scheduniv_exec.113449364.0"
+03/29/23 15:44:54 argv[1] == "-Lockfile"
+03/29/23 15:44:54 argv[2] == "bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.lock"
+03/29/23 15:44:54 argv[3] == "-AutoRescue"
+03/29/23 15:44:54 argv[4] == "1"
+03/29/23 15:44:54 argv[5] == "-DoRescueFrom"
+03/29/23 15:44:54 argv[6] == "0"
+03/29/23 15:44:54 argv[7] == "-Dag"
+03/29/23 15:44:54 argv[8] == "bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag"
+03/29/23 15:44:54 argv[9] == "-Suppress_notification"
+03/29/23 15:44:54 argv[10] == "-CsdVersion"
+03/29/23 15:44:54 argv[11] == "$CondorVersion: 9.0.17 Oct 04 2022 $"
+03/29/23 15:44:54 argv[12] == "-Dagman"
+03/29/23 15:44:54 argv[13] == "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/bin/condor_dagman"
+03/29/23 15:44:54 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/29/23 15:44:54 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/29/23 15:44:54 Workflow batch-id: <113449364.0>
+03/29/23 15:44:54 Workflow batch-name: <bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag+113449364>
+03/29/23 15:44:54 Workflow accounting_group: <>
+03/29/23 15:44:54 Workflow accounting_group_user: <>
+03/29/23 15:44:54 Warning: failed to get attribute DAGNodeName
+03/29/23 15:44:54 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+03/29/23 15:44:54 Default node log file is: </home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log>
+03/29/23 15:44:54 DAG Lockfile will be written to bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.lock
+03/29/23 15:44:54 DAG Input file is bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag
+03/29/23 15:44:54 Parsing 1 dagfiles
+03/29/23 15:44:54 Parsing bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag ...
+03/29/23 15:44:54 Adjusting edges
+03/29/23 15:44:54 Dag contains 3 total jobs
+03/29/23 15:44:54 Bootstrapping...
+03/29/23 15:44:54 Number of pre-completed nodes: 0
+03/29/23 15:44:54 MultiLogFiles: truncating log file /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log
+03/29/23 15:44:54 DAG status: 0 (DAG_STATUS_OK)
+03/29/23 15:44:54 Of 3 nodes total:
+03/29/23 15:44:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+03/29/23 15:44:54   ===     ===      ===     ===     ===        ===      ===
+03/29/23 15:44:54     0       0        0       0       3          0        0
+03/29/23 15:44:54 0 job proc(s) currently held
+03/29/23 15:44:54 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+03/29/23 15:44:54 Registering condor_event_timer...
+03/29/23 15:44:55 Submitting HTCondor Node 530 job(s)...
+03/29/23 15:44:55 Adding a DAGMan workflow log /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log
+03/29/23 15:44:55 Masking the events recorded in the DAGMAN workflow log
+03/29/23 15:44:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+03/29/23 15:44:55 submitting: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/bin/condor_submit -a dag_node_name' '=' '530 -a +DAGManJobId' '=' '113449364 -a DAGManJobId' '=' '113449364 -batch-name bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag+113449364 -batch-id 113449364.0 -a submit_event_notes' '=' 'DAG' 'Node:' '530 -a dagman_log' '=' '/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a JOB=530 -a jobNumber' '=' '530 -a json' '=' '/home/simona.miller/comp-spin-mock-injections/Data/InjectedPopulationParameters/population1_highSpinPrecessing_highmass.json -a outdir' '=' '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/bilby_population1_highSpinPrecessing_fixedExtrinsic.sub
+03/29/23 15:44:55 From submit: Submitting job(s).
+03/29/23 15:44:55 From submit: 1 job(s) submitted to cluster 113449365.
+03/29/23 15:44:55 From submit: WARNING: the line 'JOB = 530' was unused by condor_submit. Is it a typo?
+03/29/23 15:44:55 	assigned HTCondor ID (113449365.0.0)
+03/29/23 15:44:55 Submitting HTCondor Node 988 job(s)...
+03/29/23 15:44:55 Adding a DAGMan workflow log /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log
+03/29/23 15:44:55 Masking the events recorded in the DAGMAN workflow log
+03/29/23 15:44:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+03/29/23 15:44:55 submitting: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/bin/condor_submit -a dag_node_name' '=' '988 -a +DAGManJobId' '=' '113449364 -a DAGManJobId' '=' '113449364 -batch-name bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag+113449364 -batch-id 113449364.0 -a submit_event_notes' '=' 'DAG' 'Node:' '988 -a dagman_log' '=' '/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a JOB=988 -a jobNumber' '=' '988 -a json' '=' '/home/simona.miller/comp-spin-mock-injections/Data/InjectedPopulationParameters/population1_highSpinPrecessing_highmass.json -a outdir' '=' '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/bilby_population1_highSpinPrecessing_fixedExtrinsic.sub
+03/29/23 15:44:55 From submit: Submitting job(s).
+03/29/23 15:44:55 From submit: 1 job(s) submitted to cluster 113449366.
+03/29/23 15:44:55 From submit: WARNING: the line 'JOB = 988' was unused by condor_submit. Is it a typo?
+03/29/23 15:44:55 	assigned HTCondor ID (113449366.0.0)
+03/29/23 15:44:55 Submitting HTCondor Node 508 job(s)...
+03/29/23 15:44:55 Adding a DAGMan workflow log /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log
+03/29/23 15:44:55 Masking the events recorded in the DAGMAN workflow log
+03/29/23 15:44:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+03/29/23 15:44:55 submitting: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/bin/condor_submit -a dag_node_name' '=' '508 -a +DAGManJobId' '=' '113449364 -a DAGManJobId' '=' '113449364 -batch-name bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag+113449364 -batch-id 113449364.0 -a submit_event_notes' '=' 'DAG' 'Node:' '508 -a dagman_log' '=' '/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/./bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a JOB=508 -a jobNumber' '=' '508 -a json' '=' '/home/simona.miller/comp-spin-mock-injections/Data/InjectedPopulationParameters/population1_highSpinPrecessing_highmass.json -a outdir' '=' '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" /home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/condor/new_bilby/bilby_population1_highSpinPrecessing_fixedExtrinsic.sub
+03/29/23 15:44:55 From submit: Submitting job(s).
+03/29/23 15:44:55 From submit: 1 job(s) submitted to cluster 113449367.
+03/29/23 15:44:55 From submit: WARNING: the line 'JOB = 508' was unused by condor_submit. Is it a typo?
+03/29/23 15:44:55 	assigned HTCondor ID (113449367.0.0)
+03/29/23 15:44:55 Just submitted 3 jobs this cycle...
+03/29/23 15:44:55 DAG status: 0 (DAG_STATUS_OK)
+03/29/23 15:44:55 Of 3 nodes total:
+03/29/23 15:44:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+03/29/23 15:44:55   ===     ===      ===     ===     ===        ===      ===
+03/29/23 15:44:55     0       0        3       0       0          0        0
+03/29/23 15:44:55 0 job proc(s) currently held
+03/29/23 15:44:55 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.193958044052124; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.193958044052124; SubmitCycleTimeMin = 0.193958044052124; SubmitCycleTimeStd = 0.193958044052124; SubmitCycleTimeSum = 0.193958044052124; ]
+03/29/23 15:45:00 Currently monitoring 1 HTCondor log file(s)
+03/29/23 15:45:00 Reassigning the id of job 530 from (113449365.0.0) to (113449365.0.0)
+03/29/23 15:45:00 Event: ULOG_SUBMIT for HTCondor Node 530 (113449365.0.0) {03/29/23 15:44:55}
+03/29/23 15:45:00 Number of idle job procs: 1
+03/29/23 15:45:00 Reassigning the id of job 988 from (113449366.0.0) to (113449366.0.0)
+03/29/23 15:45:00 Event: ULOG_SUBMIT for HTCondor Node 988 (113449366.0.0) {03/29/23 15:44:55}
+03/29/23 15:45:00 Number of idle job procs: 2
+03/29/23 15:45:00 Reassigning the id of job 508 from (113449367.0.0) to (113449367.0.0)
+03/29/23 15:45:00 Event: ULOG_SUBMIT for HTCondor Node 508 (113449367.0.0) {03/29/23 15:44:55}
+03/29/23 15:45:00 Number of idle job procs: 3
+03/29/23 15:47:00 Currently monitoring 1 HTCondor log file(s)
+03/29/23 15:47:00 Event: ULOG_EXECUTE for HTCondor Node 530 (113449365.0.0) {03/29/23 15:46:58}
+03/29/23 15:47:00 Number of idle job procs: 2
+03/29/23 15:47:45 Currently monitoring 1 HTCondor log file(s)
+03/29/23 15:47:45 Event: ULOG_EXECUTE for HTCondor Node 508 (113449367.0.0) {03/29/23 15:47:41}
+03/29/23 15:47:45 Number of idle job procs: 1
+03/29/23 15:47:45 Event: ULOG_EXECUTE for HTCondor Node 988 (113449366.0.0) {03/29/23 15:47:41}
+03/29/23 15:47:45 Number of idle job procs: 0
+03/29/23 15:57:46 601 seconds since last log event
+03/29/23 15:57:46 Pending DAG nodes:
+03/29/23 15:57:46   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 15:57:46   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 15:57:46   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:07:47 1202 seconds since last log event
+03/29/23 16:07:47 Pending DAG nodes:
+03/29/23 16:07:47   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:07:47   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:07:47   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:17:47 1802 seconds since last log event
+03/29/23 16:17:47 Pending DAG nodes:
+03/29/23 16:17:47   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:17:47   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:17:47   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:27:48 2403 seconds since last log event
+03/29/23 16:27:48 Pending DAG nodes:
+03/29/23 16:27:48   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:27:48   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:27:48   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:37:48 3003 seconds since last log event
+03/29/23 16:37:48 Pending DAG nodes:
+03/29/23 16:37:48   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:37:48   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:37:48   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:47:49 3604 seconds since last log event
+03/29/23 16:47:49 Pending DAG nodes:
+03/29/23 16:47:49   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:47:49   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:47:49   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 16:57:50 4205 seconds since last log event
+03/29/23 16:57:50 Pending DAG nodes:
+03/29/23 16:57:50   Node 508, HTCondor ID 113449367, status STATUS_SUBMITTED
+03/29/23 16:57:50   Node 988, HTCondor ID 113449366, status STATUS_SUBMITTED
+03/29/23 16:57:50   Node 530, HTCondor ID 113449365, status STATUS_SUBMITTED
+03/29/23 17:00:38 Received SIGUSR1
+03/29/23 17:00:38 Aborting DAG...
+03/29/23 17:00:38 Writing Rescue DAG to bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.rescue001...
+03/29/23 17:00:38 Removing submitted jobs...
+03/29/23 17:00:38 Removing any/all submitted HTCondor jobs...
+03/29/23 17:00:38 Running: /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py39-20221118/bin/condor_rm -const DAGManJobId==113449364
+03/29/23 17:00:38 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+03/29/23 17:00:38 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+03/29/23 17:00:38 Note: 0 total job deferrals because of node category throttles
+03/29/23 17:00:38 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+03/29/23 17:00:38 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+03/29/23 17:00:38 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+03/29/23 17:00:38 DAG status: 4 (DAG_STATUS_RM)
+03/29/23 17:00:38 Of 3 nodes total:
+03/29/23 17:00:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+03/29/23 17:00:38   ===     ===      ===     ===     ===        ===      ===
+03/29/23 17:00:38     0       0        3       0       0          0        0
+03/29/23 17:00:38 0 job proc(s) currently held
+03/29/23 17:00:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0003391488533188068; EventCycleTimeCount = 908.0; EventCycleTimeMax = 0.1940670013427734; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.006448097108378107; EventCycleTimeSum = 0.3079471588134766; LogProcessCycleTimeAvg = 0.0001707077026367188; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002889633178710938; LogProcessCycleTimeMin = 9.608268737792969E-05; LogProcessCycleTimeStd = 0.0001035782619352744; LogProcessCycleTimeSum = 0.0005121231079101562; SleepCycleTimeAvg = 5.005203389017427; SleepCycleTimeCount = 907.0; SleepCycleTimeMax = 5.110908985137939; SleepCycleTimeMin = 5.000066041946411; SleepCycleTimeStd = 0.003731246292224792; SleepCycleTimeSum = 4539.719473838806; SubmitCycleTimeAvg = 0.0002605137846018249; SubmitCycleTimeCount = 908.0; SubmitCycleTimeMax = 0.193958044052124; SubmitCycleTimeMin = 3.099441528320312E-06; SubmitCycleTimeStd = 0.006438746530410251; SubmitCycleTimeSum = 0.236546516418457; ]
+03/29/23 17:00:38 Wrote metrics file bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2_test.dag.metrics.
+03/29/23 17:00:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0003391488533188068; EventCycleTimeCount = 908.0; EventCycleTimeMax = 0.1940670013427734; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.006448097108378107; EventCycleTimeSum = 0.3079471588134766; LogProcessCycleTimeAvg = 0.0001707077026367188; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002889633178710938; LogProcessCycleTimeMin = 9.608268737792969E-05; LogProcessCycleTimeStd = 0.0001035782619352744; LogProcessCycleTimeSum = 0.0005121231079101562; SleepCycleTimeAvg = 5.005203389017427; SleepCycleTimeCount = 907.0; SleepCycleTimeMax = 5.110908985137939; SleepCycleTimeMin = 5.000066041946411; SleepCycleTimeStd = 0.003731246292224792; SleepCycleTimeSum = 4539.719473838806; SubmitCycleTimeAvg = 0.0002605137846018249; SubmitCycleTimeCount = 908.0; SubmitCycleTimeMax = 0.193958044052124; SubmitCycleTimeMin = 3.099441528320312E-06; SubmitCycleTimeStd = 0.006438746530410251; SubmitCycleTimeSum = 0.236546516418457; ]
+03/29/23 17:00:38 **** condor_scheduniv_exec.113449364.0 (condor_DAGMAN) pid 2023215 EXITING WITH STATUS 2

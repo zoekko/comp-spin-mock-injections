@@ -8,7 +8,8 @@ from posteriors import betaPlusDoubleGaussian
 from postprocessing import processEmceeChain 
 
 # set seed for reproducibility (number chosen arbitrarily)
-np.random.seed(2648)
+#np.random.seed(2648)
+np.random.seed(2649)
 
 """
 Definitions and loading data
@@ -20,30 +21,36 @@ nevents = sys.argv[2]
 
 # Model
 model = "betaPlusDoubleGaussian"
-#model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
-model_savename = model + f"_pop{pop}_{nevents}events_temp2" ## TODO: get rid of temp
+model_savename = model + f"_pop{pop}_{nevents}events_WIP3" 
+
+print(f'Running {model_savename} ...')
 
 # File path root for where to store data 
-froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
-froot = "../../Data/" ## TODO: eventually input and output should both be this
+froot = "../../Data/"
 
 # Define emcee parameters
 nWalkers = 20       # number of walkers 
 dim = 8             # dimension of parameter space (number hyper params)
 nSteps = int(sys.argv[3])      # number of steps for chain
 
-# Set prior bounds (same as Table XII in https://arxiv.org/pdf/2111.03634.pdf)
+# Set prior bounds 
 priorDict = {
     'mu_chi':(0., 1.),
     'sigma_chi':(0.07, 0.5),
     'mu_cost':(-1., 1.),
-    'sigma_cost':(0.07, 1),
+    #'sigma_cost':(0.1, 1),
+    'sigma_cost':(0.2, 0.8),
     'MF_cost':(0., 1.)
 }
 
 # Load sampleDict
-#with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: 
-with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f: ## TODO: update with "real" data
+pop_names = {
+    '1':'population1_highSpinPrecessing', 
+    '2':'population2_mediumSpin',
+    '3':'population3_lowSpinAligned'
+}
+#with open(froot+f"PopulationInferenceInput/sampleDict_{pop_names[pop]}.json", 'r') as f: 
+with open(froot+f"PopulationInferenceInput/sampleDict_{pop_names[pop]}_WIP3.json", 'r') as f: 
     sampleDict_full = json.load(f)
 
 # Choose subset of sampleDict if necessary
@@ -55,7 +62,7 @@ else:
     sampleDict = sampleDict_full
     
 # Load injectionDict
-with open(froot_input+"injectionDict_flat.json", 'r') as f: 
+with open(froot+"PopulationInferenceInput/injectionDict_flat.json", 'r') as f: 
     injectionDict = json.load(f)
 
 # Will save emcee chains temporarily in the .tmp folder in this directory
@@ -77,19 +84,28 @@ if len(old_chains)==0:
 
     run_version = 0
 
-    # Initialize walkers
-    initial_mu_chis = draw_initial_walkers_uniform(nWalkers, (0.2,0.4)) # TODO: change these?
-    initial_sigma_chis = draw_initial_walkers_uniform(nWalkers, (0.17,0.25))
-    initial_mu_costs = draw_initial_walkers_uniform(2*nWalkers, (0.2,0.4))
-    initial_sigma_costs = draw_initial_walkers_uniform(2*nWalkers, (0.17,0.25))
-    initial_MF_costs = draw_initial_walkers_uniform(nWalkers, (0,1))
-    initial_Bqs = np.random.normal(loc=0, scale=3, size=nWalkers)
+    # Initialize walkers 
     
-    # Put together all initial walkers into a single array
-    initial_walkers = np.transpose(
-        [initial_mu_chis, initial_sigma_chis, initial_mu_costs[:nWalkers], initial_sigma_costs[:nWalkers], 
-         initial_mu_costs[nWalkers:], initial_sigma_costs[nWalkers:], initial_MF_costs, initial_Bqs]
-    )
+    hyperparams = { 
+         # True mu_chi, sigma_chi, mu1_cost, sigma1_cost, mu2_cost, sigma2_cost, f, Bq:
+        '1':[0.55, 0.26, 0.19, 0.18, 0.42, 0.75, 0.55, 0.96],  
+        '2':[0.32, 0.16, 0.33, 0.64, 0.59, 0.40, 0.36, 0.96],
+        '3':[0.19, 0.12, -0.98, 0.44, 0.98, 0.31, 0.26, 0.96]
+    }
+    initial_walkers = np.transpose([draw_initial_walkers_uniform(nWalkers, (hyperparams[pop][i]-0.02, hyperparams[pop][i]+0.02)) for i in range(dim)])
+    
+#     initial_mu_chis = draw_initial_walkers_uniform(nWalkers, (0.2,0.4)) 
+#     initial_sigma_chis = draw_initial_walkers_uniform(nWalkers, (0.17,0.25))
+#     initial_mu_costs = draw_initial_walkers_uniform(2*nWalkers, (0.2,0.4))
+#     initial_sigma_costs = draw_initial_walkers_uniform(2*nWalkers, (0.4,0.5))
+#     initial_MF_costs = draw_initial_walkers_uniform(nWalkers, (0,1))
+#     initial_Bqs = np.random.normal(loc=0, scale=3, size=nWalkers)
+    
+#     # Put together all initial walkers into a single array
+#     initial_walkers = np.transpose(
+#         [initial_mu_chis, initial_sigma_chis, initial_mu_costs[:nWalkers], initial_sigma_costs[:nWalkers], 
+#          initial_mu_costs[nWalkers:], initial_sigma_costs[nWalkers:], initial_MF_costs, initial_Bqs]
+#     )
             
 # Otherwise resume existing chain
 else:
@@ -124,13 +140,18 @@ if nSteps>0: # if the run hasn't already finished
     assert dim==initial_walkers.shape[1], "'dim' = wrong number of dimensions for 'initial_walkers'"
 
     print(f'\nLaunching emcee with {dim} hyper-parameters, {nSteps} steps, and {nWalkers} walkers ...')
+    
+    # for metadata 
+    dtype_for_blobs = [ ("logL", float), ("Neff", float), ("minNsamps", float)]
 
+    # make sampler object
     sampler = mc.EnsembleSampler(
         nWalkers,
         dim,
         betaPlusDoubleGaussian, # model in posteriors.py
         args=[sampleDict,injectionDict,priorDict], # arguments passed to betaPlusDoubleGaussian
-        threads=16
+        threads=16,
+        blobs_dtype=dtype_for_blobs #for metadata: logL, Neff, and min(Nsamps)    
     )
 
     print('\nRunning emcee ... ')
@@ -140,6 +161,9 @@ if nSteps>0: # if the run hasn't already finished
         # Save every 10 iterations
         if i%10==0:
             np.save("{0}_r{1:02d}.npy".format(output_tmp,run_version),sampler.chain)
+            np.save("{0}_r{1:02d}_Neffs.npy".format(output_tmp,run_version),sampler.get_blobs()['Neff'])
+            np.save("{0}_r{1:02d}_minNsamps.npy".format(output_tmp,run_version),sampler.get_blobs()['minNsamps'])
+            np.save("{0}_r{1:02d}_logL.npy".format(output_tmp,run_version),sampler.get_blobs()['logL'])
 
         # Print progress every 100 iterations
         if i%100==0:
@@ -147,6 +171,9 @@ if nSteps>0: # if the run hasn't already finished
 
     # Save raw output chains
     np.save("{0}_r{1:02d}.npy".format(output_tmp,run_version),sampler.chain)
+    np.save("{0}_r{1:02d}_Neffs.npy".format(output_tmp,run_version),sampler.get_blobs()['Neff'])
+    np.save("{0}_r{1:02d}_minNsamps.npy".format(output_tmp,run_version),sampler.get_blobs()['minNsamps'])
+    np.save("{0}_r{1:02d}_logL.npy".format(output_tmp,run_version),sampler.get_blobs()['logL'])
 
 
 """
@@ -155,23 +182,29 @@ Running post processing and saving results
 
 print('\nDoing post processing ...')
 
-if nSteps>0: 
+# Load in data in correct format
+if nSteps==0:
+    run_version=run_version-1
 
-    # If this is the only run, just process this one directly 
-    if run_version==0:
-        chainRaw = sampler.chain
+if run_version==0:
+    chainRaw = np.load("{0}_r00.npy".format(output_tmp))
+    NeffsRaw = np.load("{0}_r00_Neffs.npy".format(output_tmp))
+    minNsampsRaw = np.load("{0}_r00_minNsamps.npy".format(output_tmp))
+    logLRaw = np.load("{0}_r00_logL.npy".format(output_tmp))
+else:
+    chainRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??.npy".format(output_tmp)))], axis=1)
+    NeffsRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_Neffs.npy".format(output_tmp)))])
+    minNsampsRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_minNsamps.npy".format(output_tmp)))])
+    logLRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_logL.npy".format(output_tmp)))])
 
-    # otherwise, put chains from all previous runs together 
-    else:
-        previous_chains = [np.load(chain) for chain in old_chains]
-        previous_chains.append(sampler.chain)
-        chainRaw = np.concatenate(previous_chains, axis=1)
+blobsRaw = {
+    'Neff':NeffsRaw,
+    'minNsamps':minNsampsRaw, 
+    'logL':logLRaw
+}
 
-else: 
-    chainRaw = old_chain
-
-# Run post-processing
-chainDownsampled = processEmceeChain(chainRaw) 
+# Run post-processing 
+chainDownsampled, blobsDownsampled = processEmceeChain(chainRaw, blobs=blobsRaw)
 
 # Format output into an easily readable format 
 results = {
@@ -182,7 +215,10 @@ results = {
     'mu2_cost':{'unprocessed':chainRaw[:,:,4].tolist(), 'processed':chainDownsampled[:,4].tolist()},
     'sigma2_cost':{'unprocessed':chainRaw[:,:,5].tolist(), 'processed':chainDownsampled[:,5].tolist()},
     'MF_cost':{'unprocessed':chainRaw[:,:,6].tolist(), 'processed':chainDownsampled[:,6].tolist()},
-    'Bq':{'unprocessed':chainRaw[:,:,7].tolist(), 'processed':chainDownsampled[:,7].tolist()}
+    'Bq':{'unprocessed':chainRaw[:,:,7].tolist(), 'processed':chainDownsampled[:,7].tolist()}, 
+    'Neff':blobsDownsampled['Neff'].tolist(),
+    'minNsamps':blobsDownsampled['minNsamps'].tolist(), 
+    'logL':blobsDownsampled['logL'].tolist()
 } 
 
 # Save

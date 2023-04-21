@@ -1,0 +1,146 @@
+20:36 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+20:36 bilby INFO    : Injected signal in H1:
+20:36 bilby INFO    :   optimal SNR = 5.60
+20:36 bilby INFO    :   matched filter SNR = 6.38+0.76j
+20:36 bilby INFO    :   mass_1 = 95.60101005288925
+20:36 bilby INFO    :   mass_2 = 48.715167365388034
+20:36 bilby INFO    :   a_1 = 0.6447244579678788
+20:36 bilby INFO    :   a_2 = 0.04604091286900002
+20:36 bilby INFO    :   tilt_1 = 1.1348791523430708
+20:36 bilby INFO    :   tilt_2 = 1.1076210192279907
+20:36 bilby INFO    :   phi_12 = 5.413828714343953
+20:36 bilby INFO    :   phi_jl = 0.9561645999163283
+20:36 bilby INFO    :   luminosity_distance = 1833.0046601191
+20:36 bilby INFO    :   theta_jn = 2.2532119501678265
+20:36 bilby INFO    :   psi = 3.1308470313
+20:36 bilby INFO    :   phase = 2.2522798318
+20:36 bilby INFO    :   geocent_time = 1126259642.413
+20:36 bilby INFO    :   zenith = -1.4308110997051036
+20:36 bilby INFO    :   azimuth = -36136.32589994966
+20:36 bilby INFO    :   ra = 0.7424614495
+20:36 bilby INFO    :   dec = 3.0016074265
+20:36 bilby INFO    : Injected signal in L1:
+20:36 bilby INFO    :   optimal SNR = 9.82
+20:36 bilby INFO    :   matched filter SNR = 10.78-0.00j
+20:36 bilby INFO    :   mass_1 = 95.60101005288925
+20:36 bilby INFO    :   mass_2 = 48.715167365388034
+20:36 bilby INFO    :   a_1 = 0.6447244579678788
+20:36 bilby INFO    :   a_2 = 0.04604091286900002
+20:36 bilby INFO    :   tilt_1 = 1.1348791523430708
+20:36 bilby INFO    :   tilt_2 = 1.1076210192279907
+20:36 bilby INFO    :   phi_12 = 5.413828714343953
+20:36 bilby INFO    :   phi_jl = 0.9561645999163283
+20:36 bilby INFO    :   luminosity_distance = 1833.0046601191
+20:36 bilby INFO    :   theta_jn = 2.2532119501678265
+20:36 bilby INFO    :   psi = 3.1308470313
+20:36 bilby INFO    :   phase = 2.2522798318
+20:36 bilby INFO    :   geocent_time = 1126259642.413
+20:36 bilby INFO    :   zenith = -1.4308110997051036
+20:36 bilby INFO    :   azimuth = -36136.32589994966
+20:36 bilby INFO    :   ra = 0.7424614495
+20:36 bilby INFO    :   dec = 3.0016074265
+20:36 bilby INFO    : Injected signal in V1:
+20:36 bilby INFO    :   optimal SNR = 2.24
+20:36 bilby INFO    :   matched filter SNR = 3.47+1.34j
+20:36 bilby INFO    :   mass_1 = 95.60101005288925
+20:36 bilby INFO    :   mass_2 = 48.715167365388034
+20:36 bilby INFO    :   a_1 = 0.6447244579678788
+20:36 bilby INFO    :   a_2 = 0.04604091286900002
+20:36 bilby INFO    :   tilt_1 = 1.1348791523430708
+20:36 bilby INFO    :   tilt_2 = 1.1076210192279907
+20:36 bilby INFO    :   phi_12 = 5.413828714343953
+20:36 bilby INFO    :   phi_jl = 0.9561645999163283
+20:36 bilby INFO    :   luminosity_distance = 1833.0046601191
+20:36 bilby INFO    :   theta_jn = 2.2532119501678265
+20:36 bilby INFO    :   psi = 3.1308470313
+20:36 bilby INFO    :   phase = 2.2522798318
+20:36 bilby INFO    :   geocent_time = 1126259642.413
+20:36 bilby INFO    :   zenith = -1.4308110997051036
+20:36 bilby INFO    :   azimuth = -36136.32589994966
+20:36 bilby INFO    :   ra = 0.7424614495
+20:36 bilby INFO    :   dec = 3.0016074265
+20:36 bilby INFO    : Distance marginalisation file .distance_marginalization_lookup.npz does not exist
+20:36 bilby INFO    : Building lookup table for distance marginalisation.
+  0%|          | 0/400 [00:00<?, ?it/s]  0%|          | 2/400 [00:00<00:34, 11.61it/s]  1%|          | 4/400 [00:00<00:35, 11.29it/s]  2%|▏         | 6/400 [00:00<00:34, 11.43it/s]  2%|▏         | 8/400 [00:00<00:33, 11.70it/s]  2%|▎         | 10/400 [00:00<00:32, 11.92it/s]  3%|▎         | 12/400 [00:01<00:33, 11.55it/s]  4%|▎         | 14/400 [00:01<00:33, 11.42it/s]  4%|▍         | 16/400 [00:01<00:33, 11.58it/s]  4%|▍         | 18/400 [00:01<00:33, 11.40it/s]  5%|▌         | 20/400 [00:01<00:32, 11.60it/s]  6%|▌         | 22/400 [00:01<00:33, 11.43it/s]  6%|▌         | 24/400 [00:02<00:32, 11.53it/s]  6%|▋         | 26/400 [00:02<00:32, 11.58it/s]  7%|▋         | 28/400 [00:02<00:32, 11.47it/s]  8%|▊         | 30/400 [00:02<00:32, 11.42it/s]  8%|▊         | 32/400 [00:02<00:32, 11.42it/s]  8%|▊         | 34/400 [00:02<00:31, 11.59it/s]  9%|▉         | 36/400 [00:03<00:32, 11.32it/s] 10%|▉         | 38/400 [00:03<00:32, 11.29it/s] 10%|█         | 40/400 [00:03<00:31, 11.29it/s] 10%|█         | 42/400 [00:03<00:32, 11.10it/s] 11%|█         | 44/400 [00:03<00:31, 11.17it/s] 12%|█▏        | 46/400 [00:04<00:31, 11.08it/s] 12%|█▏        | 48/400 [00:04<00:31, 11.34it/s] 12%|█▎        | 50/400 [00:04<00:30, 11.36it/s] 13%|█▎        | 52/400 [00:04<00:30, 11.53it/s] 14%|█▎        | 54/400 [00:04<00:29, 11.77it/s] 14%|█▍        | 56/400 [00:04<00:29, 11.69it/s] 14%|█▍        | 58/400 [00:05<00:29, 11.78it/s] 15%|█▌        | 60/400 [00:05<00:29, 11.65it/s] 16%|█▌        | 62/400 [00:05<00:28, 11.73it/s] 16%|█▌        | 64/400 [00:05<00:28, 11.75it/s] 16%|█▋        | 66/400 [00:05<00:28, 11.76it/s] 17%|█▋        | 68/400 [00:05<00:27, 11.93it/s] 18%|█▊        | 70/400 [00:06<00:27, 12.04it/s] 18%|█▊        | 72/400 [00:06<00:27, 12.00it/s] 18%|█▊        | 74/400 [00:06<00:27, 11.93it/s] 19%|█▉        | 76/400 [00:06<00:26, 12.09it/s] 20%|█▉        | 78/400 [00:06<00:26, 12.24it/s] 20%|██        | 80/400 [00:06<00:26, 12.07it/s] 20%|██        | 82/400 [00:07<00:26, 12.03it/s] 21%|██        | 84/400 [00:07<00:26, 12.15it/s] 22%|██▏       | 86/400 [00:07<00:25, 12.09it/s] 22%|██▏       | 88/400 [00:07<00:26, 11.88it/s] 22%|██▎       | 90/400 [00:07<00:25, 11.99it/s] 23%|██▎       | 92/400 [00:07<00:25, 11.96it/s] 24%|██▎       | 94/400 [00:08<00:25, 11.81it/s] 24%|██▍       | 96/400 [00:08<00:25, 11.97it/s] 24%|██▍       | 98/400 [00:08<00:24, 12.13it/s] 25%|██▌       | 100/400 [00:08<00:24, 12.30it/s] 26%|██▌       | 102/400 [00:08<00:24, 12.13it/s] 26%|██▌       | 104/400 [00:08<00:24, 12.01it/s] 26%|██▋       | 106/400 [00:09<00:24, 12.06it/s] 27%|██▋       | 108/400 [00:09<00:24, 12.02it/s] 28%|██▊       | 110/400 [00:09<00:23, 12.14it/s] 28%|██▊       | 112/400 [00:09<00:24, 11.90it/s] 28%|██▊       | 114/400 [00:09<00:23, 11.93it/s] 29%|██▉       | 116/400 [00:09<00:23, 12.08it/s] 30%|██▉       | 118/400 [00:10<00:23, 12.12it/s] 30%|███       | 120/400 [00:10<00:23, 11.76it/s] 30%|███       | 122/400 [00:10<00:23, 11.79it/s] 31%|███       | 124/400 [00:10<00:23, 11.65it/s] 32%|███▏      | 126/400 [00:10<00:23, 11.65it/s] 32%|███▏      | 128/400 [00:10<00:23, 11.72it/s] 32%|███▎      | 130/400 [00:11<00:23, 11.66it/s] 33%|███▎      | 132/400 [00:11<00:22, 11.68it/s] 34%|███▎      | 134/400 [00:11<00:22, 11.73it/s] 34%|███▍      | 136/400 [00:11<00:22, 11.76it/s] 34%|███▍      | 138/400 [00:11<00:22, 11.76it/s] 35%|███▌      | 140/400 [00:11<00:22, 11.67it/s] 36%|███▌      | 142/400 [00:12<00:21, 11.80it/s] 36%|███▌      | 144/400 [00:12<00:22, 11.59it/s] 36%|███▋      | 146/400 [00:12<00:21, 11.78it/s] 37%|███▋      | 148/400 [00:12<00:21, 11.77it/s] 38%|███▊      | 150/400 [00:12<00:21, 11.79it/s] 38%|███▊      | 152/400 [00:12<00:20, 11.92it/s] 38%|███▊      | 154/400 [00:13<00:20, 11.79it/s] 39%|███▉      | 156/400 [00:13<00:20, 11.82it/s] 40%|███▉      | 158/400 [00:13<00:20, 11.96it/s] 40%|████      | 160/400 [00:13<00:20, 11.89it/s] 40%|████      | 162/400 [00:13<00:20, 11.82it/s] 41%|████      | 164/400 [00:13<00:20, 11.74it/s] 42%|████▏     | 166/400 [00:14<00:19, 11.70it/s] 42%|████▏     | 168/400 [00:14<00:19, 11.74it/s] 42%|████▎     | 170/400 [00:14<00:19, 11.66it/s] 43%|████▎     | 172/400 [00:14<00:19, 11.68it/s] 44%|████▎     | 174/400 [00:14<00:19, 11.76it/s] 44%|████▍     | 176/400 [00:14<00:19, 11.59it/s] 44%|████▍     | 178/400 [00:15<00:19, 11.60it/s] 45%|████▌     | 180/400 [00:15<00:19, 11.26it/s] 46%|████▌     | 182/400 [00:15<00:19, 11.24it/s] 46%|████▌     | 184/400 [00:15<00:19, 11.35it/s] 46%|████▋     | 186/400 [00:15<00:19, 11.15it/s] 47%|████▋     | 188/400 [00:16<00:18, 11.17it/s] 48%|████▊     | 190/400 [00:16<00:18, 11.15it/s] 48%|████▊     | 192/400 [00:16<00:19, 10.92it/s] 48%|████▊     | 194/400 [00:16<00:18, 10.96it/s] 49%|████▉     | 196/400 [00:16<00:19, 10.61it/s] 50%|████▉     | 198/400 [00:17<00:18, 10.65it/s] 50%|█████     | 200/400 [00:17<00:19, 10.44it/s] 50%|█████     | 202/400 [00:17<00:18, 10.52it/s] 51%|█████     | 204/400 [00:17<00:18, 10.33it/s] 52%|█████▏    | 206/400 [00:17<00:18, 10.35it/s] 52%|█████▏    | 208/400 [00:18<00:19, 10.02it/s] 52%|█████▎    | 210/400 [00:18<00:18, 10.00it/s] 53%|█████▎    | 212/400 [00:18<00:19,  9.75it/s] 53%|█████▎    | 213/400 [00:18<00:19,  9.74it/s] 54%|█████▎    | 214/400 [00:18<00:19,  9.59it/s] 54%|█████▍    | 215/400 [00:18<00:19,  9.44it/s] 54%|█████▍    | 216/400 [00:18<00:19,  9.40it/s] 54%|█████▍    | 217/400 [00:18<00:19,  9.26it/s] 55%|█████▍    | 218/400 [00:19<00:20,  9.00it/s] 55%|█████▍    | 219/400 [00:19<00:19,  9.07it/s] 55%|█████▌    | 220/400 [00:19<00:19,  9.11it/s] 55%|█████▌    | 221/400 [00:19<00:20,  8.87it/s] 56%|█████▌    | 222/400 [00:19<00:19,  8.91it/s] 56%|█████▌    | 223/400 [00:19<00:19,  8.98it/s] 56%|█████▌    | 224/400 [00:19<00:19,  9.00it/s] 56%|█████▋    | 225/400 [00:19<00:19,  8.81it/s] 56%|█████▋    | 226/400 [00:20<00:20,  8.69it/s] 57%|█████▋    | 227/400 [00:20<00:19,  8.66it/s] 57%|█████▋    | 228/400 [00:20<00:19,  8.80it/s] 57%|█████▋    | 229/400 [00:20<00:19,  8.76it/s] 57%|█████▊    | 230/400 [00:20<00:19,  8.79it/s] 58%|█████▊    | 231/400 [00:20<00:19,  8.79it/s] 58%|█████▊    | 232/400 [00:20<00:20,  8.35it/s] 58%|█████▊    | 233/400 [00:20<00:19,  8.47it/s] 58%|█████▊    | 234/400 [00:20<00:19,  8.51it/s] 59%|█████▉    | 235/400 [00:21<00:19,  8.51it/s] 59%|█████▉    | 236/400 [00:21<00:19,  8.59it/s] 59%|█████▉    | 237/400 [00:21<00:18,  8.68it/s] 60%|█████▉    | 238/400 [00:21<00:18,  8.63it/s] 60%|█████▉    | 239/400 [00:21<00:18,  8.73it/s] 60%|██████    | 240/400 [00:21<00:18,  8.82it/s] 60%|██████    | 241/400 [00:21<00:18,  8.78it/s] 60%|██████    | 242/400 [00:21<00:18,  8.71it/s] 61%|██████    | 243/400 [00:21<00:17,  8.80it/s] 61%|██████    | 244/400 [00:22<00:17,  8.75it/s] 61%|██████▏   | 245/400 [00:22<00:17,  8.75it/s] 62%|██████▏   | 246/400 [00:22<00:17,  8.89it/s] 62%|██████▏   | 247/400 [00:22<00:17,  8.93it/s] 62%|██████▏   | 248/400 [00:22<00:17,  8.80it/s] 62%|██████▏   | 249/400 [00:22<00:17,  8.84it/s] 62%|██████▎   | 250/400 [00:22<00:16,  8.95it/s] 63%|██████▎   | 251/400 [00:22<00:16,  8.84it/s] 63%|██████▎   | 252/400 [00:22<00:16,  8.89it/s] 63%|██████▎   | 253/400 [00:23<00:16,  9.07it/s] 64%|██████▎   | 254/400 [00:23<00:16,  8.97it/s] 64%|██████▍   | 255/400 [00:23<00:16,  9.03it/s] 64%|██████▍   | 256/400 [00:23<00:15,  9.15it/s] 64%|██████▍   | 257/400 [00:23<00:15,  9.29it/s] 64%|██████▍   | 258/400 [00:23<00:15,  9.28it/s] 65%|██████▍   | 259/400 [00:23<00:15,  9.23it/s] 65%|██████▌   | 260/400 [00:23<00:15,  9.21it/s] 65%|██████▌   | 261/400 [00:23<00:14,  9.30it/s] 66%|██████▌   | 262/400 [00:24<00:15,  9.17it/s] 66%|██████▌   | 263/400 [00:24<00:14,  9.24it/s] 66%|██████▌   | 264/400 [00:24<00:14,  9.45it/s] 66%|██████▋   | 265/400 [00:24<00:14,  9.49it/s] 66%|██████▋   | 266/400 [00:24<00:14,  9.45it/s] 67%|██████▋   | 267/400 [00:24<00:13,  9.54it/s] 67%|██████▋   | 268/400 [00:24<00:13,  9.67it/s] 67%|██████▋   | 269/400 [00:24<00:13,  9.59it/s] 68%|██████▊   | 270/400 [00:24<00:13,  9.40it/s] 68%|██████▊   | 271/400 [00:24<00:13,  9.48it/s] 68%|██████▊   | 272/400 [00:25<00:13,  9.51it/s] 68%|██████▊   | 273/400 [00:25<00:13,  9.49it/s] 68%|██████▊   | 274/400 [00:25<00:13,  9.46it/s] 69%|██████▉   | 275/400 [00:25<00:13,  9.46it/s] 69%|██████▉   | 276/400 [00:25<00:13,  9.36it/s] 69%|██████▉   | 277/400 [00:25<00:13,  9.38it/s] 70%|██████▉   | 278/400 [00:25<00:12,  9.54it/s] 70%|██████▉   | 279/400 [00:25<00:12,  9.56it/s] 70%|███████   | 280/400 [00:25<00:12,  9.47it/s] 70%|███████   | 282/400 [00:26<00:12,  9.77it/s] 71%|███████   | 283/400 [00:26<00:11,  9.80it/s] 71%|███████   | 284/400 [00:26<00:12,  9.64it/s] 71%|███████▏  | 285/400 [00:26<00:11,  9.68it/s] 72%|███████▏  | 286/400 [00:26<00:11,  9.67it/s] 72%|███████▏  | 287/400 [00:26<00:11,  9.52it/s] 72%|███████▏  | 288/400 [00:26<00:11,  9.64it/s] 72%|███████▏  | 289/400 [00:26<00:11,  9.67it/s] 72%|███████▎  | 290/400 [00:26<00:11,  9.37it/s] 73%|███████▎  | 292/400 [00:27<00:11,  9.72it/s] 73%|███████▎  | 293/400 [00:27<00:11,  9.69it/s] 74%|███████▎  | 294/400 [00:27<00:10,  9.71it/s] 74%|███████▍  | 295/400 [00:27<00:10,  9.78it/s] 74%|███████▍  | 296/400 [00:27<00:10,  9.61it/s] 74%|███████▍  | 297/400 [00:27<00:10,  9.49it/s] 74%|███████▍  | 298/400 [00:27<00:10,  9.63it/s] 75%|███████▌  | 300/400 [00:28<00:10,  9.72it/s] 75%|███████▌  | 301/400 [00:28<00:10,  9.54it/s] 76%|███████▌  | 302/400 [00:28<00:10,  9.51it/s] 76%|███████▌  | 303/400 [00:28<00:10,  9.31it/s] 76%|███████▌  | 304/400 [00:28<00:10,  9.41it/s] 76%|███████▋  | 305/400 [00:28<00:10,  9.28it/s] 76%|███████▋  | 306/400 [00:28<00:10,  9.28it/s] 77%|███████▋  | 308/400 [00:28<00:09,  9.69it/s] 77%|███████▋  | 309/400 [00:28<00:09,  9.53it/s] 78%|███████▊  | 310/400 [00:29<00:09,  9.60it/s] 78%|███████▊  | 312/400 [00:29<00:09,  9.69it/s] 78%|███████▊  | 313/400 [00:29<00:08,  9.70it/s] 79%|███████▉  | 315/400 [00:29<00:08,  9.83it/s] 79%|███████▉  | 316/400 [00:29<00:08,  9.77it/s] 79%|███████▉  | 317/400 [00:29<00:08,  9.70it/s] 80%|███████▉  | 319/400 [00:29<00:08,  9.92it/s] 80%|████████  | 320/400 [00:30<00:08,  9.81it/s] 80%|████████  | 321/400 [00:30<00:08,  9.74it/s] 80%|████████  | 322/400 [00:30<00:07,  9.79it/s] 81%|████████  | 324/400 [00:30<00:07,  9.82it/s] 81%|████████▏ | 325/400 [00:30<00:07,  9.79it/s] 82%|████████▏ | 327/400 [00:30<00:07,  9.93it/s] 82%|████████▏ | 329/400 [00:31<00:07,  9.88it/s] 82%|████████▎ | 330/400 [00:31<00:07,  9.73it/s] 83%|████████▎ | 331/400 [00:31<00:07,  9.74it/s] 83%|████████▎ | 332/400 [00:31<00:07,  9.62it/s] 83%|████████▎ | 333/400 [00:31<00:07,  9.54it/s] 84%|████████▍ | 335/400 [00:31<00:06,  9.79it/s] 84%|████████▍ | 336/400 [00:31<00:06,  9.59it/s] 84%|████████▍ | 337/400 [00:31<00:06,  9.66it/s] 85%|████████▍ | 339/400 [00:32<00:06,  9.87it/s] 85%|████████▌ | 340/400 [00:32<00:06,  9.79it/s] 85%|████████▌ | 341/400 [00:32<00:06,  9.79it/s] 86%|████████▌ | 343/400 [00:32<00:05,  9.95it/s] 86%|████████▋ | 345/400 [00:32<00:05,  9.74it/s] 86%|████████▋ | 346/400 [00:32<00:05,  9.66it/s] 87%|████████▋ | 348/400 [00:32<00:05,  9.66it/s] 87%|████████▋ | 349/400 [00:33<00:05,  9.69it/s] 88%|████████▊ | 351/400 [00:33<00:04,  9.95it/s] 88%|████████▊ | 352/400 [00:33<00:04,  9.85it/s] 88%|████████▊ | 353/400 [00:33<00:04,  9.79it/s] 89%|████████▉ | 355/400 [00:33<00:04,  9.74it/s] 89%|████████▉ | 356/400 [00:33<00:04,  9.69it/s] 90%|████████▉ | 358/400 [00:33<00:04,  9.86it/s] 90%|████████▉ | 359/400 [00:34<00:04,  9.66it/s] 90%|█████████ | 360/400 [00:34<00:04,  9.73it/s] 90%|█████████ | 362/400 [00:34<00:03,  9.92it/s] 91%|█████████ | 363/400 [00:34<00:03,  9.73it/s] 91%|█████████ | 364/400 [00:34<00:03,  9.75it/s] 92%|█████████▏| 366/400 [00:34<00:03,  9.71it/s] 92%|█████████▏| 367/400 [00:34<00:03,  9.73it/s] 92%|█████████▏| 369/400 [00:35<00:03,  9.77it/s] 92%|█████████▎| 370/400 [00:35<00:03,  9.75it/s] 93%|█████████▎| 372/400 [00:35<00:02,  9.91it/s] 93%|█████████▎| 373/400 [00:35<00:02,  9.70it/s] 94%|█████████▍| 375/400 [00:35<00:02,  9.86it/s] 94%|█████████▍| 376/400 [00:35<00:02,  9.80it/s] 94%|█████████▍| 377/400 [00:35<00:02,  9.62it/s] 94%|█████████▍| 378/400 [00:36<00:02,  9.62it/s] 95%|█████████▌| 380/400 [00:36<00:02,  9.60it/s] 95%|█████████▌| 381/400 [00:36<00:01,  9.68it/s] 96%|█████████▌| 382/400 [00:36<00:01,  9.73it/s] 96%|█████████▌| 383/400 [00:36<00:01,  9.75it/s] 96%|█████████▌| 384/400 [00:36<00:01,  9.68it/s] 96%|█████████▋| 385/400 [00:36<00:01,  9.66it/s] 97%|█████████▋| 387/400 [00:36<00:01,  9.72it/s] 97%|█████████▋| 388/400 [00:37<00:01,  9.55it/s] 98%|█████████▊| 390/400 [00:37<00:01,  9.58it/s] 98%|█████████▊| 391/400 [00:37<00:00,  9.41it/s] 98%|█████████▊| 392/400 [00:37<00:00,  9.53it/s] 98%|█████████▊| 393/400 [00:37<00:00,  9.49it/s] 98%|█████████▊| 394/400 [00:37<00:00,  9.41it/s] 99%|█████████▉| 395/400 [00:37<00:00,  9.53it/s] 99%|█████████▉| 396/400 [00:37<00:00,  9.47it/s] 99%|█████████▉| 397/400 [00:38<00:00,  9.23it/s]100%|█████████▉| 398/400 [00:38<00:00,  9.40it/s]100%|██████████| 400/400 [00:38<00:00,  9.46it/s]100%|██████████| 400/400 [00:38<00:00, 10.43it/s]
+20:37 bilby INFO    : Running for label 'job_00581', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass'
+20:37 bilby INFO    : Using lal version 7.3.0
+20:37 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+20:37 bilby INFO    : Using lalsimulation version 5.0.0
+20:37 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+20:37 bilby INFO    : Analysis priors:
+20:37 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+20:37 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+20:37 bilby INFO    : zenith=Sine(minimum=0, maximum=3.141592653589793, name='zenith', latex_label='zenith', unit=None, boundary=None)
+20:37 bilby INFO    : azimuth=Uniform(minimum=0, maximum=6.283185307179586, name='azimuth', latex_label='azimuth', unit=None, boundary='periodic')
+20:37 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+20:37 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+20:37 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+20:37 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+20:37 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+20:37 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+20:37 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+20:37 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+20:37 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+20:37 bilby INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+20:37 bilby INFO    : mass_1=Constraint(minimum=85.60101005288925, maximum=105.60101005288925, name='mass_1', latex_label='$m_1$', unit=None)
+20:37 bilby INFO    : mass_2=Constraint(minimum=38.715167365388034, maximum=58.715167365388034, name='mass_2', latex_label='$m_2$', unit=None)
+20:37 bilby INFO    : luminosity_distance=6610.928915372315
+20:37 bilby INFO    : geocent_time=1126259636.413
+20:37 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+20:37 bilby INFO    : Analysis likelihood noise evidence: -24499.994810138345
+20:37 bilby INFO    : Single likelihood evaluation took 7.246e-02 s
+20:37 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1489a1242220>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+20:37 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+20:37 bilby INFO    : Using dynesty version 2.1.0
+20:37 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+20:37 bilby INFO    : Setting up multiproccesing pool with 8 processes
+20:37 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+20:37 bilby INFO    : Resume file successfully loaded.
+21:00 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+21:24 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+21:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+22:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+22:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+22:37 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+23:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+23:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+23:42 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+00:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+00:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+00:54 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+01:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+01:34 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+01:51 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+02:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+02:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+03:08 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+03:25 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+03:42 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+03:55 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+04:10 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+04:27 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+04:51 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+05:05 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+05:21 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+05:39 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+05:43 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00581_resume.pickle
+05:44 bilby INFO    : Starting to close worker pool.
+05:44 bilby INFO    : Finished closing worker pool.
+05:46 bilby INFO    : Rejection sampling nested samples to obtain 13170 posterior samples
+05:46 bilby INFO    : Sampling time: 6 days, 10:01:40.073424
+05:46 bilby INFO    : Computing per-detector log likelihoods.
+05:46 bilby INFO    : Using a pool with size 8 for nsamples=13170
+05:48 bilby INFO    : Reconstructing marginalised parameters.
+05:48 bilby INFO    : Using a pool with size 8 for nsamples=13170
+05:51 bilby INFO    : Generating sky frame parameters.
+05:51 bilby INFO    : Computing SNRs for every sample.
+05:51 bilby INFO    : Using a pool with size 8 for nsamples=13170
+05:52 bilby INFO    : Summary of results:
+nsamples: 13170
+ln_noise_evidence: -24499.995
+ln_evidence: -24438.851 +/-  0.097
+ln_bayes_factor: 61.144 +/-  0.097
+

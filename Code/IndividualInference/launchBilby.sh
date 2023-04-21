@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source /cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/etc/profile.d/conda.sh
-conda activate igwn-py38
+conda activate igwn-py39
 
 job=$1
 json=$2

@@ -1,0 +1,368 @@
+09:53 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+09:53 bilby INFO    : Injected signal in H1:
+09:53 bilby INFO    :   optimal SNR = 34.10
+09:53 bilby INFO    :   matched filter SNR = 34.05+1.12j
+09:53 bilby INFO    :   mass_1 = 26.84757110315384
+09:53 bilby INFO    :   mass_2 = 22.481189052071983
+09:53 bilby INFO    :   a_1 = 0.07841972110358908
+09:53 bilby INFO    :   a_2 = 0.1712342296270187
+09:53 bilby INFO    :   tilt_1 = 2.100124723829276
+09:53 bilby INFO    :   tilt_2 = 1.3864284823456214
+09:53 bilby INFO    :   phi_12 = 4.730505369831261
+09:53 bilby INFO    :   phi_jl = 0.3870164502124476
+09:53 bilby INFO    :   luminosity_distance = 440.0429733308
+09:53 bilby INFO    :   theta_jn = 0.43335029280062853
+09:53 bilby INFO    :   psi = 5.8684786744
+09:53 bilby INFO    :   phase = 0.8791682061
+09:53 bilby INFO    :   geocent_time = 1126259642.413
+09:53 bilby INFO    :   zenith = -1.0309270224051037
+09:53 bilby INFO    :   azimuth = -36133.89745611856
+09:53 bilby INFO    :   ra = 3.1709052806
+09:53 bilby INFO    :   dec = 2.6017233492000003
+09:53 bilby INFO    : Injected signal in L1:
+09:53 bilby INFO    :   optimal SNR = 34.17
+09:53 bilby INFO    :   matched filter SNR = 35.62+0.63j
+09:53 bilby INFO    :   mass_1 = 26.84757110315384
+09:53 bilby INFO    :   mass_2 = 22.481189052071983
+09:53 bilby INFO    :   a_1 = 0.07841972110358908
+09:53 bilby INFO    :   a_2 = 0.1712342296270187
+09:53 bilby INFO    :   tilt_1 = 2.100124723829276
+09:53 bilby INFO    :   tilt_2 = 1.3864284823456214
+09:53 bilby INFO    :   phi_12 = 4.730505369831261
+09:53 bilby INFO    :   phi_jl = 0.3870164502124476
+09:53 bilby INFO    :   luminosity_distance = 440.0429733308
+09:53 bilby INFO    :   theta_jn = 0.43335029280062853
+09:53 bilby INFO    :   psi = 5.8684786744
+09:53 bilby INFO    :   phase = 0.8791682061
+09:53 bilby INFO    :   geocent_time = 1126259642.413
+09:53 bilby INFO    :   zenith = -1.0309270224051037
+09:53 bilby INFO    :   azimuth = -36133.89745611856
+09:53 bilby INFO    :   ra = 3.1709052806
+09:53 bilby INFO    :   dec = 2.6017233492000003
+09:53 bilby INFO    : Injected signal in V1:
+09:53 bilby INFO    :   optimal SNR = 3.14
+09:53 bilby INFO    :   matched filter SNR = 1.91+0.15j
+09:53 bilby INFO    :   mass_1 = 26.84757110315384
+09:53 bilby INFO    :   mass_2 = 22.481189052071983
+09:53 bilby INFO    :   a_1 = 0.07841972110358908
+09:53 bilby INFO    :   a_2 = 0.1712342296270187
+09:53 bilby INFO    :   tilt_1 = 2.100124723829276
+09:53 bilby INFO    :   tilt_2 = 1.3864284823456214
+09:53 bilby INFO    :   phi_12 = 4.730505369831261
+09:53 bilby INFO    :   phi_jl = 0.3870164502124476
+09:53 bilby INFO    :   luminosity_distance = 440.0429733308
+09:53 bilby INFO    :   theta_jn = 0.43335029280062853
+09:53 bilby INFO    :   psi = 5.8684786744
+09:53 bilby INFO    :   phase = 0.8791682061
+09:53 bilby INFO    :   geocent_time = 1126259642.413
+09:53 bilby INFO    :   zenith = -1.0309270224051037
+09:53 bilby INFO    :   azimuth = -36133.89745611856
+09:53 bilby INFO    :   ra = 3.1709052806
+09:53 bilby INFO    :   dec = 2.6017233492000003
+09:53 bilby INFO    : Distance marginalisation file .distance_marginalization_lookup.npz does not exist
+09:53 bilby INFO    : Building lookup table for distance marginalisation.
+  0%|          | 0/400 [00:00<?, ?it/s]  0%|          | 1/400 [00:00<01:00,  6.61it/s]  0%|          | 2/400 [00:00<00:57,  6.92it/s]  1%|          | 3/400 [00:00<00:57,  6.86it/s]  1%|          | 4/400 [00:00<00:56,  6.96it/s]  1%|▏         | 5/400 [00:00<00:57,  6.91it/s]  2%|▏         | 6/400 [00:00<00:56,  7.00it/s]  2%|▏         | 7/400 [00:01<00:59,  6.65it/s]  2%|▏         | 8/400 [00:01<00:57,  6.80it/s]  2%|▏         | 9/400 [00:01<00:57,  6.81it/s]  2%|▎         | 10/400 [00:01<00:58,  6.66it/s]  3%|▎         | 11/400 [00:01<00:57,  6.71it/s]  3%|▎         | 12/400 [00:01<00:57,  6.69it/s]  3%|▎         | 13/400 [00:01<00:59,  6.54it/s]  4%|▎         | 14/400 [00:02<00:58,  6.56it/s]  4%|▍         | 15/400 [00:02<00:58,  6.62it/s]  4%|▍         | 16/400 [00:02<00:58,  6.51it/s]  4%|▍         | 17/400 [00:02<00:58,  6.58it/s]  4%|▍         | 18/400 [00:02<00:57,  6.64it/s]  5%|▍         | 19/400 [00:02<00:57,  6.68it/s]  5%|▌         | 20/400 [00:02<00:56,  6.77it/s]  5%|▌         | 21/400 [00:03<00:55,  6.89it/s]  6%|▌         | 22/400 [00:03<00:54,  6.97it/s]  6%|▌         | 23/400 [00:03<00:53,  7.02it/s]  6%|▌         | 24/400 [00:03<00:53,  7.02it/s]  6%|▋         | 25/400 [00:03<00:53,  7.07it/s]  6%|▋         | 26/400 [00:03<00:52,  7.11it/s]  7%|▋         | 27/400 [00:03<00:52,  7.11it/s]  7%|▋         | 28/400 [00:04<00:52,  7.02it/s]  7%|▋         | 29/400 [00:04<00:53,  6.97it/s]  8%|▊         | 30/400 [00:04<00:52,  7.03it/s]  8%|▊         | 31/400 [00:04<00:53,  6.94it/s]  8%|▊         | 32/400 [00:04<00:52,  7.01it/s]  8%|▊         | 33/400 [00:04<00:51,  7.06it/s]  8%|▊         | 34/400 [00:04<00:51,  7.09it/s]  9%|▉         | 35/400 [00:05<00:52,  6.99it/s]  9%|▉         | 36/400 [00:05<00:53,  6.78it/s]  9%|▉         | 37/400 [00:05<00:52,  6.91it/s] 10%|▉         | 38/400 [00:05<00:51,  6.99it/s] 10%|▉         | 39/400 [00:05<00:52,  6.88it/s] 10%|█         | 40/400 [00:05<00:51,  6.94it/s] 10%|█         | 41/400 [00:05<00:53,  6.67it/s] 10%|█         | 42/400 [00:06<00:52,  6.79it/s] 11%|█         | 43/400 [00:06<00:51,  6.92it/s] 11%|█         | 44/400 [00:06<00:52,  6.74it/s] 11%|█▏        | 45/400 [00:06<00:54,  6.56it/s] 12%|█▏        | 46/400 [00:06<00:52,  6.73it/s] 12%|█▏        | 47/400 [00:06<00:51,  6.87it/s] 12%|█▏        | 48/400 [00:07<00:50,  6.92it/s] 12%|█▏        | 49/400 [00:07<00:52,  6.68it/s] 12%|█▎        | 50/400 [00:07<00:52,  6.65it/s] 13%|█▎        | 51/400 [00:07<00:53,  6.49it/s] 13%|█▎        | 52/400 [00:07<00:54,  6.38it/s] 13%|█▎        | 53/400 [00:07<00:53,  6.54it/s] 14%|█▎        | 54/400 [00:07<00:51,  6.73it/s] 14%|█▍        | 55/400 [00:08<00:51,  6.72it/s] 14%|█▍        | 56/400 [00:08<00:51,  6.69it/s] 14%|█▍        | 57/400 [00:08<00:50,  6.76it/s] 14%|█▍        | 58/400 [00:08<00:50,  6.73it/s] 15%|█▍        | 59/400 [00:08<00:52,  6.55it/s] 15%|█▌        | 60/400 [00:08<00:51,  6.55it/s] 15%|█▌        | 61/400 [00:08<00:50,  6.68it/s] 16%|█▌        | 62/400 [00:09<00:50,  6.76it/s] 16%|█▌        | 63/400 [00:09<00:49,  6.88it/s] 16%|█▌        | 64/400 [00:09<00:48,  6.87it/s] 16%|█▋        | 65/400 [00:09<00:48,  6.96it/s] 16%|█▋        | 66/400 [00:09<00:49,  6.71it/s] 17%|█▋        | 67/400 [00:09<00:50,  6.62it/s] 17%|█▋        | 68/400 [00:10<00:49,  6.77it/s] 17%|█▋        | 69/400 [00:10<00:48,  6.83it/s] 18%|█▊        | 70/400 [00:10<00:48,  6.87it/s] 18%|█▊        | 71/400 [00:10<00:47,  6.93it/s] 18%|█▊        | 72/400 [00:10<00:47,  6.93it/s] 18%|█▊        | 73/400 [00:10<00:46,  6.98it/s] 18%|█▊        | 74/400 [00:10<00:46,  6.97it/s] 19%|█▉        | 75/400 [00:11<00:48,  6.76it/s] 19%|█▉        | 76/400 [00:11<00:47,  6.84it/s] 19%|█▉        | 77/400 [00:11<00:46,  6.95it/s] 20%|█▉        | 78/400 [00:11<00:46,  6.98it/s] 20%|█▉        | 79/400 [00:11<00:46,  6.87it/s] 20%|██        | 80/400 [00:11<00:46,  6.91it/s] 20%|██        | 81/400 [00:11<00:47,  6.66it/s] 20%|██        | 82/400 [00:12<00:47,  6.63it/s] 21%|██        | 83/400 [00:12<00:47,  6.69it/s] 21%|██        | 84/400 [00:12<00:47,  6.66it/s] 21%|██▏       | 85/400 [00:12<00:48,  6.53it/s] 22%|██▏       | 86/400 [00:12<00:47,  6.67it/s] 22%|██▏       | 87/400 [00:12<00:45,  6.82it/s] 22%|██▏       | 88/400 [00:12<00:45,  6.84it/s] 22%|██▏       | 89/400 [00:13<00:46,  6.63it/s] 22%|██▎       | 90/400 [00:13<00:46,  6.66it/s] 23%|██▎       | 91/400 [00:13<00:46,  6.70it/s] 23%|██▎       | 92/400 [00:13<00:45,  6.80it/s] 23%|██▎       | 93/400 [00:13<00:44,  6.92it/s] 24%|██▎       | 94/400 [00:13<00:45,  6.75it/s] 24%|██▍       | 95/400 [00:13<00:44,  6.85it/s] 24%|██▍       | 96/400 [00:14<00:45,  6.65it/s] 24%|██▍       | 97/400 [00:14<00:45,  6.72it/s] 24%|██▍       | 98/400 [00:14<00:44,  6.74it/s] 25%|██▍       | 99/400 [00:14<00:43,  6.88it/s] 25%|██▌       | 100/400 [00:14<00:45,  6.65it/s] 25%|██▌       | 101/400 [00:14<00:44,  6.66it/s] 26%|██▌       | 102/400 [00:15<00:43,  6.81it/s] 26%|██▌       | 103/400 [00:15<00:42,  6.92it/s] 26%|██▌       | 104/400 [00:15<00:44,  6.67it/s] 26%|██▋       | 105/400 [00:15<00:44,  6.63it/s] 26%|██▋       | 106/400 [00:15<00:43,  6.78it/s] 27%|██▋       | 107/400 [00:15<00:43,  6.81it/s] 27%|██▋       | 108/400 [00:15<00:42,  6.85it/s] 27%|██▋       | 109/400 [00:16<00:42,  6.87it/s] 28%|██▊       | 110/400 [00:16<00:42,  6.87it/s] 28%|██▊       | 111/400 [00:16<00:42,  6.85it/s] 28%|██▊       | 112/400 [00:16<00:42,  6.74it/s] 28%|██▊       | 113/400 [00:16<00:42,  6.71it/s] 28%|██▊       | 114/400 [00:16<00:43,  6.61it/s] 29%|██▉       | 115/400 [00:16<00:42,  6.74it/s] 29%|██▉       | 116/400 [00:17<00:42,  6.61it/s] 29%|██▉       | 117/400 [00:17<00:42,  6.58it/s] 30%|██▉       | 118/400 [00:17<00:42,  6.59it/s] 30%|██▉       | 119/400 [00:17<00:42,  6.65it/s] 30%|███       | 120/400 [00:17<00:41,  6.75it/s] 30%|███       | 121/400 [00:17<00:40,  6.85it/s] 30%|███       | 122/400 [00:17<00:40,  6.89it/s] 31%|███       | 123/400 [00:18<00:39,  6.94it/s] 31%|███       | 124/400 [00:18<00:40,  6.87it/s] 31%|███▏      | 125/400 [00:18<00:39,  6.91it/s] 32%|███▏      | 126/400 [00:18<00:39,  6.91it/s] 32%|███▏      | 127/400 [00:18<00:39,  6.94it/s] 32%|███▏      | 128/400 [00:18<00:40,  6.73it/s] 32%|███▏      | 129/400 [00:19<00:40,  6.76it/s] 32%|███▎      | 130/400 [00:19<00:39,  6.78it/s] 33%|███▎      | 131/400 [00:19<00:39,  6.75it/s] 33%|███▎      | 132/400 [00:19<00:39,  6.72it/s] 33%|███▎      | 133/400 [00:19<00:39,  6.81it/s] 34%|███▎      | 134/400 [00:19<00:39,  6.81it/s] 34%|███▍      | 135/400 [00:19<00:38,  6.82it/s] 34%|███▍      | 136/400 [00:20<00:39,  6.66it/s] 34%|███▍      | 137/400 [00:20<00:39,  6.73it/s] 34%|███▍      | 138/400 [00:20<00:38,  6.78it/s] 35%|███▍      | 139/400 [00:20<00:38,  6.73it/s] 35%|███▌      | 140/400 [00:20<00:39,  6.60it/s] 35%|███▌      | 141/400 [00:20<00:40,  6.46it/s] 36%|███▌      | 142/400 [00:20<00:39,  6.48it/s] 36%|███▌      | 143/400 [00:21<00:39,  6.57it/s] 36%|███▌      | 144/400 [00:21<00:39,  6.44it/s] 36%|███▋      | 145/400 [00:21<00:38,  6.61it/s] 36%|███▋      | 146/400 [00:21<00:37,  6.71it/s] 37%|███▋      | 147/400 [00:21<00:38,  6.65it/s] 37%|███▋      | 148/400 [00:21<00:37,  6.75it/s] 37%|███▋      | 149/400 [00:22<00:37,  6.75it/s] 38%|███▊      | 150/400 [00:22<00:36,  6.83it/s] 38%|███▊      | 151/400 [00:22<00:36,  6.83it/s] 38%|███▊      | 152/400 [00:22<00:36,  6.77it/s] 38%|███▊      | 153/400 [00:22<00:36,  6.76it/s] 38%|███▊      | 154/400 [00:22<00:37,  6.57it/s] 39%|███▉      | 155/400 [00:22<00:36,  6.69it/s] 39%|███▉      | 156/400 [00:23<00:36,  6.63it/s] 39%|███▉      | 157/400 [00:23<00:36,  6.63it/s] 40%|███▉      | 158/400 [00:23<00:37,  6.48it/s] 40%|███▉      | 159/400 [00:23<00:36,  6.61it/s] 40%|████      | 160/400 [00:23<00:36,  6.51it/s] 40%|████      | 161/400 [00:23<00:36,  6.55it/s] 40%|████      | 162/400 [00:23<00:36,  6.57it/s] 41%|████      | 163/400 [00:24<00:36,  6.44it/s] 41%|████      | 164/400 [00:24<00:35,  6.57it/s] 41%|████▏     | 165/400 [00:24<00:35,  6.67it/s] 42%|████▏     | 166/400 [00:24<00:34,  6.72it/s] 42%|████▏     | 167/400 [00:24<00:34,  6.70it/s] 42%|████▏     | 168/400 [00:24<00:34,  6.72it/s] 42%|████▏     | 169/400 [00:25<00:34,  6.68it/s] 42%|████▎     | 170/400 [00:25<00:34,  6.74it/s] 43%|████▎     | 171/400 [00:25<00:33,  6.74it/s] 43%|████▎     | 172/400 [00:25<00:34,  6.57it/s] 43%|████▎     | 173/400 [00:25<00:34,  6.65it/s] 44%|████▎     | 174/400 [00:25<00:34,  6.50it/s] 44%|████▍     | 175/400 [00:25<00:34,  6.57it/s] 44%|████▍     | 176/400 [00:26<00:33,  6.64it/s] 44%|████▍     | 177/400 [00:26<00:33,  6.65it/s] 44%|████▍     | 178/400 [00:26<00:34,  6.52it/s] 45%|████▍     | 179/400 [00:26<00:33,  6.61it/s] 45%|████▌     | 180/400 [00:26<00:33,  6.48it/s] 45%|████▌     | 181/400 [00:26<00:34,  6.39it/s] 46%|████▌     | 182/400 [00:27<00:34,  6.32it/s] 46%|████▌     | 183/400 [00:27<00:34,  6.27it/s] 46%|████▌     | 184/400 [00:27<00:34,  6.23it/s] 46%|████▋     | 185/400 [00:27<00:34,  6.21it/s] 46%|████▋     | 186/400 [00:27<00:34,  6.26it/s] 47%|████▋     | 187/400 [00:27<00:34,  6.23it/s] 47%|████▋     | 188/400 [00:27<00:34,  6.21it/s] 47%|████▋     | 189/400 [00:28<00:34,  6.20it/s] 48%|████▊     | 190/400 [00:28<00:33,  6.22it/s] 48%|████▊     | 191/400 [00:28<00:33,  6.19it/s] 48%|████▊     | 192/400 [00:28<00:33,  6.17it/s] 48%|████▊     | 193/400 [00:28<00:33,  6.16it/s] 48%|████▊     | 194/400 [00:28<00:33,  6.15it/s] 49%|████▉     | 195/400 [00:29<00:33,  6.13it/s] 49%|████▉     | 196/400 [00:29<00:33,  6.11it/s] 49%|████▉     | 197/400 [00:29<00:33,  6.09it/s] 50%|████▉     | 198/400 [00:29<00:33,  6.00it/s] 50%|████▉     | 199/400 [00:29<00:33,  5.96it/s] 50%|█████     | 200/400 [00:29<00:33,  5.97it/s] 50%|█████     | 201/400 [00:30<00:33,  5.97it/s] 50%|█████     | 202/400 [00:30<00:32,  6.06it/s] 51%|█████     | 203/400 [00:30<00:32,  6.04it/s] 51%|█████     | 204/400 [00:30<00:32,  5.99it/s] 51%|█████▏    | 205/400 [00:30<00:32,  6.03it/s] 52%|█████▏    | 206/400 [00:30<00:32,  6.04it/s] 52%|█████▏    | 207/400 [00:31<00:32,  5.97it/s] 52%|█████▏    | 208/400 [00:31<00:32,  5.91it/s] 52%|█████▏    | 209/400 [00:31<00:32,  5.86it/s] 52%|█████▎    | 210/400 [00:31<00:32,  5.80it/s] 53%|█████▎    | 211/400 [00:31<00:32,  5.75it/s] 53%|█████▎    | 212/400 [00:32<00:32,  5.70it/s] 53%|█████▎    | 213/400 [00:32<00:33,  5.66it/s] 54%|█████▎    | 214/400 [00:32<00:33,  5.61it/s] 54%|█████▍    | 215/400 [00:32<00:33,  5.56it/s] 54%|█████▍    | 216/400 [00:32<00:33,  5.52it/s] 54%|█████▍    | 217/400 [00:32<00:33,  5.48it/s] 55%|█████▍    | 218/400 [00:33<00:33,  5.43it/s] 55%|█████▍    | 219/400 [00:33<00:33,  5.38it/s] 55%|█████▌    | 220/400 [00:33<00:33,  5.34it/s] 55%|█████▌    | 221/400 [00:33<00:33,  5.28it/s] 56%|█████▌    | 222/400 [00:33<00:33,  5.24it/s] 56%|█████▌    | 223/400 [00:34<00:34,  5.19it/s] 56%|█████▌    | 224/400 [00:34<00:34,  5.14it/s] 56%|█████▋    | 225/400 [00:34<00:34,  5.10it/s] 56%|█████▋    | 226/400 [00:34<00:34,  5.05it/s] 57%|█████▋    | 227/400 [00:34<00:34,  5.01it/s] 57%|█████▋    | 228/400 [00:35<00:34,  4.96it/s] 57%|█████▋    | 229/400 [00:35<00:34,  4.92it/s] 57%|█████▊    | 230/400 [00:35<00:34,  4.88it/s] 58%|█████▊    | 231/400 [00:35<00:34,  4.85it/s] 58%|█████▊    | 232/400 [00:35<00:34,  4.81it/s] 58%|█████▊    | 233/400 [00:36<00:34,  4.78it/s] 58%|█████▊    | 234/400 [00:36<00:34,  4.75it/s] 59%|█████▉    | 235/400 [00:36<00:35,  4.70it/s] 59%|█████▉    | 236/400 [00:36<00:35,  4.67it/s] 59%|█████▉    | 237/400 [00:37<00:35,  4.63it/s] 60%|█████▉    | 238/400 [00:37<00:35,  4.61it/s] 60%|█████▉    | 239/400 [00:37<00:35,  4.57it/s] 60%|██████    | 240/400 [00:37<00:35,  4.55it/s] 60%|██████    | 241/400 [00:37<00:35,  4.53it/s] 60%|██████    | 242/400 [00:38<00:35,  4.50it/s] 61%|██████    | 243/400 [00:38<00:35,  4.47it/s] 61%|██████    | 244/400 [00:38<00:35,  4.45it/s] 61%|██████▏   | 245/400 [00:38<00:35,  4.43it/s] 62%|██████▏   | 246/400 [00:39<00:34,  4.41it/s] 62%|██████▏   | 247/400 [00:39<00:34,  4.38it/s] 62%|██████▏   | 248/400 [00:39<00:34,  4.37it/s] 62%|██████▏   | 249/400 [00:39<00:34,  4.35it/s] 62%|██████▎   | 250/400 [00:39<00:34,  4.33it/s] 63%|██████▎   | 251/400 [00:40<00:34,  4.32it/s] 63%|██████▎   | 252/400 [00:40<00:34,  4.31it/s] 63%|██████▎   | 253/400 [00:40<00:34,  4.29it/s] 64%|██████▎   | 254/400 [00:40<00:34,  4.29it/s] 64%|██████▍   | 255/400 [00:41<00:33,  4.28it/s] 64%|██████▍   | 256/400 [00:41<00:33,  4.27it/s] 64%|██████▍   | 257/400 [00:41<00:33,  4.26it/s] 64%|██████▍   | 258/400 [00:41<00:33,  4.25it/s] 65%|██████▍   | 259/400 [00:42<00:33,  4.23it/s] 65%|██████▌   | 260/400 [00:42<00:33,  4.22it/s] 65%|██████▌   | 261/400 [00:42<00:32,  4.21it/s] 66%|██████▌   | 262/400 [00:42<00:32,  4.21it/s] 66%|██████▌   | 263/400 [00:43<00:32,  4.21it/s] 66%|██████▌   | 264/400 [00:43<00:32,  4.20it/s] 66%|██████▋   | 265/400 [00:43<00:32,  4.20it/s] 66%|██████▋   | 266/400 [00:43<00:31,  4.20it/s] 67%|██████▋   | 267/400 [00:43<00:31,  4.21it/s] 67%|██████▋   | 268/400 [00:44<00:31,  4.20it/s] 67%|██████▋   | 269/400 [00:44<00:31,  4.19it/s] 68%|██████▊   | 270/400 [00:44<00:31,  4.18it/s] 68%|██████▊   | 271/400 [00:44<00:30,  4.17it/s] 68%|██████▊   | 272/400 [00:45<00:30,  4.16it/s] 68%|██████▊   | 273/400 [00:45<00:30,  4.16it/s] 68%|██████▊   | 274/400 [00:45<00:30,  4.15it/s] 69%|██████▉   | 275/400 [00:45<00:30,  4.15it/s] 69%|██████▉   | 276/400 [00:46<00:29,  4.16it/s] 69%|██████▉   | 277/400 [00:46<00:29,  4.15it/s] 70%|██████▉   | 278/400 [00:46<00:29,  4.14it/s] 70%|██████▉   | 279/400 [00:46<00:29,  4.14it/s] 70%|███████   | 280/400 [00:47<00:28,  4.14it/s] 70%|███████   | 281/400 [00:47<00:28,  4.14it/s] 70%|███████   | 282/400 [00:47<00:28,  4.14it/s] 71%|███████   | 283/400 [00:47<00:28,  4.14it/s] 71%|███████   | 284/400 [00:48<00:28,  4.14it/s] 71%|███████▏  | 285/400 [00:48<00:27,  4.14it/s] 72%|███████▏  | 286/400 [00:48<00:27,  4.14it/s] 72%|███████▏  | 287/400 [00:48<00:27,  4.14it/s] 72%|███████▏  | 288/400 [00:49<00:27,  4.13it/s] 72%|███████▏  | 289/400 [00:49<00:26,  4.14it/s] 72%|███████▎  | 290/400 [00:49<00:26,  4.13it/s] 73%|███████▎  | 291/400 [00:49<00:26,  4.13it/s] 73%|███████▎  | 292/400 [00:50<00:26,  4.13it/s] 73%|███████▎  | 293/400 [00:50<00:25,  4.13it/s] 74%|███████▎  | 294/400 [00:50<00:25,  4.13it/s] 74%|███████▍  | 295/400 [00:50<00:25,  4.13it/s] 74%|███████▍  | 296/400 [00:50<00:25,  4.13it/s] 74%|███████▍  | 297/400 [00:51<00:24,  4.12it/s] 74%|███████▍  | 298/400 [00:51<00:24,  4.12it/s] 75%|███████▍  | 299/400 [00:51<00:24,  4.13it/s] 75%|███████▌  | 300/400 [00:51<00:24,  4.12it/s] 75%|███████▌  | 301/400 [00:52<00:24,  4.12it/s] 76%|███████▌  | 302/400 [00:52<00:23,  4.12it/s] 76%|███████▌  | 303/400 [00:52<00:23,  4.12it/s] 76%|███████▌  | 304/400 [00:52<00:23,  4.11it/s] 76%|███████▋  | 305/400 [00:53<00:23,  4.12it/s] 76%|███████▋  | 306/400 [00:53<00:22,  4.12it/s] 77%|███████▋  | 307/400 [00:53<00:22,  4.12it/s] 77%|███████▋  | 308/400 [00:53<00:22,  4.12it/s] 77%|███████▋  | 309/400 [00:54<00:22,  4.11it/s] 78%|███████▊  | 310/400 [00:54<00:21,  4.11it/s] 78%|███████▊  | 311/400 [00:54<00:21,  4.11it/s] 78%|███████▊  | 312/400 [00:54<00:21,  4.11it/s] 78%|███████▊  | 313/400 [00:55<00:21,  4.11it/s] 78%|███████▊  | 314/400 [00:55<00:20,  4.12it/s] 79%|███████▉  | 315/400 [00:55<00:20,  4.11it/s] 79%|███████▉  | 316/400 [00:55<00:20,  4.12it/s] 79%|███████▉  | 317/400 [00:56<00:20,  4.12it/s] 80%|███████▉  | 318/400 [00:56<00:19,  4.11it/s] 80%|███████▉  | 319/400 [00:56<00:19,  4.12it/s] 80%|████████  | 320/400 [00:56<00:19,  4.11it/s] 80%|████████  | 321/400 [00:57<00:19,  4.12it/s] 80%|████████  | 322/400 [00:57<00:18,  4.11it/s] 81%|████████  | 323/400 [00:57<00:18,  4.11it/s] 81%|████████  | 324/400 [00:57<00:18,  4.12it/s] 81%|████████▏ | 325/400 [00:58<00:18,  4.11it/s] 82%|████████▏ | 326/400 [00:58<00:17,  4.11it/s] 82%|████████▏ | 327/400 [00:58<00:17,  4.12it/s] 82%|████████▏ | 328/400 [00:58<00:17,  4.12it/s] 82%|████████▏ | 329/400 [00:59<00:17,  4.12it/s] 82%|████████▎ | 330/400 [00:59<00:17,  4.12it/s] 83%|████████▎ | 331/400 [00:59<00:16,  4.12it/s] 83%|████████▎ | 332/400 [00:59<00:16,  4.12it/s] 83%|████████▎ | 333/400 [00:59<00:16,  4.12it/s] 84%|████████▎ | 334/400 [01:00<00:16,  4.12it/s] 84%|████████▍ | 335/400 [01:00<00:15,  4.11it/s] 84%|████████▍ | 336/400 [01:00<00:15,  4.11it/s] 84%|████████▍ | 337/400 [01:00<00:15,  4.11it/s] 84%|████████▍ | 338/400 [01:01<00:15,  4.11it/s] 85%|████████▍ | 339/400 [01:01<00:14,  4.11it/s] 85%|████████▌ | 340/400 [01:01<00:14,  4.11it/s] 85%|████████▌ | 341/400 [01:01<00:14,  4.11it/s] 86%|████████▌ | 342/400 [01:02<00:14,  4.11it/s] 86%|████████▌ | 343/400 [01:02<00:13,  4.11it/s] 86%|████████▌ | 344/400 [01:02<00:13,  4.11it/s] 86%|████████▋ | 345/400 [01:02<00:13,  4.11it/s] 86%|████████▋ | 346/400 [01:03<00:13,  4.11it/s] 87%|████████▋ | 347/400 [01:03<00:12,  4.11it/s] 87%|████████▋ | 348/400 [01:03<00:12,  4.11it/s] 87%|████████▋ | 349/400 [01:03<00:12,  4.10it/s] 88%|████████▊ | 350/400 [01:04<00:12,  4.10it/s] 88%|████████▊ | 351/400 [01:04<00:11,  4.10it/s] 88%|████████▊ | 352/400 [01:04<00:11,  4.10it/s] 88%|████████▊ | 353/400 [01:04<00:11,  4.10it/s] 88%|████████▊ | 354/400 [01:05<00:11,  4.10it/s] 89%|████████▉ | 355/400 [01:05<00:10,  4.11it/s] 89%|████████▉ | 356/400 [01:05<00:10,  4.11it/s] 89%|████████▉ | 357/400 [01:05<00:10,  4.10it/s] 90%|████████▉ | 358/400 [01:06<00:10,  4.11it/s] 90%|████████▉ | 359/400 [01:06<00:09,  4.10it/s] 90%|█████████ | 360/400 [01:06<00:09,  4.10it/s] 90%|█████████ | 361/400 [01:06<00:09,  4.10it/s] 90%|█████████ | 362/400 [01:07<00:09,  4.10it/s] 91%|█████████ | 363/400 [01:07<00:09,  4.10it/s] 91%|█████████ | 364/400 [01:07<00:08,  4.11it/s] 91%|█████████▏| 365/400 [01:07<00:08,  4.11it/s] 92%|█████████▏| 366/400 [01:08<00:08,  4.11it/s] 92%|█████████▏| 367/400 [01:08<00:08,  4.10it/s] 92%|█████████▏| 368/400 [01:08<00:07,  4.10it/s] 92%|█████████▏| 369/400 [01:08<00:07,  4.11it/s] 92%|█████████▎| 370/400 [01:08<00:07,  4.11it/s] 93%|█████████▎| 371/400 [01:09<00:07,  4.11it/s] 93%|█████████▎| 372/400 [01:09<00:06,  4.11it/s] 93%|█████████▎| 373/400 [01:09<00:06,  4.11it/s] 94%|█████████▎| 374/400 [01:09<00:06,  4.11it/s] 94%|█████████▍| 375/400 [01:10<00:06,  4.11it/s] 94%|█████████▍| 376/400 [01:10<00:05,  4.11it/s] 94%|█████████▍| 377/400 [01:10<00:05,  4.11it/s] 94%|█████████▍| 378/400 [01:10<00:05,  4.09it/s] 95%|█████████▍| 379/400 [01:11<00:05,  4.10it/s] 95%|█████████▌| 380/400 [01:11<00:04,  4.11it/s] 95%|█████████▌| 381/400 [01:11<00:04,  4.11it/s] 96%|█████████▌| 382/400 [01:11<00:04,  4.12it/s] 96%|█████████▌| 383/400 [01:12<00:04,  4.13it/s] 96%|█████████▌| 384/400 [01:12<00:03,  4.12it/s] 96%|█████████▋| 385/400 [01:12<00:03,  4.13it/s] 96%|█████████▋| 386/400 [01:12<00:03,  4.13it/s] 97%|█████████▋| 387/400 [01:13<00:03,  4.13it/s] 97%|█████████▋| 388/400 [01:13<00:02,  4.13it/s] 97%|█████████▋| 389/400 [01:13<00:02,  4.14it/s] 98%|█████████▊| 390/400 [01:13<00:02,  4.14it/s] 98%|█████████▊| 391/400 [01:14<00:02,  4.14it/s] 98%|█████████▊| 392/400 [01:14<00:01,  4.15it/s] 98%|█████████▊| 393/400 [01:14<00:01,  4.15it/s] 98%|█████████▊| 394/400 [01:14<00:01,  4.16it/s] 99%|█████████▉| 395/400 [01:15<00:01,  4.18it/s] 99%|█████████▉| 396/400 [01:15<00:00,  4.18it/s] 99%|█████████▉| 397/400 [01:15<00:00,  4.19it/s]100%|█████████▉| 398/400 [01:15<00:00,  4.22it/s]100%|█████████▉| 399/400 [01:15<00:00,  4.23it/s]100%|██████████| 400/400 [01:16<00:00,  4.24it/s]100%|██████████| 400/400 [01:16<00:00,  5.25it/s]
+09:54 bilby INFO    : Running for label 'job_00334', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass'
+09:54 bilby INFO    : Using lal version 7.3.0
+09:54 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+09:54 bilby INFO    : Using lalsimulation version 5.0.0
+09:54 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+09:54 bilby INFO    : Analysis priors:
+09:54 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+09:54 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+09:54 bilby INFO    : zenith=Sine(minimum=0, maximum=3.141592653589793, name='zenith', latex_label='zenith', unit=None, boundary=None)
+09:54 bilby INFO    : azimuth=Uniform(minimum=0, maximum=6.283185307179586, name='azimuth', latex_label='azimuth', unit=None, boundary='periodic')
+09:54 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+09:54 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+09:54 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+09:54 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+09:54 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+09:54 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+09:54 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+09:54 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+09:54 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+09:54 bilby INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+09:54 bilby INFO    : mass_1=Constraint(minimum=16.84757110315384, maximum=36.84757110315384, name='mass_1', latex_label='$m_1$', unit=None)
+09:54 bilby INFO    : mass_2=Constraint(minimum=12.481189052071983, maximum=32.48118905207198, name='mass_2', latex_label='$m_2$', unit=None)
+09:54 bilby INFO    : luminosity_distance=6610.928915372315
+09:54 bilby INFO    : geocent_time=1126259636.413
+09:54 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+09:54 bilby INFO    : Analysis likelihood noise evidence: -25190.89499488654
+09:54 bilby INFO    : Single likelihood evaluation took 7.862e-02 s
+09:54 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14c34dcad6a0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+09:54 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+09:54 bilby INFO    : Using dynesty version 2.1.0
+09:54 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+09:54 bilby INFO    : Setting up multiproccesing pool with 8 processes
+09:54 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+09:54 bilby INFO    : Resume file successfully loaded.
+10:31 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:31 bilby WARNING : Axis limits cannot be NaN or Inf
+10:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:05 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:06 bilby WARNING : Axis limits cannot be NaN or Inf
+11:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:39 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:40 bilby WARNING : Axis limits cannot be NaN or Inf
+11:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:17 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:17 bilby WARNING : Axis limits cannot be NaN or Inf
+12:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:56 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:56 bilby WARNING : Axis limits cannot be NaN or Inf
+12:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:33 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:33 bilby WARNING : Axis limits cannot be NaN or Inf
+13:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:11 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:12 bilby WARNING : Axis limits cannot be NaN or Inf
+14:12 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:56 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:57 bilby WARNING : Axis limits cannot be NaN or Inf
+14:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:36 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:37 bilby WARNING : Axis limits cannot be NaN or Inf
+15:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:15 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:16 bilby WARNING : Axis limits cannot be NaN or Inf
+16:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:01 bilby WARNING : Axis limits cannot be NaN or Inf
+17:01 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:45 bilby WARNING : Axis limits cannot be NaN or Inf
+17:45 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:30 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:30 bilby WARNING : Axis limits cannot be NaN or Inf
+18:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:07 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:07 bilby WARNING : Axis limits cannot be NaN or Inf
+19:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:45 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:46 bilby WARNING : Axis limits cannot be NaN or Inf
+19:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:22 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:23 bilby WARNING : Axis limits cannot be NaN or Inf
+20:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:59 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:00 bilby WARNING : Axis limits cannot be NaN or Inf
+21:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:37 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:38 bilby WARNING : Axis limits cannot be NaN or Inf
+21:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:14 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:15 bilby WARNING : Axis limits cannot be NaN or Inf
+22:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:56 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:57 bilby WARNING : Axis limits cannot be NaN or Inf
+22:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:38 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:38 bilby WARNING : Axis limits cannot be NaN or Inf
+23:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:19 bilby WARNING : Axis limits cannot be NaN or Inf
+00:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:02 bilby WARNING : Axis limits cannot be NaN or Inf
+01:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:37 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:38 bilby WARNING : Axis limits cannot be NaN or Inf
+01:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:19 bilby WARNING : Axis limits cannot be NaN or Inf
+02:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:56 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:57 bilby WARNING : Axis limits cannot be NaN or Inf
+02:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:39 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:40 bilby WARNING : Axis limits cannot be NaN or Inf
+03:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:16 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:17 bilby WARNING : Axis limits cannot be NaN or Inf
+04:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:53 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:54 bilby WARNING : Axis limits cannot be NaN or Inf
+04:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:36 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:36 bilby WARNING : Axis limits cannot be NaN or Inf
+05:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:07 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:08 bilby WARNING : Axis limits cannot be NaN or Inf
+06:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:47 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:48 bilby WARNING : Axis limits cannot be NaN or Inf
+06:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty_utils.py", line 197, in __call__
+    self.build_cache()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty_utils.py", line 326, in build_cache
+    accept = max(accept // n_found, 1)
+ZeroDivisionError: integer division or modulo by zero
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/launchBilby.py", line 180, in <module>
+    result = bilby.run_sampler(
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/__init__.py", line 234, in run_sampler
+    result = sampler.run_sampler()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/base_sampler.py", line 96, in wrapped
+    output = method(self, *args, **kwargs)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 517, in run_sampler
+    out = self._run_external_sampler_with_checkpointing()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 635, in _run_external_sampler_with_checkpointing
+    self.sampler.run_nested(**sampler_kwargs)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 1016, in run_nested
+    for it, results in enumerate(
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 838, in sample
+    u, v, logl, nc = self._new_point(loglstar_new)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 395, in _new_point
+    u, v, logl, nc, blob = self._get_point_value(loglstar)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 379, in _get_point_value
+    self._fill_queue(loglstar)
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/sampler.py", line 372, in _fill_queue
+    self.queue = list(mapper(evolve_point, args))
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py", line 771, in get
+    raise self._value
+ZeroDivisionError: integer division or modulo by zero
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/multiprocessing/pool.py:265: ResourceWarning: unclosed running multiprocessing pool <multiprocessing.pool.Pool state=RUN pool_size=8>

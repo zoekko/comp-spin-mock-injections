@@ -1,0 +1,161 @@
+14:24 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+14:24 bilby INFO    : Injected signal in H1:
+14:24 bilby INFO    :   optimal SNR = 5.40
+14:24 bilby INFO    :   matched filter SNR = 3.69+1.08j
+14:24 bilby INFO    :   mass_1 = 61.50198996127726
+14:24 bilby INFO    :   mass_2 = 55.354652440602536
+14:24 bilby INFO    :   a_1 = 0.3799935571560642
+14:24 bilby INFO    :   a_2 = 0.38826743512810713
+14:24 bilby INFO    :   tilt_1 = 1.3053036862857317
+14:24 bilby INFO    :   tilt_2 = 0.758981504907008
+14:24 bilby INFO    :   phi_12 = 3.2440444275686025
+14:24 bilby INFO    :   phi_jl = 3.9288036789549055
+14:24 bilby INFO    :   luminosity_distance = 4563.1515303606
+14:24 bilby INFO    :   theta_jn = 2.834190563576193
+14:24 bilby INFO    :   psi = 1.6079920052999999
+14:24 bilby INFO    :   phase = 5.8397034976
+14:24 bilby INFO    :   geocent_time = 1126259642.413
+14:24 bilby INFO    :   ra = 4.7525097173
+14:24 bilby INFO    :   dec = 2.5010707136
+14:24 bilby INFO    : Injected signal in L1:
+14:24 bilby INFO    :   optimal SNR = 8.35
+14:24 bilby INFO    :   matched filter SNR = 7.24+0.46j
+14:24 bilby INFO    :   mass_1 = 61.50198996127726
+14:24 bilby INFO    :   mass_2 = 55.354652440602536
+14:24 bilby INFO    :   a_1 = 0.3799935571560642
+14:24 bilby INFO    :   a_2 = 0.38826743512810713
+14:24 bilby INFO    :   tilt_1 = 1.3053036862857317
+14:24 bilby INFO    :   tilt_2 = 0.758981504907008
+14:24 bilby INFO    :   phi_12 = 3.2440444275686025
+14:24 bilby INFO    :   phi_jl = 3.9288036789549055
+14:24 bilby INFO    :   luminosity_distance = 4563.1515303606
+14:24 bilby INFO    :   theta_jn = 2.834190563576193
+14:24 bilby INFO    :   psi = 1.6079920052999999
+14:24 bilby INFO    :   phase = 5.8397034976
+14:24 bilby INFO    :   geocent_time = 1126259642.413
+14:24 bilby INFO    :   ra = 4.7525097173
+14:24 bilby INFO    :   dec = 2.5010707136
+14:24 bilby INFO    : Injected signal in V1:
+14:24 bilby INFO    :   optimal SNR = 2.95
+14:24 bilby INFO    :   matched filter SNR = 2.70+1.01j
+14:24 bilby INFO    :   mass_1 = 61.50198996127726
+14:24 bilby INFO    :   mass_2 = 55.354652440602536
+14:24 bilby INFO    :   a_1 = 0.3799935571560642
+14:24 bilby INFO    :   a_2 = 0.38826743512810713
+14:24 bilby INFO    :   tilt_1 = 1.3053036862857317
+14:24 bilby INFO    :   tilt_2 = 0.758981504907008
+14:24 bilby INFO    :   phi_12 = 3.2440444275686025
+14:24 bilby INFO    :   phi_jl = 3.9288036789549055
+14:24 bilby INFO    :   luminosity_distance = 4563.1515303606
+14:24 bilby INFO    :   theta_jn = 2.834190563576193
+14:24 bilby INFO    :   psi = 1.6079920052999999
+14:24 bilby INFO    :   phase = 5.8397034976
+14:24 bilby INFO    :   geocent_time = 1126259642.413
+14:24 bilby INFO    :   ra = 4.7525097173
+14:24 bilby INFO    :   dec = 2.5010707136
+14:24 bilby INFO    : Running for label 'job_00004_fixedExtrinsic', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass'
+14:24 bilby INFO    : Using lal version 7.3.0
+14:24 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:24 bilby INFO    : Using lalsimulation version 5.0.0
+14:24 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:24 bilby INFO    : Analysis priors:
+14:24 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+14:24 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+14:24 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+14:24 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+14:24 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+14:24 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+14:24 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+14:24 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+14:24 bilby INFO    : mass_1=Constraint(minimum=51.50198996127726, maximum=71.50198996127726, name='mass_1', latex_label='$m_1$', unit=None)
+14:24 bilby INFO    : mass_2=Constraint(minimum=45.354652440602536, maximum=65.35465244060254, name='mass_2', latex_label='$m_2$', unit=None)
+14:24 bilby INFO    : ra=4.7525097173
+14:24 bilby INFO    : dec=2.5010707136
+14:24 bilby INFO    : geocent_time=1126259642.413
+14:24 bilby INFO    : phase=5.8397034976
+14:24 bilby INFO    : psi=1.6079920052999999
+14:24 bilby INFO    : luminosity_distance=4563.1515303606
+14:24 bilby INFO    : theta_jn=2.834190563576193
+14:24 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+14:24 bilby INFO    : Analysis likelihood noise evidence: -23998.210479903842
+14:25 bilby INFO    : Single likelihood evaluation took 6.379e-02 s
+14:25 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x15543159efa0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+14:25 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:25 bilby INFO    : Using dynesty version 2.1.0
+14:25 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+14:25 bilby INFO    : Setting up multiproccesing pool with 8 processes
+14:25 bilby INFO    : Resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle does not exist.
+14:25 bilby INFO    : Generating initial points from the prior
+14:40 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+14:50 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:12 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:23 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:34 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+15:58 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+16:09 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+16:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+16:31 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+16:42 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+16:53 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:05 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:16 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:28 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:38 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:49 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+17:59 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+18:11 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+18:23 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+18:36 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+18:49 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+19:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+19:12 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+19:24 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+19:36 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+19:51 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+20:08 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+20:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+20:30 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+20:41 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+20:53 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+21:06 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+21:16 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+21:29 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+21:41 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+21:58 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+22:12 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+22:26 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+22:38 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+22:49 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+23:08 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+23:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+23:33 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+23:45 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+23:57 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+00:10 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+00:23 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+00:35 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+00:47 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+00:58 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+01:10 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+01:24 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+01:29 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00004_fixedExtrinsic_resume.pickle
+01:30 bilby INFO    : Starting to close worker pool.
+01:30 bilby INFO    : Finished closing worker pool.
+01:30 bilby INFO    : Rejection sampling nested samples to obtain 6090 posterior samples
+01:30 bilby INFO    : Sampling time: 11:00:28.184264
+01:30 bilby INFO    : Computing per-detector log likelihoods.
+01:30 bilby INFO    : Using a pool with size 8 for nsamples=6090
+01:31 bilby INFO    : Generating sky frame parameters.
+01:31 bilby INFO    : Computing SNRs for every sample.
+01:31 bilby INFO    : Using a pool with size 8 for nsamples=6090
+01:31 bilby INFO    : Summary of results:
+nsamples: 6090
+ln_noise_evidence: -23998.210
+ln_evidence: -23965.853 +/-  0.046
+ln_bayes_factor: 32.358 +/-  0.046
+

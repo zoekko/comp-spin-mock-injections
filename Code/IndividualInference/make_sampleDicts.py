@@ -41,13 +41,14 @@ Genearate sampleDict
 individual_inference_output_folder = '../../Data/IndividualInferenceOutput/'
 
 # Cycle through the three populations
-pop_names = ['population1_highSpinPrecessing', 'population2_mediumSpin', 'population3_lowSpinAligned']
+pop_names = ['population1_highSpinPrecessing_highmass', 'population2_mediumSpin_highmass', 'population3_lowSpinAligned_highmass']
 for pop in pop_names: 
     
     print('\nCalculating for '+pop+' ...')
 
     # Read list of event names for this population
-    pop_injlist = np.sort(np.loadtxt(f'injlist_{pop}_300events.txt'))
+    #pop_injlist = np.sort(np.loadtxt(f'injlist_{pop}_300events.txt'))
+    pop_injlist = np.sort(np.loadtxt(f'injlist_{pop}_100events.txt'))
 
     sampleDict = {}
     
@@ -115,7 +116,7 @@ for pop in pop_names:
             print(f"event {int(event)} not found")
             
     # Save sampleDict in folder where population inference input goes 
-    with open(f'../../Data/PopulationInferenceInput/sampleDict_{pop}.json', 'w') as f:
+    with open(f'../../Data/PopulationInferenceInput/sampleDict_{pop}_WIP3.json', 'w') as f:
         json.dump(sampleDict, f)
     
         

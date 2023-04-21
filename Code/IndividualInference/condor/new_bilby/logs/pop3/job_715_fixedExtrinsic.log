@@ -1,0 +1,72 @@
+000 (113450173.000.000) 2023-03-29 17:01:37 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 715
+...
+040 (113450173.000.000) 2023-03-29 17:46:05 Started transferring input files
+	Transferring to host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=slot1_2_189911_3ac4_89220>
+...
+040 (113450173.000.000) 2023-03-29 17:46:05 Finished transferring input files
+...
+001 (113450173.000.000) 2023-03-29 17:46:06 Job executing on host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=startd_189641_87e3>
+...
+006 (113450173.000.000) 2023-03-29 17:46:06 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (113450173.000.000) 2023-03-29 17:46:06 Started transferring output files
+...
+040 (113450173.000.000) 2023-03-29 17:46:06 Finished transferring output files
+...
+005 (113450173.000.000) 2023-03-29 17:46:06 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	407  -  Run Bytes Sent By Job
+	381  -  Run Bytes Received By Job
+	407  -  Total Bytes Sent By Job
+	381  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :       15   500000    561711 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0    20000     20096 
+
+	Job terminated of its own accord at 2023-03-30T00:46:06Z with exit-code 127.
+...
+000 (113484762.000.000) 2023-04-01 14:23:18 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 715
+...
+040 (113484762.000.000) 2023-04-01 14:27:04 Started transferring input files
+	Transferring to host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=slot1_2_189911_3ac4_109000>
+...
+040 (113484762.000.000) 2023-04-01 14:27:04 Finished transferring input files
+...
+001 (113484762.000.000) 2023-04-01 14:27:05 Job executing on host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=startd_189641_87e3>
+...
+006 (113484762.000.000) 2023-04-01 14:27:05 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (113484762.000.000) 2023-04-01 14:27:05 Started transferring output files
+...
+040 (113484762.000.000) 2023-04-01 14:27:05 Finished transferring output files
+...
+005 (113484762.000.000) 2023-04-01 14:27:06 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	411  -  Run Bytes Sent By Job
+	381  -  Run Bytes Received By Job
+	411  -  Total Bytes Sent By Job
+	381  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :       14   500000    561711 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0    20000     20096 
+
+	Job terminated of its own accord at 2023-04-01T21:27:05Z with exit-code 127.
+...

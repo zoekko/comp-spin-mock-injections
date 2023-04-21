@@ -1,0 +1,517 @@
+14:43 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+14:43 bilby INFO    : Injected signal in H1:
+14:43 bilby INFO    :   optimal SNR = 34.10
+14:43 bilby INFO    :   matched filter SNR = 34.05+1.12j
+14:43 bilby INFO    :   mass_1 = 26.84757110315384
+14:43 bilby INFO    :   mass_2 = 22.481189052071983
+14:43 bilby INFO    :   a_1 = 0.07841972110358908
+14:43 bilby INFO    :   a_2 = 0.1712342296270187
+14:43 bilby INFO    :   tilt_1 = 2.100124723829276
+14:43 bilby INFO    :   tilt_2 = 1.3864284823456214
+14:43 bilby INFO    :   phi_12 = 4.730505369831261
+14:43 bilby INFO    :   phi_jl = 0.3870164502124476
+14:43 bilby INFO    :   luminosity_distance = 440.0429733308
+14:43 bilby INFO    :   theta_jn = 0.43335029280062853
+14:43 bilby INFO    :   psi = 5.8684786744
+14:43 bilby INFO    :   phase = 0.8791682061
+14:43 bilby INFO    :   geocent_time = 1126259642.413
+14:43 bilby INFO    :   ra = 3.1709052806
+14:43 bilby INFO    :   dec = 2.6017233492000003
+14:43 bilby INFO    : Injected signal in L1:
+14:43 bilby INFO    :   optimal SNR = 34.17
+14:43 bilby INFO    :   matched filter SNR = 35.62+0.63j
+14:43 bilby INFO    :   mass_1 = 26.84757110315384
+14:43 bilby INFO    :   mass_2 = 22.481189052071983
+14:43 bilby INFO    :   a_1 = 0.07841972110358908
+14:43 bilby INFO    :   a_2 = 0.1712342296270187
+14:43 bilby INFO    :   tilt_1 = 2.100124723829276
+14:43 bilby INFO    :   tilt_2 = 1.3864284823456214
+14:43 bilby INFO    :   phi_12 = 4.730505369831261
+14:43 bilby INFO    :   phi_jl = 0.3870164502124476
+14:43 bilby INFO    :   luminosity_distance = 440.0429733308
+14:43 bilby INFO    :   theta_jn = 0.43335029280062853
+14:43 bilby INFO    :   psi = 5.8684786744
+14:43 bilby INFO    :   phase = 0.8791682061
+14:43 bilby INFO    :   geocent_time = 1126259642.413
+14:43 bilby INFO    :   ra = 3.1709052806
+14:43 bilby INFO    :   dec = 2.6017233492000003
+14:43 bilby INFO    : Injected signal in V1:
+14:43 bilby INFO    :   optimal SNR = 3.14
+14:43 bilby INFO    :   matched filter SNR = 1.91+0.15j
+14:43 bilby INFO    :   mass_1 = 26.84757110315384
+14:43 bilby INFO    :   mass_2 = 22.481189052071983
+14:43 bilby INFO    :   a_1 = 0.07841972110358908
+14:43 bilby INFO    :   a_2 = 0.1712342296270187
+14:43 bilby INFO    :   tilt_1 = 2.100124723829276
+14:43 bilby INFO    :   tilt_2 = 1.3864284823456214
+14:43 bilby INFO    :   phi_12 = 4.730505369831261
+14:43 bilby INFO    :   phi_jl = 0.3870164502124476
+14:43 bilby INFO    :   luminosity_distance = 440.0429733308
+14:43 bilby INFO    :   theta_jn = 0.43335029280062853
+14:43 bilby INFO    :   psi = 5.8684786744
+14:43 bilby INFO    :   phase = 0.8791682061
+14:43 bilby INFO    :   geocent_time = 1126259642.413
+14:43 bilby INFO    :   ra = 3.1709052806
+14:43 bilby INFO    :   dec = 2.6017233492000003
+14:43 bilby INFO    : Running for label 'job_00334_justSpin', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass'
+14:43 bilby INFO    : Using lal version 7.3.0
+14:43 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:43 bilby INFO    : Using lalsimulation version 5.0.0
+14:43 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:44 bilby INFO    : Analysis priors:
+14:44 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+14:44 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+14:44 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+14:44 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+14:44 bilby INFO    : ra=3.1709052806
+14:44 bilby INFO    : dec=2.6017233492000003
+14:44 bilby INFO    : geocent_time=1126259642.413
+14:44 bilby INFO    : phase=0.8791682061
+14:44 bilby INFO    : psi=5.8684786744
+14:44 bilby INFO    : luminosity_distance=440.0429733308
+14:44 bilby INFO    : theta_jn=0.43335029280062853
+14:44 bilby INFO    : mass_1=26.84757110315384
+14:44 bilby INFO    : mass_2=22.481189052071983
+14:44 bilby INFO    : phi_12=4.730505369831261
+14:44 bilby INFO    : phi_jl=0.3870164502124476
+14:44 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+14:44 bilby INFO    : Analysis likelihood noise evidence: -25190.89499488654
+14:44 bilby INFO    : Single likelihood evaluation took 3.094e-02 s
+14:44 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x150df5040fa0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+14:44 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:44 bilby INFO    : Using dynesty version 2.1.0
+14:44 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+14:44 bilby INFO    : Setting up multiproccesing pool with 8 processes
+14:44 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+14:44 bilby INFO    : Resume file successfully loaded.
+15:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:02 bilby WARNING : Axis limits cannot be NaN or Inf
+15:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:26 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:26 bilby WARNING : Axis limits cannot be NaN or Inf
+15:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:44 bilby WARNING : Axis limits cannot be NaN or Inf
+15:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:02 bilby WARNING : Axis limits cannot be NaN or Inf
+16:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:14 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:14 bilby WARNING : Axis limits cannot be NaN or Inf
+16:14 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:31 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:32 bilby WARNING : Axis limits cannot be NaN or Inf
+16:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:03 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:03 bilby WARNING : Axis limits cannot be NaN or Inf
+17:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:33 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:33 bilby WARNING : Axis limits cannot be NaN or Inf
+17:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:02 bilby WARNING : Axis limits cannot be NaN or Inf
+18:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:23 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:23 bilby WARNING : Axis limits cannot be NaN or Inf
+18:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:44 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:44 bilby WARNING : Axis limits cannot be NaN or Inf
+18:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:02 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:02 bilby WARNING : Axis limits cannot be NaN or Inf
+20:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:13 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:13 bilby WARNING : Axis limits cannot be NaN or Inf
+20:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:33 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:33 bilby WARNING : Axis limits cannot be NaN or Inf
+20:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:51 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:51 bilby WARNING : Axis limits cannot be NaN or Inf
+20:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:15 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:15 bilby WARNING : Axis limits cannot be NaN or Inf
+21:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:24 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:24 bilby WARNING : Axis limits cannot be NaN or Inf
+22:24 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:50 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:50 bilby WARNING : Axis limits cannot be NaN or Inf
+22:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:15 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:15 bilby WARNING : Axis limits cannot be NaN or Inf
+23:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:45 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:45 bilby WARNING : Axis limits cannot be NaN or Inf
+23:45 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:03 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:03 bilby WARNING : Axis limits cannot be NaN or Inf
+00:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:24 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:24 bilby WARNING : Axis limits cannot be NaN or Inf
+00:24 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:42 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:43 bilby WARNING : Axis limits cannot be NaN or Inf
+00:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:27 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:27 bilby WARNING : Axis limits cannot be NaN or Inf
+01:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:08 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:08 bilby WARNING : Axis limits cannot be NaN or Inf
+02:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:22 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:22 bilby WARNING : Axis limits cannot be NaN or Inf
+02:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:40 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:40 bilby WARNING : Axis limits cannot be NaN or Inf
+02:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:54 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:55 bilby WARNING : Axis limits cannot be NaN or Inf
+02:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:15 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:15 bilby WARNING : Axis limits cannot be NaN or Inf
+03:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:28 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:28 bilby WARNING : Axis limits cannot be NaN or Inf
+03:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:43 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:43 bilby WARNING : Axis limits cannot be NaN or Inf
+03:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:13 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:14 bilby WARNING : Axis limits cannot be NaN or Inf
+04:14 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:39 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:39 bilby WARNING : Axis limits cannot be NaN or Inf
+04:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:01 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:01 bilby WARNING : Axis limits cannot be NaN or Inf
+05:01 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:35 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:35 bilby WARNING : Axis limits cannot be NaN or Inf
+05:35 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:05 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:06 bilby WARNING : Axis limits cannot be NaN or Inf
+06:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:28 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:29 bilby WARNING : Axis limits cannot be NaN or Inf
+06:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:50 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:50 bilby WARNING : Axis limits cannot be NaN or Inf
+06:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:59 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:59 bilby WARNING : Axis limits cannot be NaN or Inf
+07:59 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:19 bilby WARNING : Axis limits cannot be NaN or Inf
+08:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:51 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:51 bilby WARNING : Axis limits cannot be NaN or Inf
+08:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:14 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:14 bilby WARNING : Axis limits cannot be NaN or Inf
+09:14 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:38 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:38 bilby WARNING : Axis limits cannot be NaN or Inf
+09:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:58 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:58 bilby WARNING : Axis limits cannot be NaN or Inf
+09:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:14 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:14 bilby WARNING : Axis limits cannot be NaN or Inf
+10:14 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:36 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:36 bilby WARNING : Axis limits cannot be NaN or Inf
+10:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:54 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:55 bilby WARNING : Axis limits cannot be NaN or Inf
+10:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:10 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:10 bilby WARNING : Axis limits cannot be NaN or Inf
+11:10 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:49 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:50 bilby WARNING : Axis limits cannot be NaN or Inf
+11:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:00 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:00 bilby WARNING : Axis limits cannot be NaN or Inf
+12:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:13 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:13 bilby WARNING : Axis limits cannot be NaN or Inf
+12:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:34 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:34 bilby WARNING : Axis limits cannot be NaN or Inf
+12:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:47 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:47 bilby WARNING : Axis limits cannot be NaN or Inf
+12:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:58 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:58 bilby WARNING : Axis limits cannot be NaN or Inf
+12:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:10 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:11 bilby WARNING : Axis limits cannot be NaN or Inf
+13:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:28 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:29 bilby WARNING : Axis limits cannot be NaN or Inf
+13:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:42 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:42 bilby WARNING : Axis limits cannot be NaN or Inf
+13:42 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:17 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:17 bilby WARNING : Axis limits cannot be NaN or Inf
+14:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:18 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population2_mediumSpin_highmass/job_00334_justSpin_resume.pickle
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/home/simona.miller/.conda/envs/bilby_201/lib/python3.9/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:18 bilby WARNING : Axis limits cannot be NaN or Inf
+14:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:18 bilby INFO    : Starting to close worker pool.
+14:18 bilby INFO    : Finished closing worker pool.
+14:18 bilby INFO    : Rejection sampling nested samples to obtain 5278 posterior samples
+14:18 bilby INFO    : Sampling time: 1 day, 23:49:31.473468
+14:18 bilby INFO    : Computing per-detector log likelihoods.
+14:18 bilby INFO    : Using a pool with size 8 for nsamples=5278
+14:19 bilby INFO    : Generating sky frame parameters.
+14:20 bilby INFO    : Computing SNRs for every sample.
+14:20 bilby INFO    : Using a pool with size 8 for nsamples=5278
+14:20 bilby INFO    : Summary of results:
+nsamples: 5278
+ln_noise_evidence: -25190.895
+ln_evidence: -23981.739 +/-  0.066
+ln_bayes_factor: 1209.156 +/-  0.066
+

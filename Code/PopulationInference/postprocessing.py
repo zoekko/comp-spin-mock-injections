@@ -2,7 +2,7 @@ import numpy as np
 import sys
 import acor.acor as acor
 
-def processEmceeChain(sample_chain):
+def processEmceeChain(sample_chain, blobs=None, removeStuckWalkers=True):
     
     """
     Script with function to do some basic post-processing of emcee chains.
@@ -15,18 +15,32 @@ def processEmceeChain(sample_chain):
     ----------
     sample_chain : `numpy.array`
         raw emcee output samples of dimension [# walkers, # steps, # variables]
+    blobs : dict (optional)
+        dictionary containing metadata that also needs to be downsampled in the same way as sample_chain
+    removeStuckWalkers : boolean (optional)
+        do you want to get rid of any walkers that got stuck?
         
     Returns
     -------
     chainDownsampled : `numpy.array`
         processed chains of dimension [# steps, # variables]
+    blobsDownsampled : dict (optional)
+        if blobs passed, return processed blobs 
     """
 
     print("Shape of sample chain:")
     print(np.shape(sample_chain))
-    
+
     goodInds = np.where(sample_chain[0,:,0]!=0.0)[0]
     sample_chain = sample_chain[:,goodInds,:]
+    
+    # Get rid of stuck walkers 
+    if removeStuckWalkers: 
+        goodWalkers = np.unique(np.where(sample_chain[:,0,:]-sample_chain[:,-1,:] != 0)[0])
+        sample_chain = sample_chain[goodWalkers,:,:]
+        
+        print('Shape of sample chain after getting rid of stuck walkers:')
+        print(np.shape(sample_chain))
     
     # Read off the number of walkers, the number of steps, and the dimensionality of our parameter space
     nWalkers,nSteps,dim = sample_chain.shape
@@ -61,7 +75,42 @@ def processEmceeChain(sample_chain):
     print("Shape of downsampled chain post-flattening:")
     print(np.shape(chainDownsampled))
     
-    return(chainDownsampled)
+    if blobs is None:
+        return chainDownsampled 
+    else: 
+        blobsDownsampled = {}
+        
+        # if passed metadata, perform the same operations to it
+        for key in blobs:
+            
+            # each blob chain has dimensions (# samples, # walkers)
+            blob_chain = blobs[key]
+            
+            # take transpose and add dimension to get into (# walkers, # samples, 1) to match the chains
+            blob_chain = np.transpose(blob_chain)
+            blob_chain = np.expand_dims(blob_chain, -1)
+            blob_chain = blob_chain[:,goodInds,:]
+            
+            if removeStuckWalkers:
+                blob_chain = blob_chain[goodWalkers,:,:]
+            
+            # burn first quarter
+            blobBurned = blob_chain[:, int(np.floor(nSteps/4.)):]
+            
+            # downsample by autocorrelation length
+            blobDownsampled = blobBurned[:,::int(maxCorLength),:]
+            print("Shape of downsampled blobs:")
+            print(np.shape(blobDownsampled))
+                    
+            # flatten  
+            blobDownsampled = blobDownsampled.reshape((-1,len(blobDownsampled[0,0,:])))
+            print("Shape of downsampled blobs post-flattening:")
+            print(np.shape(blobDownsampled))
+                        
+            # get rid of added extra dimension and store in dict to return
+            blobsDownsampled[key] = blobDownsampled[:,0]
+            
+        return chainDownsampled, blobsDownsampled
 
 
 '''

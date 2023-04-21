@@ -1,0 +1,60 @@
+000 (113449365.000.000) 2023-03-29 15:44:55 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 530
+...
+000 (113449366.000.000) 2023-03-29 15:44:55 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 988
+...
+000 (113449367.000.000) 2023-03-29 15:44:55 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 508
+...
+001 (113449365.000.000) 2023-03-29 15:46:58 Job executing on host: <10.14.10.38:9618?addrs=10.14.10.38-9618&alias=node2288.cluster.ldas.cit&noUDP&sock=startd_166737_4ab9>
+...
+001 (113449367.000.000) 2023-03-29 15:47:41 Job executing on host: <10.14.9.176:9618?addrs=10.14.9.176-9618&alias=node2176.cluster.ldas.cit&noUDP&sock=startd_594138_d404>
+...
+001 (113449366.000.000) 2023-03-29 15:47:41 Job executing on host: <10.14.9.145:9618?addrs=10.14.9.145-9618&alias=node2145.cluster.ldas.cit&noUDP&sock=startd_2947090_30a6>
+...
+004 (113449366.000.000) 2023-03-29 17:00:38 Job was evicted.
+	(0) CPU times
+		Usr 0 03:44:14, Sys 0 00:00:48  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	381  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     3.27        1         1 
+	   Disk (KB)            :   240      500000    624256 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   671       20000     20096 
+...
+004 (113449367.000.000) 2023-03-29 17:00:38 Job was evicted.
+	(0) CPU times
+		Usr 0 04:34:58, Sys 0 00:00:37  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	381  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.62        1         1 
+	   Disk (KB)            :   184      500000    609620 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   520       20000     20096 
+...
+004 (113449365.000.000) 2023-03-29 17:00:38 Job was evicted.
+	(0) CPU times
+		Usr 0 04:34:10, Sys 0 00:00:36  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	381  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     6.95        1         1 
+	   Disk (KB)            :   349      500000    585302 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   659       20000     20096 
+...
+009 (113449365.000.000) 2023-03-29 17:00:38 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 113449364> fired when job (113449364.0) was removed
+...
+009 (113449366.000.000) 2023-03-29 17:00:38 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 113449364> fired when job (113449364.0) was removed
+...
+009 (113449367.000.000) 2023-03-29 17:00:38 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 113449364> fired when job (113449364.0) was removed
+...

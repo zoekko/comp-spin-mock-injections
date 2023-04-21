@@ -1,4 +1,4 @@
-import numpy as np
+    `import numpy as np
 from astropy.cosmology import Planck13,z_at_value
 import astropy.units as u
 from scipy.special import erf, erfinv
@@ -169,12 +169,12 @@ def draw_xy_spins(chi,sz):
     # calculate in plane spin component from sz and chi
     s_perp = np.sqrt(chi**2 - sz**2)
     
-    # draw a random phi_12 uniformly btwn 0 to 2pi
-    phi12 = draw_uniform(0, 2*np.pi)
+    # draw a random phi uniformly btwn 0 to 2pi
+    phi = draw_uniform(0, 2*np.pi)
     
-    # calculate sx and sy from s_perp and phi_12
-    sx = s_perp*np.cos(phi12)
-    sy = s_perp*np.sin(phi12)
+    # calculate sx and sy from s_perp and phi
+    sx = s_perp*np.cos(phi)
+    sy = s_perp*np.sin(phi)
         
     return sx,sy 
 

@@ -44,6 +44,12 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
     -------
     logP : float
         log posterior for the input sample 'c'
+    logL : float
+        log likelihood for the input sample 'c'
+    Neff : float
+        effective sample number for injDict for the input sample 'c'
+    minNsamp : float
+        minimum effective sample number over all events in sampleDict for the input sample 'c'
     """
     
     # Make sure hyper-sample is the right length
@@ -64,30 +70,30 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
     
     # Reject samples outside of our prior bounds for those with uniform priors
     if mu_chi < priorDict['mu_chi'][0] or mu_chi > priorDict['mu_chi'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif sigma_chi < priorDict['sigma_chi'][0] or sigma_chi > priorDict['sigma_chi'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     if mu1_cost < priorDict['mu_cost'][0] or mu1_cost > priorDict['mu_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif sigma1_cost < priorDict['sigma_cost'][0] or sigma1_cost > priorDict['sigma_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     if mu2_cost < priorDict['mu_cost'][0] or mu2_cost > priorDict['mu_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif sigma2_cost < priorDict['sigma_cost'][0] or sigma2_cost > priorDict['sigma_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif MF_cost < priorDict['MF_cost'][0] or MF_cost > priorDict['MF_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     
     # Additionally, to break the degeneracy between the two gaussians in the tilt distribution, 
     # impose that mu1_cost <= mu2_cost
     elif mu1_cost > mu2_cost:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     
     # If the sample falls inside our prior range, continue
     else:
         
-        # Initialize log-posterior
-        logP = 0.
+        # Initialize log-likelihood
+        logL = 0.
         
         # Translate mu_chi and sigma_chi to beta function parameters a and b 
         # See: https://en.wikipedia.org/wiki/Beta_distribution#Mean_and_variance
@@ -96,10 +102,10 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
         # Impose cut on a and b: must be greater then or equal to 1 in order
         # for distribution to go to 0 at chi=0 and chi=1 (aka nonsingular)
         if a<=1. or b<=1.: 
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Prior on Bq - gaussian centered at 0 with sigma=3
-        logP -= (Bq**2)/18. 
+        logPrior = -(Bq**2)/18. 
         
         # --- Selection effects --- 
     
@@ -132,20 +138,21 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
         det_weights = p_det/p_draw
         
         if np.max(det_weights)==0:
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Check for sufficient sampling size
         # Specifically require 4*Ndet effective detections, according to https://arxiv.org/abs/1904.10879
-        Nsamp = np.sum(det_weights)**2/np.sum(det_weights**2)
-        if Nsamp<=4*nEvents:
-            return -np.inf
+        Neff = np.sum(det_weights)**2/np.sum(det_weights**2)
+        if Neff<=4*nEvents:
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Calculate detection efficiency and add to log posterior
         log_detEff = -nEvents*np.log(np.sum(det_weights))
-        logP += log_detEff
+        logL += log_detEff
         
         # --- Loop across BBH events ---
-        for event in sampleDict:
+        Nsamps = np.zeros(len(sampleDict)) 
+        for i,event in enumerate(sampleDict):
 
             # Unpack posterior samples for this event
             chi1_samples = np.asarray(sampleDict[event]['a1'])
@@ -178,18 +185,35 @@ def betaPlusDoubleGaussian(c,sampleDict,injectionDict,priorDict):
             
             # Sum over probabilities to get the marginalized likelihood for this event
             # PE priors for chi_i and cost_i are all uniform so "dividing them out" = dividing by 1
+            det_weights_event = pSpins*m1_m2_z_prior_ratio
             nSamples = pSpins.size
-            pEvidence = (1.0/nSamples)*np.sum(pSpins*m1_m2_z_prior_ratio)
+            pEvidence = (1.0/nSamples)*np.sum(det_weights_event)
+            
+            # Calculate effective sample number
+            Nsamp_event = np.sum(det_weights_event)**2/np.sum(det_weights_event**2)
+                        
+            # Cut in effective samples for each event
+            if Nsamp_event <= 10: 
+                return -np.inf, -np.inf, -np.inf, -np.inf
+            
+            Nsamps[i] = Nsamp_event
 
             # Add to our running total
-            logP += np.log(pEvidence)
+            logL += np.log(pEvidence)
+            
+        # Get minimum effective sample number over events
+        minNsamp = np.min(Nsamps)
+        
+        # Combine likelihood and prior to get posteriors
+        logP = logL + logPrior
 
         if logP!=logP:
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
 
         else:
-            return logP
-
+            return logP, logL, Neff, minNsamp
+        
+        
 def betaPlusGaussian(c,sampleDict,injectionDict,priorDict): 
     
     """
@@ -227,6 +251,12 @@ def betaPlusGaussian(c,sampleDict,injectionDict,priorDict):
     -------
     logP : float
         log posterior for the input sample 'c'
+    logL : float
+        log likelihood for the input sample 'c'
+    Neff : float
+        effective sample number for injDict for the input sample 'c'
+    minNsamp : float
+        minimum effective sample number over all events in sampleDict for the input sample 'c'
     """
     
     # Make sure hyper-sample is the right length
@@ -244,19 +274,19 @@ def betaPlusGaussian(c,sampleDict,injectionDict,priorDict):
     
     # Reject samples outside of our prior bounds for those with uniform priors
     if mu_chi < priorDict['mu_chi'][0] or mu_chi > priorDict['mu_chi'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif sigma_chi < priorDict['sigma_chi'][0] or sigma_chi > priorDict['sigma_chi'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     if mu_cost < priorDict['mu_cost'][0] or mu_cost > priorDict['mu_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     elif sigma_cost < priorDict['sigma_cost'][0] or sigma_cost > priorDict['sigma_cost'][1]:
-        return -np.inf
+        return -np.inf, -np.inf, -np.inf, -np.inf
     
     # If the sample falls inside our prior range, continue
     else:
         
-        # Initialize log-posterior
-        logP = 0.
+        # Initialize log-likelihood
+        logL = 0.
         
         # Translate mu_chi and sigma_chi to beta function parameters a and b 
         # See: https://en.wikipedia.org/wiki/Beta_distribution#Mean_and_variance
@@ -265,10 +295,10 @@ def betaPlusGaussian(c,sampleDict,injectionDict,priorDict):
         # Impose cut on a and b: must be greater then or equal to 1 in order
         # for distribution to go to 0 at chi=0 and chi=1 (aka nonsingular)
         if a<=1. or b<=1.: 
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Prior on Bq - gaussian centered at 0 with sigma=3
-        logP -= (Bq**2)/18. 
+        logPrior = -(Bq**2)/18. 
         
         # --- Selection effects --- 
     
@@ -301,20 +331,21 @@ def betaPlusGaussian(c,sampleDict,injectionDict,priorDict):
         det_weights = p_det/p_draw
         
         if np.max(det_weights)==0:
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Check for sufficient sampling size
         # Specifically require 4*Ndet effective detections, according to https://arxiv.org/abs/1904.10879
-        Nsamp = np.sum(det_weights)**2/np.sum(det_weights**2)
-        if Nsamp<=4*nEvents:
-            return -np.inf
+        Neff = np.sum(det_weights)**2/np.sum(det_weights**2)
+        if Neff<=4*nEvents:
+            return -np.inf, -np.inf, -np.inf, -np.inf
         
         # Calculate detection efficiency and add to log posterior
         log_detEff = -nEvents*np.log(np.sum(det_weights))
-        logP += log_detEff
+        logL += log_detEff
         
         # --- Loop across BBH events ---
-        for event in sampleDict:
+        Nsamps = np.zeros(len(sampleDict)) 
+        for i,event in enumerate(sampleDict):
 
             # Unpack posterior samples for this event
             chi1_samples = np.asarray(sampleDict[event]['a1'])
@@ -347,14 +378,24 @@ def betaPlusGaussian(c,sampleDict,injectionDict,priorDict):
             
             # Sum over probabilities to get the marginalized likelihood for this event
             # PE priors for chi_i and cost_i are all uniform so "dividing them out" = dividing by 1
+            det_weights_event = pSpins*m1_m2_z_prior_ratio
             nSamples = pSpins.size
-            pEvidence = (1.0/nSamples)*np.sum(pSpins*m1_m2_z_prior_ratio)
+            pEvidence = (1.0/nSamples)*np.sum(det_weights_event)
+            
+            # Calculate effective sample number
+            Nsamps[i] = np.sum(det_weights_event)**2/np.sum(det_weights_event**2)
 
             # Add to our running total
-            logP += np.log(pEvidence)
+            logL += np.log(pEvidence)
+            
+        # Get minimum effective sample number over events
+        minNsamp = np.min(Nsamps)
+        
+        # Combine likelihood and prior to get posteriors
+        logP = logL + logPrior
 
         if logP!=logP:
-            return -np.inf
+            return -np.inf, -np.inf, -np.inf, -np.inf
 
         else:
-            return logP
+            return logP, logL, Neff, minNsamp

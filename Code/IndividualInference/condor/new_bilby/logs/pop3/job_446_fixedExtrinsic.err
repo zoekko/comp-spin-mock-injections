@@ -1,0 +1,110 @@
+14:05 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+14:05 bilby INFO    : Injected signal in H1:
+14:05 bilby INFO    :   optimal SNR = 12.62
+14:05 bilby INFO    :   matched filter SNR = 11.34-0.73j
+14:05 bilby INFO    :   mass_1 = 26.715814064732825
+14:05 bilby INFO    :   mass_2 = 20.733436026320135
+14:05 bilby INFO    :   a_1 = 0.12394512159153782
+14:05 bilby INFO    :   a_2 = 0.05264764354636458
+14:05 bilby INFO    :   tilt_1 = 0.6022742097448466
+14:05 bilby INFO    :   tilt_2 = 0.5548290076526173
+14:05 bilby INFO    :   phi_12 = 3.478690078850481
+14:05 bilby INFO    :   phi_jl = 4.23144281356721
+14:05 bilby INFO    :   luminosity_distance = 155.8312041952
+14:05 bilby INFO    :   theta_jn = 1.9079606952960282
+14:05 bilby INFO    :   psi = 4.7915267136
+14:05 bilby INFO    :   phase = 3.1818061142
+14:05 bilby INFO    :   geocent_time = 1126259642.413
+14:05 bilby INFO    :   ra = 1.5937616902
+14:05 bilby INFO    :   dec = 2.770715446
+14:05 bilby INFO    : Injected signal in L1:
+14:05 bilby INFO    :   optimal SNR = 34.61
+14:05 bilby INFO    :   matched filter SNR = 35.67-0.42j
+14:05 bilby INFO    :   mass_1 = 26.715814064732825
+14:05 bilby INFO    :   mass_2 = 20.733436026320135
+14:05 bilby INFO    :   a_1 = 0.12394512159153782
+14:05 bilby INFO    :   a_2 = 0.05264764354636458
+14:05 bilby INFO    :   tilt_1 = 0.6022742097448466
+14:05 bilby INFO    :   tilt_2 = 0.5548290076526173
+14:05 bilby INFO    :   phi_12 = 3.478690078850481
+14:05 bilby INFO    :   phi_jl = 4.23144281356721
+14:05 bilby INFO    :   luminosity_distance = 155.8312041952
+14:05 bilby INFO    :   theta_jn = 1.9079606952960282
+14:05 bilby INFO    :   psi = 4.7915267136
+14:05 bilby INFO    :   phase = 3.1818061142
+14:05 bilby INFO    :   geocent_time = 1126259642.413
+14:05 bilby INFO    :   ra = 1.5937616902
+14:05 bilby INFO    :   dec = 2.770715446
+14:05 bilby INFO    : Injected signal in V1:
+14:05 bilby INFO    :   optimal SNR = 3.53
+14:05 bilby INFO    :   matched filter SNR = 3.65+1.94j
+14:05 bilby INFO    :   mass_1 = 26.715814064732825
+14:05 bilby INFO    :   mass_2 = 20.733436026320135
+14:05 bilby INFO    :   a_1 = 0.12394512159153782
+14:05 bilby INFO    :   a_2 = 0.05264764354636458
+14:05 bilby INFO    :   tilt_1 = 0.6022742097448466
+14:05 bilby INFO    :   tilt_2 = 0.5548290076526173
+14:05 bilby INFO    :   phi_12 = 3.478690078850481
+14:05 bilby INFO    :   phi_jl = 4.23144281356721
+14:05 bilby INFO    :   luminosity_distance = 155.8312041952
+14:05 bilby INFO    :   theta_jn = 1.9079606952960282
+14:05 bilby INFO    :   psi = 4.7915267136
+14:05 bilby INFO    :   phase = 3.1818061142
+14:05 bilby INFO    :   geocent_time = 1126259642.413
+14:05 bilby INFO    :   ra = 1.5937616902
+14:05 bilby INFO    :   dec = 2.770715446
+14:05 bilby INFO    : Running for label 'job_00446_fixedExtrinsic', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass'
+14:05 bilby INFO    : Using lal version 7.3.0
+14:05 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:05 bilby INFO    : Using lalsimulation version 5.0.0
+14:05 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.13;Id: ec1fcb1d2d1dab69321fdb8f0afef1f867b11e06;;Builder: Unknown User <>;Repository status: UNCLEAN: Modified working tree
+14:05 bilby INFO    : Analysis priors:
+14:05 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+14:05 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+14:05 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+14:05 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+14:05 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+14:05 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+14:05 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+14:05 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+14:05 bilby INFO    : mass_1=Constraint(minimum=16.715814064732825, maximum=36.715814064732825, name='mass_1', latex_label='$m_1$', unit=None)
+14:05 bilby INFO    : mass_2=Constraint(minimum=10.733436026320135, maximum=30.733436026320135, name='mass_2', latex_label='$m_2$', unit=None)
+14:05 bilby INFO    : ra=1.5937616902
+14:05 bilby INFO    : dec=2.770715446
+14:05 bilby INFO    : geocent_time=1126259642.413
+14:05 bilby INFO    : phase=3.1818061142
+14:05 bilby INFO    : psi=4.7915267136
+14:05 bilby INFO    : luminosity_distance=155.8312041952
+14:05 bilby INFO    : theta_jn=1.9079606952960282
+14:05 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+14:05 bilby INFO    : Analysis likelihood noise evidence: -24954.393728406612
+14:05 bilby INFO    : Single likelihood evaluation took 5.802e-02 s
+14:05 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 8, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14ffa10c6be0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+14:05 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:05 bilby INFO    : Using dynesty version 2.1.0
+14:05 bilby INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 5 with maximum length 25000
+14:05 bilby INFO    : Setting up multiproccesing pool with 8 processes
+14:05 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00446_fixedExtrinsic_resume.pickle
+14:05 bilby INFO    : Resume file successfully loaded.
+14:34 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00446_fixedExtrinsic_resume.pickle
+14:55 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00446_fixedExtrinsic_resume.pickle
+15:17 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00446_fixedExtrinsic_resume.pickle
+15:19 bilby INFO    : Written checkpoint file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population3_lowSpinAligned_highmass/job_00446_fixedExtrinsic_resume.pickle
+15:20 bilby INFO    : Starting to close worker pool.
+15:20 bilby INFO    : Finished closing worker pool.
+15:20 bilby INFO    : Rejection sampling nested samples to obtain 7983 posterior samples
+15:20 bilby INFO    : Sampling time: 3 days, 22:18:58.347670
+15:22 bilby INFO    : Computing per-detector log likelihoods.
+15:22 bilby INFO    : Using a pool with size 8 for nsamples=7983
+15:22 bilby INFO    : Generating sky frame parameters.
+15:22 bilby INFO    : Computing SNRs for every sample.
+15:22 bilby INFO    : Using a pool with size 8 for nsamples=7983
+15:23 bilby INFO    : Summary of results:
+nsamples: 7983
+ln_noise_evidence: -24954.394
+ln_evidence: -24261.949 +/-  0.096
+ln_bayes_factor: 692.445 +/-  0.096
+

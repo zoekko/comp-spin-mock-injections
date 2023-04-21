@@ -20,7 +20,9 @@ nevents = sys.argv[2]
 
 # Model
 model = "betaPlusGaussian"
-model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
+#model_savename = model + f"_pop{pop}_{nevents}events_temp" ## TODO: get rid of temp
+model_savename = model + f"_pop{pop}_{nevents}events_temp2"
+#model_savename = model + f"_pop{pop}_{nevents}events" 
 
 # File path root for where to store data 
 froot_input = "/home/simona.miller/Xeff_injection_campaign/for_hierarchical_inf/"
@@ -31,7 +33,7 @@ nWalkers = 20       # number of walkers
 dim = 5             # dimension of parameter space (number hyper params)
 nSteps = int(sys.argv[3])      # number of steps for chain
 
-# Set prior bounds (same as Table XII in https://arxiv.org/pdf/2111.03634.pdf)
+# Set prior bounds
 priorDict = {
     'mu_chi':(0., 1.),
     'sigma_chi':(0.07, 0.5),
@@ -40,8 +42,14 @@ priorDict = {
 }
 
 # Load sampleDict
-#with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f: ## TODO: update with "real" data
-with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: 
+pop_names = {
+    '1':'population1_highSpinPrecessing', 
+    '2':'population2_mediumSpin',
+    '3':'population3_lowSpinAligned'
+}
+#with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_0.1_300events.json", 'r') as f: ## TODO: update with "real" data
+with open(froot_input+f"sampleDict_pop{pop}_gaussian_spin_posteriors_sigma_meas_realistic_300events.json", 'r') as f:
+#with open(froot+f"PopulationInferenceInput/sampleDict_{pop_names[pop]}.json", 'r') as f: 
     sampleDict_full = json.load(f)
 
 # Choose subset of sampleDict if necessary
@@ -53,7 +61,7 @@ else:
     sampleDict = sampleDict_full
     
 # Load injectionDict
-with open(froot_input+"injectionDict_flat.json", 'r') as f: 
+with open(froot+"PopulationInferenceInput/injectionDict_flat.json", 'r') as f: 
     injectionDict = json.load(f)
 
 # Will save emcee chains temporarily in the .tmp folder in this directory
@@ -121,12 +129,17 @@ if nSteps>0: # if the run hasn't already finished
 
     print(f'\nLaunching emcee with {dim} hyper-parameters, {nSteps} steps, and {nWalkers} walkers ...')
 
+    # for metadata 
+    dtype_for_blobs = [("logL", float), ("Neff", float), ("minNsamps", float)]
+    
+    # make sampler object
     sampler = mc.EnsembleSampler(
         nWalkers,
         dim,
         betaPlusGaussian, # model in posteriors.py
         args=[sampleDict,injectionDict,priorDict], # arguments passed to betaPlusGaussian
-        threads=16
+        threads=16, 
+        blobs_dtype=dtype_for_blobs #for metadata: logL, Neff, and min(Nsamps)    
     )
 
     print('\nRunning emcee ... ')
@@ -136,6 +149,9 @@ if nSteps>0: # if the run hasn't already finished
         # Save every 10 iterations
         if i%10==0:
             np.save("{0}_r{1:02d}.npy".format(output_tmp,run_version),sampler.chain)
+            np.save("{0}_r{1:02d}_Neffs.npy".format(output_tmp,run_version),sampler.get_blobs()['Neff'])
+            np.save("{0}_r{1:02d}_minNsamps.npy".format(output_tmp,run_version),sampler.get_blobs()['minNsamps'])
+            np.save("{0}_r{1:02d}_logL.npy".format(output_tmp,run_version),sampler.get_blobs()['logL'])
 
         # Print progress every 100 iterations
         if i%100==0:
@@ -143,7 +159,9 @@ if nSteps>0: # if the run hasn't already finished
 
     # Save raw output chains
     np.save("{0}_r{1:02d}.npy".format(output_tmp,run_version),sampler.chain)
-
+    np.save("{0}_r{1:02d}_Neffs.npy".format(output_tmp,run_version),sampler.get_blobs()['Neff'])
+    np.save("{0}_r{1:02d}_minNsamps.npy".format(output_tmp,run_version),sampler.get_blobs()['minNsamps'])
+    np.save("{0}_r{1:02d}_logL.npy".format(output_tmp,run_version),sampler.get_blobs()['logL'])
 
 """
 Running post processing and saving results
@@ -151,22 +169,29 @@ Running post processing and saving results
 
 print('\nDoing post processing ...')
 
-if nSteps>0: 
+# Load in data in correct format
+if nSteps==0:
+    run_version=run_version-1
 
-    # If this is the only run, just process this one directly 
-    if run_version==0:
-        chainRaw = sampler.chain
+if run_version==0:
+    chainRaw = np.load("{0}_r00.npy".format(output_tmp))
+    NeffsRaw = np.load("{0}_r00_Neffs.npy".format(output_tmp))
+    minNsampsRaw = np.load("{0}_r00_minNsamps.npy".format(output_tmp))
+    logLRaw = np.load("{0}_r00_logL.npy".format(output_tmp))
+else:
+    chainRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??.npy".format(output_tmp)))], axis=1)
+    NeffsRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_Neffs.npy".format(output_tmp)))])
+    minNsampsRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_minNsamps.npy".format(output_tmp)))])
+    logLRaw = np.concatenate([np.load(chain) for chain in np.sort(glob.glob("{0}_r??_logL.npy".format(output_tmp)))])
 
-    # otherwise, put chains from all previous runs together 
-    else:
-        previous_chains = [np.load(chain) for chain in old_chains]
-        previous_chains.append(sampler.chain)
-        chainRaw = np.concatenate(previous_chains, axis=1)
+blobsRaw = {
+    'Neff':NeffsRaw,
+    'minNsamps':minNsampsRaw, 
+    'logL':logLRaw
+}
 
-else: 
-    chainRaw = old_chain
-
-# Run post-processing
+# Run post-processing 
+#chainDownsampled, blobsDownsampled = processEmceeChain(chainRaw, blobs=blobsRaw) 
 chainDownsampled = processEmceeChain(chainRaw) 
 
 # Format output into an easily readable format 
@@ -175,7 +200,10 @@ results = {
     'sigma_chi':{'unprocessed':chainRaw[:,:,1].tolist(), 'processed':chainDownsampled[:,1].tolist()},
     'mu_cost':{'unprocessed':chainRaw[:,:,2].tolist(), 'processed':chainDownsampled[:,2].tolist()},
     'sigma_cost':{'unprocessed':chainRaw[:,:,3].tolist(), 'processed':chainDownsampled[:,3].tolist()},
-    'Bq':{'unprocessed':chainRaw[:,:,4].tolist(), 'processed':chainDownsampled[:,4].tolist()}
+    'Bq':{'unprocessed':chainRaw[:,:,4].tolist(), 'processed':chainDownsampled[:,4].tolist()}, 
+    'Neff':blobsDownsampled['Neff'].tolist(),
+    'minNsamps':blobsDownsampled['minNsamps'].tolist(), 
+    'logL':blobsDownsampled['logL'].tolist()
 } 
 
 # Save

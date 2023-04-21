@@ -1,0 +1,124 @@
+000 (113449801.000.000) 2023-03-29 17:01:33 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 653
+...
+022 (113449801.000.000) 2023-03-29 17:38:59 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_6@node2267.cluster.ldas.cit <10.14.10.17:9618?addrs=10.14.10.17-9618&alias=node2267.cluster.ldas.cit&noUDP&sock=startd_3479_e213>
+...
+024 (113449801.000.000) 2023-03-29 17:39:08 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_6@node2267.cluster.ldas.cit, rescheduling job
+...
+040 (113449801.000.000) 2023-03-29 17:39:19 Started transferring input files
+	Transferring to host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=slot1_2_189911_3ac4_88864>
+...
+040 (113449801.000.000) 2023-03-29 17:39:19 Finished transferring input files
+...
+001 (113449801.000.000) 2023-03-29 17:39:20 Job executing on host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=startd_189641_87e3>
+...
+006 (113449801.000.000) 2023-03-29 17:39:20 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (113449801.000.000) 2023-03-29 17:39:20 Started transferring output files
+...
+040 (113449801.000.000) 2023-03-29 17:39:20 Finished transferring output files
+...
+005 (113449801.000.000) 2023-03-29 17:39:20 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	407  -  Run Bytes Sent By Job
+	375  -  Run Bytes Received By Job
+	407  -  Total Bytes Sent By Job
+	375  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :       15   500000    561711 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0    20000     20096 
+
+	Job terminated of its own accord at 2023-03-30T00:39:20Z with exit-code 127.
+...
+000 (113471335.000.000) 2023-03-31 13:47:50 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 653
+...
+022 (113471335.000.000) 2023-03-31 13:57:37 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_2@node2199.cluster.ldas.cit <10.14.9.199:9618?addrs=10.14.9.199-9618&alias=node2199.cluster.ldas.cit&noUDP&sock=startd_3766_bdc1>
+...
+024 (113471335.000.000) 2023-03-31 13:57:46 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_2@node2199.cluster.ldas.cit, rescheduling job
+...
+040 (113471335.000.000) 2023-03-31 13:59:48 Started transferring input files
+	Transferring to host: <10.14.9.69:9618?addrs=10.14.9.69-9618&alias=node2069.cluster.ldas.cit&noUDP&sock=slot1_4_2458736_b089_3800>
+...
+040 (113471335.000.000) 2023-03-31 13:59:48 Finished transferring input files
+...
+001 (113471335.000.000) 2023-03-31 13:59:49 Job executing on host: <10.14.9.69:9618?addrs=10.14.9.69-9618&alias=node2069.cluster.ldas.cit&noUDP&sock=startd_2458697_36ff>
+...
+006 (113471335.000.000) 2023-03-31 13:59:58 Image size of job updated: 436348
+	168  -  MemoryUsage of job (MB)
+	171220  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:04:59 Image size of job updated: 3642920
+	526  -  MemoryUsage of job (MB)
+	538076  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:10:00 Image size of job updated: 3653900
+	542  -  MemoryUsage of job (MB)
+	554736  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:15:00 Image size of job updated: 3796532
+	621  -  MemoryUsage of job (MB)
+	635540  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:20:00 Image size of job updated: 3797368
+	622  -  MemoryUsage of job (MB)
+	636348  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:25:01 Image size of job updated: 3835444
+	635  -  MemoryUsage of job (MB)
+	649424  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:35:01 Image size of job updated: 3841212
+	646  -  MemoryUsage of job (MB)
+	661312  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:40:02 Image size of job updated: 3841212
+	647  -  MemoryUsage of job (MB)
+	662028  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:45:02 Image size of job updated: 3841212
+	656  -  MemoryUsage of job (MB)
+	671364  -  ResidentSetSize of job (KB)
+...
+006 (113471335.000.000) 2023-03-31 14:48:18 Image size of job updated: 7494312
+	656  -  MemoryUsage of job (MB)
+	671364  -  ResidentSetSize of job (KB)
+...
+040 (113471335.000.000) 2023-03-31 14:48:18 Started transferring output files
+...
+040 (113471335.000.000) 2023-03-31 14:48:18 Finished transferring output files
+...
+005 (113471335.000.000) 2023-03-31 14:48:18 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:10:31, Sys 0 00:00:48  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:10:31, Sys 0 00:00:48  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	215788  -  Run Bytes Sent By Job
+	375  -  Run Bytes Received By Job
+	215788  -  Total Bytes Sent By Job
+	375  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     5.83        1         1 
+	   Disk (KB)            :   233      500000    609620 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   656       20000     20096 
+
+	Job terminated of its own accord at 2023-03-31T21:48:18Z with exit-code 0.
+...

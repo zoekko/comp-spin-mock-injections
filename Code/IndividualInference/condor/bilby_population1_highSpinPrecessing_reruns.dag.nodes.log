@@ -1,0 +1,185 @@
+000 (112887871.000.000) 2023-03-06 12:13:08 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_4753_bdbb>
+    DAG Node: 39079
+...
+000 (112887872.000.000) 2023-03-06 12:13:08 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_4753_bdbb>
+    DAG Node: 38360
+...
+000 (112887873.000.000) 2023-03-06 12:13:08 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_4753_bdbb>
+    DAG Node: 28049
+...
+000 (112887874.000.000) 2023-03-06 12:13:08 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_4753_bdbb>
+    DAG Node: 26961
+...
+001 (112887871.000.000) 2023-03-06 12:14:28 Job executing on host: <10.14.4.10:9618?addrs=10.14.4.10-9618&alias=node760.cluster.ldas.cit&noUDP&sock=startd_4001_ee83>
+...
+001 (112887872.000.000) 2023-03-06 12:14:28 Job executing on host: <10.14.4.1:9618?addrs=10.14.4.1-9618&alias=node751.cluster.ldas.cit&noUDP&sock=startd_3649_7d2c>
+...
+001 (112887873.000.000) 2023-03-06 12:14:28 Job executing on host: <10.14.4.5:9618?addrs=10.14.4.5-9618&alias=node755.cluster.ldas.cit&noUDP&sock=startd_3874_d1fb>
+...
+001 (112887874.000.000) 2023-03-06 12:14:28 Job executing on host: <10.14.4.18:9618?addrs=10.14.4.18-9618&alias=node768.cluster.ldas.cit&noUDP&sock=startd_3871_c333>
+...
+012 (112887874.000.000) 2023-03-07 00:45:54 Job was held.
+	MemoryUsage 31090 MB > RequestMemory 20000 MB.
+	Code 26 Subcode 0
+...
+012 (112887873.000.000) 2023-03-07 10:11:49 Job was held.
+	MemoryUsage 31681 MB > RequestMemory 20000 MB.
+	Code 26 Subcode 0
+...
+013 (112887873.000.000) 2023-03-07 11:48:58 Job was released.
+	via condor_release (by user simona.miller)
+...
+013 (112887874.000.000) 2023-03-07 11:48:58 Job was released.
+	via condor_release (by user simona.miller)
+...
+001 (112887873.000.000) 2023-03-07 11:49:56 Job executing on host: <10.14.10.52:9618?addrs=10.14.10.52-9618&alias=node2302.cluster.ldas.cit&noUDP&sock=startd_854103_31fa>
+...
+001 (112887874.000.000) 2023-03-07 11:49:56 Job executing on host: <10.14.10.71:9618?addrs=10.14.10.71-9618&alias=node2321.cluster.ldas.cit&noUDP&sock=startd_4381_9480>
+...
+004 (112887871.000.000) 2023-03-07 12:31:45 Job was evicted.
+	(0) CPU times
+		Usr 0 23:51:46, Sys 0 00:11:48  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  3299      500000    609614 
+	   Memory (MB)          :  2863       20000     20096 
+...
+004 (112887872.000.000) 2023-03-07 12:31:45 Job was evicted.
+	(0) CPU times
+		Usr 1 00:01:34, Sys 0 00:02:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :  3312      500000    606141 
+	   Memory (MB)          :   977       20000     20096 
+...
+001 (112887871.000.000) 2023-03-07 12:35:39 Job executing on host: <10.14.4.40:9618?addrs=10.14.4.40-9618&alias=node790.cluster.ldas.cit&noUDP&sock=startd_261434_8ead>
+...
+001 (112887872.000.000) 2023-03-07 12:35:39 Job executing on host: <10.14.4.44:9618?addrs=10.14.4.44-9618&alias=node794.cluster.ldas.cit&noUDP&sock=startd_3401_61b0>
+...
+005 (112887873.000.000) 2023-03-07 15:04:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:03:45, Sys 0 00:07:31  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 16:10:22, Sys 0 01:01:25  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4778751  -  Run Bytes Sent By Job
+	661  -  Run Bytes Received By Job
+	4778751  -  Total Bytes Sent By Job
+	1322  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  4690      500000    624252 
+	   GPUs                 :                           0 
+	   Memory (MB)          : 46877       40000     40064 
+
+	Job terminated of its own accord at 2023-03-07T23:04:22Z.
+...
+012 (112887874.000.000) 2023-03-07 17:15:38 Job was held.
+	MemoryUsage 61012 MB > RequestMemory 40000 MB.
+	Code 26 Subcode 0
+...
+013 (112887874.000.000) 2023-03-07 17:29:42 Job was released.
+	via condor_release (by user simona.miller)
+...
+024 (112887874.000.000) 2023-03-07 17:39:00 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@node2360.cluster.ldas.cit, rescheduling job
+...
+024 (112887874.000.000) 2023-03-07 17:40:30 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@node2199.cluster.ldas.cit, rescheduling job
+...
+001 (112887874.000.000) 2023-03-07 17:43:16 Job executing on host: <10.14.4.31:9618?addrs=10.14.4.31-9618&alias=node781.cluster.ldas.cit&noUDP&sock=startd_299075_2709>
+...
+012 (112887871.000.000) 2023-03-07 18:51:29 Job was held.
+	MemoryUsage 31455 MB > RequestMemory 20000 MB.
+	Code 26 Subcode 0
+...
+005 (112887874.000.000) 2023-03-08 00:34:18 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 06:10:08, Sys 0 00:28:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 22:52:53, Sys 0 01:22:43  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	5791471  -  Run Bytes Sent By Job
+	661  -  Run Bytes Received By Job
+	5791471  -  Total Bytes Sent By Job
+	1983  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :  5678      500000    620920 
+	   GPUs                 :                           0 
+	   Memory (MB)          : 73243       70000     70016 
+
+	Job terminated of its own accord at 2023-03-08T08:34:18Z.
+...
+013 (112887871.000.000) 2023-03-08 10:20:20 Job was released.
+	via condor_release (by user simona.miller)
+...
+001 (112887871.000.000) 2023-03-08 10:22:40 Job executing on host: <10.14.10.122:9618?addrs=10.14.10.122-9618&alias=node2372.cluster.ldas.cit&noUDP&sock=startd_4258_365a>
+...
+004 (112887872.000.000) 2023-03-08 12:37:23 Job was evicted.
+	(0) CPU times
+		Usr 0 23:21:35, Sys 0 00:27:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	661  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  4552      500000    624223 
+	   GPUs                 :                           0 
+	   Memory (MB)          : 17881       20000     20096 
+...
+001 (112887872.000.000) 2023-03-08 12:39:39 Job executing on host: <10.14.4.30:9618?addrs=10.14.4.30-9618&alias=node780.cluster.ldas.cit&noUDP&sock=startd_247034_5ae5>
+...
+005 (112887871.000.000) 2023-03-08 15:45:16 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 05:07:56, Sys 0 00:09:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 2 06:10:19, Sys 0 00:45:51  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	5577776  -  Run Bytes Sent By Job
+	661  -  Run Bytes Received By Job
+	5577776  -  Total Bytes Sent By Job
+	1983  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :  5470      500000    624252 
+	   GPUs                 :                           0 
+	   Memory (MB)          : 57004       40000     40064 
+
+	Job terminated of its own accord at 2023-03-08T23:45:16Z.
+...
+012 (112887872.000.000) 2023-03-08 18:25:29 Job was held.
+	MemoryUsage 32167 MB > RequestMemory 20000 MB.
+	Code 26 Subcode 0
+...
+013 (112887872.000.000) 2023-03-09 10:50:16 Job was released.
+	via condor_release (by user simona.miller)
+...
+001 (112887872.000.000) 2023-03-09 10:50:33 Job executing on host: <10.14.4.32:9618?addrs=10.14.4.32-9618&alias=node782.cluster.ldas.cit&noUDP&sock=startd_230880_0e00>
+...
+005 (112887872.000.000) 2023-03-09 17:06:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 05:46:33, Sys 0 00:24:42  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 05:53:52, Sys 0 01:21:26  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	5655047  -  Run Bytes Sent By Job
+	661  -  Run Bytes Received By Job
+	5655047  -  Total Bytes Sent By Job
+	2644  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :  5545      500000    620325 
+	   GPUs                 :                           0 
+	   Memory (MB)          : 53439       40000     40064 
+
+	Job terminated of its own accord at 2023-03-10T01:06:09Z.
+...

@@ -1,0 +1,145 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+16:19 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+16:19 bilby INFO    : Injected signal in H1:
+16:19 bilby INFO    :   optimal SNR = 7.35
+16:19 bilby INFO    :   matched filter SNR = 8.28+1.48j
+16:19 bilby INFO    :   mass_1 = 50.18991577374649
+16:19 bilby INFO    :   mass_2 = 42.15391694810759
+16:19 bilby INFO    :   a_1 = 0.8039500731132323
+16:19 bilby INFO    :   a_2 = 0.9143319866875984
+16:19 bilby INFO    :   tilt_1 = 1.8185600047070736
+16:19 bilby INFO    :   tilt_2 = 1.438685849889211
+16:19 bilby INFO    :   phi_12 = 5.469801863666902
+16:19 bilby INFO    :   phi_jl = 0.7058340956370247
+16:19 bilby INFO    :   luminosity_distance = 2915.5287290285
+16:19 bilby INFO    :   theta_jn = 0.6353464453747065
+16:19 bilby INFO    :   psi = 5.5961346726
+16:19 bilby INFO    :   phase = 2.9967199523
+16:19 bilby INFO    :   geocent_time = 1126259642.413
+16:19 bilby INFO    :   ra = 0.6126583546000001
+16:19 bilby INFO    :   dec = 3.1858283437
+16:19 bilby INFO    : Injected signal in L1:
+16:19 bilby INFO    :   optimal SNR = 10.18
+16:19 bilby INFO    :   matched filter SNR = 11.10-0.29j
+16:19 bilby INFO    :   mass_1 = 50.18991577374649
+16:19 bilby INFO    :   mass_2 = 42.15391694810759
+16:19 bilby INFO    :   a_1 = 0.8039500731132323
+16:19 bilby INFO    :   a_2 = 0.9143319866875984
+16:19 bilby INFO    :   tilt_1 = 1.8185600047070736
+16:19 bilby INFO    :   tilt_2 = 1.438685849889211
+16:19 bilby INFO    :   phi_12 = 5.469801863666902
+16:19 bilby INFO    :   phi_jl = 0.7058340956370247
+16:19 bilby INFO    :   luminosity_distance = 2915.5287290285
+16:19 bilby INFO    :   theta_jn = 0.6353464453747065
+16:19 bilby INFO    :   psi = 5.5961346726
+16:19 bilby INFO    :   phase = 2.9967199523
+16:19 bilby INFO    :   geocent_time = 1126259642.413
+16:19 bilby INFO    :   ra = 0.6126583546000001
+16:19 bilby INFO    :   dec = 3.1858283437
+16:19 bilby INFO    : Injected signal in V1:
+16:19 bilby INFO    :   optimal SNR = 2.56
+16:19 bilby INFO    :   matched filter SNR = 2.93-1.24j
+16:19 bilby INFO    :   mass_1 = 50.18991577374649
+16:19 bilby INFO    :   mass_2 = 42.15391694810759
+16:19 bilby INFO    :   a_1 = 0.8039500731132323
+16:19 bilby INFO    :   a_2 = 0.9143319866875984
+16:19 bilby INFO    :   tilt_1 = 1.8185600047070736
+16:19 bilby INFO    :   tilt_2 = 1.438685849889211
+16:19 bilby INFO    :   phi_12 = 5.469801863666902
+16:19 bilby INFO    :   phi_jl = 0.7058340956370247
+16:19 bilby INFO    :   luminosity_distance = 2915.5287290285
+16:19 bilby INFO    :   theta_jn = 0.6353464453747065
+16:19 bilby INFO    :   psi = 5.5961346726
+16:19 bilby INFO    :   phase = 2.9967199523
+16:19 bilby INFO    :   geocent_time = 1126259642.413
+16:19 bilby INFO    :   ra = 0.6126583546000001
+16:19 bilby INFO    :   dec = 3.1858283437
+16:19 bilby INFO    : Running for label 'job_00154_fixedExtrinsic', output will be saved to '/home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass'
+16:19 bilby INFO    : Using lal version 7.2.4
+16:19 bilby INFO    : Using lal git version Branch: None;Tag: lal-v7.2.4;Id: e5e51f77cbaf264a20a620b4acefbe7ac38c84c6;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+16:19 bilby INFO    : Using lalsimulation version 4.0.2
+16:19 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsimulation-v4.0.2;Id: 233cc3963d87688c272b7affe7dd0b962e4c11a0;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+16:19 bilby INFO    : Analysis priors:
+16:19 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=2, maximum=200, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+16:19 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.05, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+16:19 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+16:19 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+16:19 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+16:19 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+16:19 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+16:19 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+16:19 bilby INFO    : mass_1=Constraint(minimum=40.18991577374649, maximum=60.18991577374649, name='mass_1', latex_label='$m_1$', unit=None)
+16:19 bilby INFO    : mass_2=Constraint(minimum=32.15391694810759, maximum=52.15391694810759, name='mass_2', latex_label='$m_2$', unit=None)
+16:19 bilby INFO    : ra=0.6126583546000001
+16:19 bilby INFO    : dec=3.1858283437
+16:19 bilby INFO    : geocent_time=1126259642.413
+16:19 bilby INFO    : phase=2.9967199523
+16:19 bilby INFO    : psi=5.5961346726
+16:19 bilby INFO    : luminosity_distance=2915.5287290285
+16:19 bilby INFO    : theta_jn=0.6353464453747065
+16:19 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+16:19 bilby INFO    : Analysis likelihood noise evidence: -24115.130203540117
+16:19 bilby INFO    : Single likelihood evaluation took 5.126e-02 s
+16:19 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'multi', 'sample': 'rwalk', 'periodic': None, 'reflective': None, 'update_interval': None, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x152addba79a0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+16:19 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+16:19 bilby INFO    : Using dynesty version 2.1.0
+16:19 bilby INFO    : Using the bilby-implemented rwalk sample method with ACT estimated walks
+16:19 bilby INFO    : Reading resume file /home/simona.miller/comp-spin-mock-injections/Data/IndividualInferenceOutput/new_bilby/population1_highSpinPrecessing_highmass/job_00154_fixedExtrinsic_resume.pickle
+Traceback (most recent call last):
+  File "/home/simona.miller/comp-spin-mock-injections/Code/IndividualInference/launchBilby_fixedExtrinsic.py", line 161, in <module>
+    result = bilby.run_sampler(
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/bilby/core/sampler/__init__.py", line 234, in run_sampler
+    result = sampler.run_sampler()
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/bilby/core/sampler/base_sampler.py", line 97, in wrapped
+    output = method(self, *args, **kwargs)
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 394, in run_sampler
+    self.resume = self.read_saved_state(continuing=True)
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 546, in read_saved_state
+    sampler = dill.load(file)
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/dill/_dill.py", line 272, in load
+    return Unpickler(file, ignore=ignore, **kwds).load()
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/dill/_dill.py", line 419, in load
+    obj = StockUnpickler.load(self)
+  File "/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn/lib/python3.9/site-packages/dill/_dill.py", line 409, in find_class
+    return StockUnpickler.find_class(self, module, name)
+ModuleNotFoundError: No module named 'bilby.core.sampler.dynesty_utils'
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+

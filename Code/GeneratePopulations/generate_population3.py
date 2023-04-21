@@ -21,13 +21,17 @@ APPROXIMANT = "IMRPhenomXPHM"
 f_lower = 15
 f_upper = 4096
 
+# Reference freq and delta_f for everything
+delta_f = 1.
+f_ref = 50.
+
 # Prepare detector object
 H1 = Detector("H1")
 L1 = Detector("L1")
 V1 = Detector("V1")
-psd_H1 = read.from_txt('./aligo_O3actual_H1.txt',f_upper,1,10,is_asd_file=True)
-psd_L1 = read.from_txt('./aligo_O3actual_L1.txt',f_upper,1,10,is_asd_file=True)
-psd_V1 = read.from_txt('./avirgo_O3actual.txt',f_upper,1,10,is_asd_file=True)
+psd_H1 = read.from_txt('./aligo_O3actual_H1.txt',f_upper,delta_f,10,is_asd_file=True)
+psd_L1 = read.from_txt('./aligo_O3actual_L1.txt',f_upper,delta_f,10,is_asd_file=True)
+psd_V1 = read.from_txt('./avirgo_O3actual.txt',f_upper,delta_f,10,is_asd_file=True)
 
 # Want to generate 50000 draws from the population
 target = 50000 
@@ -49,6 +53,8 @@ saved_DLs = np.zeros(target)
 saved_incs = np.zeros(target)
 saved_ras = np.zeros(target)
 saved_decs = np.zeros(target)
+saved_phases = np.zeros(target)
+saved_pols = np.zeros(target)
 saved_snrs = np.zeros(target)
 
 # Prepare interpolation grid for redshifts 
@@ -74,8 +80,8 @@ for i,m in enumerate(horizon_component_masses):
         DL = DL*1.5
         hp, hc = get_fd_waveform(approximant=APPROXIMANT, mass1=m, mass2=m,
                                     spin1z=0.95, spin2z=0.95, 
-                                    inclination=0., distance=DL,
-                                    f_lower=f_lower, delta_f=1., f_final=f_upper)
+                                    inclination=0., distance=DL, f_ref=f_ref,
+                                    f_lower=f_lower, delta_f=delta_f, f_final=f_upper)
         sqSNR1 = matchedfilter.overlap(hp,hp,psd=psd_H1,low_frequency_cutoff=f_lower,high_frequency_cutoff=f_upper,normalized=False)
         sqSNR2 = matchedfilter.overlap(hp,hp,psd=psd_L1,low_frequency_cutoff=f_lower,high_frequency_cutoff=f_upper,normalized=False)
         sqSNR3 = matchedfilter.overlap(hp,hp,psd=psd_V1,low_frequency_cutoff=f_lower,high_frequency_cutoff=f_upper,normalized=False)
@@ -140,9 +146,8 @@ while n_det<target:
     chi2s = chi2s[np.where(chi2s<=1)]
     chi2 = np.random.choice(chi2s[np.where(chi2s>=np.abs(s2z))])
 
-    
     # Randomly split the "remaining" spin magnitude between sx and sy by
-    # uniformly drawing in phi_12
+    # uniformly drawing in phi
     s1x,s1y = draw_xy_spins(chi1,s1z)
     s2x,s2y = draw_xy_spins(chi2,s2z)
 
@@ -151,14 +156,16 @@ while n_det<target:
     dec = np.arccos(draw_uniform(-1,1)) + np.pi/2.
     pol =  draw_uniform(0, 2*np.pi)
     inc = np.arccos(draw_uniform(-1,1))
+    phase = draw_uniform(0, 2*np.pi)
 
     # Generate waveform
     hp, hc = get_fd_waveform(approximant=APPROXIMANT, mass1=m1*(1.+z), mass2=m2*(1.+z),
                                     spin1z=s1z, spin2z=s2z,
                                     spin1x=s1x, spin2x=s2x,
                                     spin1y=s1y, spin2y=s2y,
-                                    inclination=inc, distance=DL,
-                                    f_lower=f_lower, delta_f=1.)
+                                    coa_phase=phase,
+                                    inclination=inc, distance=DL, f_ref=f_ref,
+                                    f_lower=f_lower, delta_f=delta_f)
 
     # Project onto detectors
     time = 1126259642.413
@@ -205,14 +212,16 @@ while n_det<target:
         saved_incs[n_det] = inc
         saved_ras[n_det] = ra
         saved_decs[n_det] = dec
+        saved_phases[n_det] = phase
+        saved_pols[n_det] = pol
         saved_snrs[n_det] = snr
         
         n_det += 1
 
         print(n_trials,n_det,n_hopeless, end='\r')
-
+        
+        
 # Save as dictionary -> json
-print(n_trials,n_det,n_hopeless)        
 populationDict = {\
         'm1':saved_m1s,\
         'm2':saved_m2s,\
@@ -227,11 +236,11 @@ populationDict = {\
         'ra':saved_ras,\
         'dec':saved_decs,\
         'inc':saved_incs,\
+        'phase':saved_phases,\
+        'pol':saved_pols,
         'snr':saved_snrs,\
         'seed':np.random.randint(1000000,size=n_det)\
         }
 
-savename = '../../Data/InjectedPopulationParameters/population3_lowSpinAligned.json'
 df = pd.DataFrame(populationDict)
-df.to_json(savename)
-print("File saved at", savename)
+df.to_json('../../Data/InjectedPopulationParameters/population3_lowSpinAligned.json')

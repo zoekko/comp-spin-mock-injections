@@ -1,0 +1,20 @@
+#! /bin/bash
+
+condor_submit_dag bilby_population1_highSpinPrecessing_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population1_highSpinPrecessing_fixedExtrinsic_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population1_highSpinPrecessing_justSpin_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population2_mediumSpin_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population2_mediumSpin_fixedExtrinsic_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population2_mediumSpin_justSpin_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population3_lowSpinAligned_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population3_lowSpinAligned_fixedExtrinsic_highmass2.dag
+sleep 1
+condor_submit_dag bilby_population3_lowSpinAligned_justSpin_highmass2.dag
+sleep 1

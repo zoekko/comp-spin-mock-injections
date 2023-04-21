@@ -1,0 +1,248 @@
+000 (113449916.000.000) 2023-03-29 17:01:34 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 299
+...
+040 (113449916.000.000) 2023-03-29 17:41:19 Started transferring input files
+	Transferring to host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=slot1_2_189911_3ac4_88969>
+...
+040 (113449916.000.000) 2023-03-29 17:41:19 Finished transferring input files
+...
+001 (113449916.000.000) 2023-03-29 17:41:20 Job executing on host: <10.14.9.194:9618?addrs=10.14.9.194-9618&alias=node2194.cluster.ldas.cit&noUDP&sock=startd_189641_87e3>
+...
+006 (113449916.000.000) 2023-03-29 17:41:20 Image size of job updated: 91340
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (113449916.000.000) 2023-03-29 17:41:20 Started transferring output files
+...
+040 (113449916.000.000) 2023-03-29 17:41:20 Finished transferring output files
+...
+005 (113449916.000.000) 2023-03-29 17:41:20 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	407  -  Run Bytes Sent By Job
+	375  -  Run Bytes Received By Job
+	407  -  Total Bytes Sent By Job
+	375  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :       14   500000    561711 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0    20000     20096 
+
+	Job terminated of its own accord at 2023-03-30T00:41:20Z with exit-code 127.
+...
+000 (113471373.000.000) 2023-03-31 13:47:52 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_7450_a8a7>
+    DAG Node: 299
+...
+022 (113471373.000.000) 2023-03-31 14:04:15 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@node2267.cluster.ldas.cit <10.14.10.17:9618?addrs=10.14.10.17-9618&alias=node2267.cluster.ldas.cit&noUDP&sock=startd_3479_e213>
+...
+024 (113471373.000.000) 2023-03-31 14:04:24 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_4@node2267.cluster.ldas.cit, rescheduling job
+...
+022 (113471373.000.000) 2023-03-31 14:06:35 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@node2199.cluster.ldas.cit <10.14.9.199:9618?addrs=10.14.9.199-9618&alias=node2199.cluster.ldas.cit&noUDP&sock=startd_3766_bdc1>
+...
+024 (113471373.000.000) 2023-03-31 14:06:43 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@node2199.cluster.ldas.cit, rescheduling job
+...
+040 (113471373.000.000) 2023-03-31 14:08:41 Started transferring input files
+	Transferring to host: <10.14.9.102:9618?addrs=10.14.9.102-9618&alias=node2102.cluster.ldas.cit&noUDP&sock=slot1_4_57507_a23c_7633>
+...
+040 (113471373.000.000) 2023-03-31 14:08:41 Finished transferring input files
+...
+001 (113471373.000.000) 2023-03-31 14:08:42 Job executing on host: <10.14.9.102:9618?addrs=10.14.9.102-9618&alias=node2102.cluster.ldas.cit&noUDP&sock=startd_57468_d8b3>
+...
+006 (113471373.000.000) 2023-03-31 14:08:51 Image size of job updated: 102596
+	100  -  MemoryUsage of job (MB)
+	101960  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:13:52 Image size of job updated: 3641504
+	523  -  MemoryUsage of job (MB)
+	535412  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:18:52 Image size of job updated: 3651880
+	535  -  MemoryUsage of job (MB)
+	547528  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:23:52 Image size of job updated: 3783140
+	602  -  MemoryUsage of job (MB)
+	616376  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:28:53 Image size of job updated: 3784900
+	605  -  MemoryUsage of job (MB)
+	619016  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:33:53 Image size of job updated: 3820936
+	630  -  MemoryUsage of job (MB)
+	644624  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:38:53 Image size of job updated: 3820936
+	632  -  MemoryUsage of job (MB)
+	646520  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:43:54 Image size of job updated: 3828132
+	648  -  MemoryUsage of job (MB)
+	662684  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:48:55 Image size of job updated: 3829384
+	649  -  MemoryUsage of job (MB)
+	664060  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:53:55 Image size of job updated: 3830708
+	650  -  MemoryUsage of job (MB)
+	665100  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 14:58:56 Image size of job updated: 3856880
+	650  -  MemoryUsage of job (MB)
+	665100  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:08:57 Image size of job updated: 3856880
+	657  -  MemoryUsage of job (MB)
+	672512  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:13:57 Image size of job updated: 3856880
+	659  -  MemoryUsage of job (MB)
+	673808  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:33:59 Image size of job updated: 3856880
+	690  -  MemoryUsage of job (MB)
+	705844  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:39:00 Image size of job updated: 3856880
+	709  -  MemoryUsage of job (MB)
+	725112  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:44:00 Image size of job updated: 3858180
+	712  -  MemoryUsage of job (MB)
+	728980  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:49:01 Image size of job updated: 3858180
+	741  -  MemoryUsage of job (MB)
+	757792  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:54:02 Image size of job updated: 3858180
+	863  -  MemoryUsage of job (MB)
+	882940  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 15:59:02 Image size of job updated: 3868168
+	888  -  MemoryUsage of job (MB)
+	908448  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:04:02 Image size of job updated: 3868168
+	888  -  MemoryUsage of job (MB)
+	909196  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:09:03 Image size of job updated: 3868168
+	898  -  MemoryUsage of job (MB)
+	919392  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:19:03 Image size of job updated: 3881548
+	910  -  MemoryUsage of job (MB)
+	931668  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:29:05 Image size of job updated: 3881548
+	912  -  MemoryUsage of job (MB)
+	933788  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:34:05 Image size of job updated: 3881548
+	913  -  MemoryUsage of job (MB)
+	934628  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:44:07 Image size of job updated: 3881548
+	914  -  MemoryUsage of job (MB)
+	935480  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:49:07 Image size of job updated: 3881548
+	915  -  MemoryUsage of job (MB)
+	936092  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:54:07 Image size of job updated: 3881548
+	916  -  MemoryUsage of job (MB)
+	937488  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 16:59:08 Image size of job updated: 3881548
+	918  -  MemoryUsage of job (MB)
+	939456  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 17:09:08 Image size of job updated: 3899040
+	926  -  MemoryUsage of job (MB)
+	947860  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 17:19:10 Image size of job updated: 3899040
+	932  -  MemoryUsage of job (MB)
+	953712  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 17:29:11 Image size of job updated: 3899040
+	932  -  MemoryUsage of job (MB)
+	954120  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 17:57:08 Image size of job updated: 3910840
+	934  -  MemoryUsage of job (MB)
+	956032  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:07:54 Image size of job updated: 3916192
+	938  -  MemoryUsage of job (MB)
+	960016  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:14:22 Image size of job updated: 3936572
+	958  -  MemoryUsage of job (MB)
+	980144  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:29:24 Image size of job updated: 3941492
+	963  -  MemoryUsage of job (MB)
+	985400  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:39:25 Image size of job updated: 3941492
+	963  -  MemoryUsage of job (MB)
+	985676  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:44:26 Image size of job updated: 3942032
+	967  -  MemoryUsage of job (MB)
+	990100  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 18:54:26 Image size of job updated: 3942676
+	967  -  MemoryUsage of job (MB)
+	990100  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 19:04:27 Image size of job updated: 3946924
+	969  -  MemoryUsage of job (MB)
+	992040  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 19:14:28 Image size of job updated: 3948704
+	971  -  MemoryUsage of job (MB)
+	993496  -  ResidentSetSize of job (KB)
+...
+006 (113471373.000.000) 2023-03-31 19:16:09 Image size of job updated: 8127056
+	971  -  MemoryUsage of job (MB)
+	993496  -  ResidentSetSize of job (KB)
+...
+040 (113471373.000.000) 2023-03-31 19:16:09 Started transferring output files
+...
+040 (113471373.000.000) 2023-03-31 19:16:09 Finished transferring output files
+...
+005 (113471373.000.000) 2023-03-31 19:16:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 16:07:41, Sys 0 00:02:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 16:07:41, Sys 0 00:02:19  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	405118  -  Run Bytes Sent By Job
+	375  -  Run Bytes Received By Job
+	405118  -  Total Bytes Sent By Job
+	375  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     5.10        1         1 
+	   Disk (KB)            :   418      500000    609620 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   971       20000     20096 
+
+	Job terminated of its own accord at 2023-04-01T02:16:09Z with exit-code 0.
+...
